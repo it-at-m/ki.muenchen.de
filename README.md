@@ -1,4 +1,4 @@
-![KICC Logo](docs/img/kicc_transp_border.png)
+![KICC Logo](img/kicc_transp_border.png)
 
 # ki.muenchen.de
 
