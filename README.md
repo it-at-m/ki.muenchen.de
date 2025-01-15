@@ -1,9 +1,6 @@
-![KICC Logo](img/kicc_transp_border.png)
-
 # ki.muenchen.de
 
 [![Made with love by it@M][made-with-love-shield]][itm-opensource]
-
 <!-- feel free to add more shields, style 'for-the-badge' -> see https://shields.io/badges -->
 
 Content repository for [ki.muenchen.de](https://ki.muenchen.de/)
@@ -12,11 +9,21 @@ Content repository for [ki.muenchen.de](https://ki.muenchen.de/)
 
 Made with [vitepress](https://vitepress.dev)
 
-Requires Node.js version 16 or higher.
+Requires Node.js version 20 or higher.
 
 ```shell
-npm i
-npm run docs:dev
+# Install dependencies
+npm ci
+
+# Start development server
+npm run dev
+
+# Lint and fix files
+npm run lint
+npm run fix
+
+# Build for production
+npm run build
 ```
 
 ## Contributing
@@ -25,7 +32,7 @@ Contributions are what make the open source community such an amazing place to l
 
 Please make sure your contributions are properly formatted, e.g. do
 
-`npm run prettier:format`
+`npm run fix`
 
 before committing.
 

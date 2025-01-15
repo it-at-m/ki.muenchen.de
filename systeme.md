@@ -18,6 +18,6 @@ Eine System Card ist ein Dokument, das Informationen über ein KI-System und die
 
 - **Risiken und Limitierungen**: Definiert die Grenzen und Limitierungen der Systeme
 
-## Eingesetzte KI-Systeme
+## Im Bürger*innen-Kontakt eingesetzte KI-Systeme
 
 - [KI-Suche im Dienstleistungsfinder auf muenchen.de](/systems/dlf.md)
