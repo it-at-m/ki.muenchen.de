@@ -14,6 +14,7 @@ const vitepressConfig = defineConfig({
       },
     ],
   ],
+  lang: "de-DE",
   lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -58,7 +59,7 @@ const vitepressConfig = defineConfig({
     ],
     editLink: {
       pattern: "https://github.com/it-at-m/ki.muenchen.de/blob/main/:path",
-      text: "View this page on GitHub",
+      text: "Diese Seite auf GitHub anzeigen",
     },
     search: {
       provider: "local",
@@ -66,6 +67,17 @@ const vitepressConfig = defineConfig({
     footer: {
       message: `<a href="https://opensource.muenchen.de/de/impress.html">Impressum</a>`,
     },
+    docFooter: {
+      prev: "Vorherige Seite",
+      next: "Nächste Seite",
+    },
+    darkModeSwitchLabel: "Darstellung",
+    lightModeSwitchTitle: "Zum hellem Modus wechseln",
+    darkModeSwitchTitle: "Zum dunklen Modus wechseln",
+    sidebarMenuLabel: "Menü",
+    returnToTopLabel: "Zurück nach oben",
+    skipToContentLabel: "Zum Inhalt springen",
+    externalLinkIcon: true,
   },
 });
 
