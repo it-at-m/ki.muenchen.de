@@ -10,12 +10,15 @@ hero:
     src: /img/kicc_transp.png
     alt: KI Logo
   actions:
-    - theme: brand
-      text: Überblick
-      link: /ueberblick
+    # - theme: brand
+    #   text: Überblick
+    #   link: /ueberblick
     - theme: alt
       text: Systeme
       link: /systeme
+    - theme: alt
+      text: Datensätze
+      link: /datensaetze
     - theme: alt
       text: KI Competence Center
       link: /kicc

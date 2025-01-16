@@ -22,14 +22,15 @@ const vitepressConfig = defineConfig({
       {
         text: "Dokumentation",
         items: [
-          { text: "Überblick", link: "/ueberblick" },
+          // { text: "Überblick", link: "/ueberblick" },
           { text: "Systeme", link: "/systeme" },
+          { text: "Datensätze", link: "/datensaetze" },
           { text: "KI Competence Center", link: "/kicc" },
         ],
       },
     ],
     sidebar: [
-      { text: "Überblick", link: "/ueberblick" },
+      // { text: "Überblick", link: "/ueberblick" },
       {
         text: "Systeme",
         link: "/systeme",
@@ -38,9 +39,16 @@ const vitepressConfig = defineConfig({
         ],
       },
       {
-        text: "KI Competence Center",
-        link: "/kicc",
+        text: "Datensätze",
+        link: "/datensaetze",
+        items: [
+          {
+            text: "Verwaltungs-Dienstleistungen",
+            link: "/datensaetze/munich-public-services",
+          },
+        ],
       },
+      { text: "KI Competence Center", link: "/kicc" },
     ],
     outline: {
       level: "deep",
