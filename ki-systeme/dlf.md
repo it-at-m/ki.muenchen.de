@@ -1,3 +1,5 @@
+[<- Zurück zur Übersicht](/ki-systeme/index.md)
+
 # KI-Suche im Dienstleistungsfinder auf muenchen.de
 
 Diese Dokumentation beschreibt die Funktionsweise, Datengrundlage und Evaluierung der KI-Suche im Dienstleistungsfinder auf muenchen.de.
@@ -78,3 +80,7 @@ Obwohl die KI-Suche viele Vorteile bietet, gibt es auch einige Risiken und Limit
 - **Bias in den Daten**: Die KI-Modelle können Vorurteile aus den Trainingsdaten übernehmen.
 - **Sprachliche Beschränkungen**: Die Qualität der Antworten kann je nach Sprache und Formulierung der Anfrage variieren.
 - **Datenschutz**: Es dürfen keine personenbezogenen Daten eingegeben werden.
+
+---
+
+[<- Zurück zur Übersicht](/ki-systeme/index.md)

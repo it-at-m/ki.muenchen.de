@@ -21,36 +21,31 @@ const vitepressConfig = defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      {
-        text: "Dokumentation",
-        items: [
-          // { text: "Überblick", link: "/ueberblick" },
-          { text: "Systeme", link: "/systeme" },
-          { text: "Datensätze", link: "/datensaetze" },
-          { text: "KI Competence Center", link: "/kicc" },
-        ],
-      },
+      // { text: "Überblick", link: "/ueberblick" },
+      { text: "KI-Systeme", link: "/ki-systeme/" },
+      { text: "Datensätze", link: "/datensaetze/" },
+      { text: "KI Competence Center", link: "/kicc" },
     ],
     sidebar: [
       // { text: "Überblick", link: "/ueberblick" },
-      {
-        text: "Systeme",
-        link: "/systeme",
-        items: [
-          { text: "KI-Suche im Dienstleistungsfinder ", link: "/systems/dlf" },
-        ],
-      },
-      {
-        text: "Datensätze",
-        link: "/datensaetze",
-        items: [
-          {
-            text: "Verwaltungs-Dienstleistungen",
-            link: "/datensaetze/munich-public-services",
-          },
-        ],
-      },
-      { text: "KI Competence Center", link: "/kicc" },
+      // {
+      //   text: "Systeme",
+      //   link: "/systeme",
+      //   items: [
+      //     { text: "KI-Suche im Dienstleistungsfinder ", link: "/systems/dlf" },
+      //   ],
+      // },
+      // {
+      //   text: "Datensätze",
+      //   link: "/datensaetze",
+      //   items: [
+      //     {
+      //       text: "Verwaltungs-Dienstleistungen",
+      //       link: "/datensaetze/munich-public-services",
+      //     },
+      //   ],
+      // },
+      // { text: "KI Competence Center", link: "/kicc" },
     ],
     outline: {
       level: "deep",

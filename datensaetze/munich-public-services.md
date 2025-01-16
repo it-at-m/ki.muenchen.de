@@ -1,10 +1,20 @@
-# Dataset Card für "Münchner Verwaltungs-Dienstleistungen"
+[<- Zurück zur Übersicht](/datensaetze/index.md#liste-der-datensatze)
 
-[**zum Datensatz**](https://huggingface.co/datasets/it-at-m/munich-public-services)
+# Münchner Verwaltungs-Dienstleistungen
 
 <!-- Provide a quick summary of the dataset. -->
-
 Dieser Datensatz enthält Informationen über die von der Landeshauptstadt München angebotenen Dienstleistungen in Form von schriftlichen Artikeln, zugehörigen Metadaten sowie Einbettungen.
+
+## Vorschau
+
+<iframe
+  src="https://huggingface.co/datasets/it-at-m/munich-public-services/embed/viewer/default/train"
+  frameborder="0"
+  width="100%"
+  height="560px"
+></iframe>
+
+[**zum Datensatz**](https://huggingface.co/datasets/it-at-m/munich-public-services)
 
 ## Datensatzdetails
 
@@ -17,7 +27,7 @@ Neben dem Inhalt der Artikel enthält der Datensatz auch Metadaten wie die Sprac
 Der Datensatz enthält auch Einbettungsvektoren, die aus jedem Artikel berechnet wurden und für Retrieval- oder andere NLP-Aufgaben verwendet werden können.
 
 - **Kuratiert von:** Landeshauptstadt München, it@M, KI Competence Center
-- **Sprache(n) (NLP):** Deutsch, Englisch
+- **Sprachen:** Deutsch, Englisch
 - **Lizenz:** MIT
 
 ### Datenquellen
@@ -66,7 +76,7 @@ Der Datensatz besteht aus den folgenden Feldern:
 | `public`           | bool              | Wahrheitswert, der angibt, ob der Artikel öffentlich ist oder nicht, immer `True`.                                                                                                                                             |
 | `lastModification` | timestamp         | Zeitstempel der letzten Änderung des Artikels in UTC.                                                                                                                                                                          |
 | `keywords`         | sequence [string] | Eine Liste von Schlüsselwörtern, die mit dem Artikel verbunden sind; die Schlüsselwörter können auf Deutsch oder Englisch sein.                                                                                                |
-| `embedding`        | sequence [float]  | Ein 3072-dimensionaler Einbettungsvektor, der aus dem Artikelinhalt berechnet wurde, unter Verwendung von OpenAI's [`text-embedding-3-large`](https://platform.openai.com/docs/guides/embeddings/#embedding-models) KI-Modell. |
+| `embedding`        | sequence [float]  | Ein 3072-dimensionaler Einbettungsvektor, der aus dem Artikelinhalt berechnet wurde, unter Verwendung von OpenAI's [`text-embedding-3-large`][openai-link] KI-Modell. |
 
 ## Datensatz-Erstellung
 
@@ -91,7 +101,7 @@ Alle Artikel wurden von Mitarbeitenden der Landeshauptstadt München geschrieben
 Die Daten wurden durch Abfragen einer internen API des CMS der Landeshauptstadt München gesammelt.
 Die Daten wurden dann weiterverarbeitet, um die Metadaten und den Inhalt der Artikel zu extrahieren.
 Der Artikelinhalt wurde mit der [markdownify](https://pypi.org/project/markdownify/) Bibliothek von HTML in Markdown umgewandelt.
-Die Einbettungen wurden mit dem [`text-embedding-3-large`](https://platform.openai.com/docs/guides/embeddings/#embedding-models) Modell von OpenAI generiert.
+Die Einbettungen wurden mit dem [`text-embedding-3-large`][openai-link] Modell von OpenAI generiert.
 
 #### Wer sind die Ersteller der Quelldaten?
 
@@ -135,14 +145,17 @@ Ein weiterer Ansatz besteht darin, den Datensatz mit einem benutzerdefinierten E
 - **LLM:** Large Language Model, großes Sprachmodell.
 - **Desinformation:** Verbreitung falscher oder irreführender Informationen.
 
-## Weitere Informationen
-
-Für weitere Informationen über die KI-Projekte der Landeshauptstadt München besuchen Sie bitte [ki.muenchen.de](https://ki.muenchen.de/).
-
 ## Autoren der Dataset Card
 
 Fabian Reinold - Landeshauptstadt München, it@M, KI Competence Center
 
 ## Kontakt für die Dataset Card
 
-Bei Fragen zum Datensatz kontaktieren Sie uns bitte [hier](mailto:itm.kicc@muenchen.de).
+Bei Fragen zum Datensatz kontaktieren Sie uns bitte [per Mail](mailto:itm.kicc@muenchen.de).
+
+---
+
+[<- Zurück zur Übersicht](/datensaetze/index.md#liste-der-datensatze)
+
+<!-- Links -->
+[openai-link]: https://platform.openai.com/docs/guides/embeddings/#embedding-models

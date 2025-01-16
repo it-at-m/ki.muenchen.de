@@ -13,9 +13,9 @@ hero:
     # - theme: brand
     #   text: Überblick
     #   link: /ueberblick
-    - theme: alt
-      text: Systeme
-      link: /systeme
+    - theme: brand
+      text: KI-Systeme
+      link: /ki-systeme
     - theme: alt
       text: Datensätze
       link: /datensaetze

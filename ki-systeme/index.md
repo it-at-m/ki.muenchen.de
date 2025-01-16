@@ -1,6 +1,7 @@
 # KI-Systeme der Landeshauptstadt München
 
 KI-Systeme sind alle IT-Systeme, die Künstliche Intelligenz (KI) verwenden, um bestimmte Teil-Aufgaben und Arbeitsschritte zu automatisieren oder zu unterstützen.
+Diese Definition umfasst nicht nur vollständige Anwendungen, die im Kern auf KI-Technologien wie große Sprachmodelle aufbauen, sondern auch solche, die KI-Technologien als zum Teil kleine Teil-Komponente einer größeren Anwendung bereitstellen.
 
 Die Landeshauptstadt München setzt bereits heute diverse KI-Systeme ein, um Verwaltungsprozesse zu optimieren, datenbasierte Entscheidungen zu treffen und die Barrierefreiheit und Mehrsprachigkeit von Dienstleistungen zu verbessern.
 
@@ -20,4 +21,4 @@ Eine System Card ist ein Dokument, das Informationen über ein KI-System und die
 
 ## Im Bürger\*innen-Kontakt eingesetzte KI-Systeme
 
-- [KI-Suche im Dienstleistungsfinder auf muenchen.de](/systems/dlf.md)
+- [KI-Suche im Dienstleistungsfinder auf muenchen.de](/ki-systeme/dlf.md)
