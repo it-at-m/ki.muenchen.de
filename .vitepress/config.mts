@@ -5,6 +5,7 @@ import { withMermaid } from "vitepress-plugin-mermaid"; // https://vitepress.dev
 const vitepressConfig = defineConfig({
   title: "KI @ LHM",
   description: "Dokumentation zu KI-Systemen der Landeshauptstadt München",
+  cleanUrls: true,
   head: [
     [
       "link",
@@ -65,7 +66,7 @@ const vitepressConfig = defineConfig({
       provider: "local",
     },
     footer: {
-      message: `<a href="https://opensource.muenchen.de/de/impress.html">Impressum</a>`,
+      message: `<a href="https://ki.muenchen.de/impressum.html">Impressum & Datenschutz</a>`,
     },
     docFooter: {
       prev: "Vorherige Seite",
@@ -76,7 +77,6 @@ const vitepressConfig = defineConfig({
     darkModeSwitchTitle: "Zum dunklen Modus wechseln",
     sidebarMenuLabel: "Menü",
     returnToTopLabel: "Zurück nach oben",
-    skipToContentLabel: "Zum Inhalt springen",
     externalLinkIcon: true,
   },
 });

@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "KI-Dokumentation"
   text: "der Landeshauptstadt München"
-  tagline: "Künstliche Intelligenz für eine Smart City"
+  tagline: "Mit Künstlicher Intelligenz Bürgerservice verbessern"
   image:
     src: /img/kicc_transp.png
     alt: KI Logo
