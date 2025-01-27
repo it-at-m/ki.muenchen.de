@@ -23,6 +23,6 @@ Eine System Card ist ein Dokument, das Informationen über ein KI-System und die
 
 - [KI-Suche im Dienstleistungsfinder auf muenchen.de](/ki-systeme/dlf.md)
 
-## KI-System für die Mitarbeiter*innen
+## KI-System für die Mitarbeiter\*innen
 
 - [MUCGPT](/ki-systeme/mucgpt.md)

@@ -3,6 +3,7 @@
 # Münchner Verwaltungs-Dienstleistungen
 
 <!-- Provide a quick summary of the dataset. -->
+
 Dieser Datensatz enthält Informationen über die von der Landeshauptstadt München angebotenen Dienstleistungen in Form von schriftlichen Artikeln, zugehörigen Metadaten sowie Einbettungen.
 
 ## Vorschau
@@ -65,17 +66,17 @@ Auch die Verwendung des Datensatzes als Eingabe für ein LLM zur Erstellung weit
 
 Der Datensatz besteht aus den folgenden Feldern:
 
-| Feld               | Typ               | Beschreibung                                                                                                                                                                                                                   |
-| ------------------ | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `id`               | int               | Die eindeutige ID des Artikels.                                                                                                                                                                                                |
-| `name`             | string            | Der Titel des Artikels.                                                                                                                                                                                                        |
-| `content`          | string            | Der vollständige Textinhalt des Artikels, formatiert in Markdown.                                                                                                                                                              |
-| `language`         | string            | Die Sprache des Artikels, entweder Deutsch (`de`) oder Englisch (`en`).                                                                                                                                                        |
-| `description`      | string            | Eine kurze Beschreibung des Artikelinhalts mit einer maximalen Länge von x Zeichen, formatiert in HTML.                                                                                                                        |
-| `source`           | string            | Link zur Quellwebseite des Artikels.                                                                                                                                                                                           |
-| `public`           | bool              | Wahrheitswert, der angibt, ob der Artikel öffentlich ist oder nicht, immer `True`.                                                                                                                                             |
-| `lastModification` | timestamp         | Zeitstempel der letzten Änderung des Artikels in UTC.                                                                                                                                                                          |
-| `keywords`         | sequence [string] | Eine Liste von Schlüsselwörtern, die mit dem Artikel verbunden sind; die Schlüsselwörter können auf Deutsch oder Englisch sein.                                                                                                |
+| Feld               | Typ               | Beschreibung                                                                                                                                                          |
+| ------------------ | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `id`               | int               | Die eindeutige ID des Artikels.                                                                                                                                       |
+| `name`             | string            | Der Titel des Artikels.                                                                                                                                               |
+| `content`          | string            | Der vollständige Textinhalt des Artikels, formatiert in Markdown.                                                                                                     |
+| `language`         | string            | Die Sprache des Artikels, entweder Deutsch (`de`) oder Englisch (`en`).                                                                                               |
+| `description`      | string            | Eine kurze Beschreibung des Artikelinhalts mit einer maximalen Länge von x Zeichen, formatiert in HTML.                                                               |
+| `source`           | string            | Link zur Quellwebseite des Artikels.                                                                                                                                  |
+| `public`           | bool              | Wahrheitswert, der angibt, ob der Artikel öffentlich ist oder nicht, immer `True`.                                                                                    |
+| `lastModification` | timestamp         | Zeitstempel der letzten Änderung des Artikels in UTC.                                                                                                                 |
+| `keywords`         | sequence [string] | Eine Liste von Schlüsselwörtern, die mit dem Artikel verbunden sind; die Schlüsselwörter können auf Deutsch oder Englisch sein.                                       |
 | `embedding`        | sequence [float]  | Ein 3072-dimensionaler Einbettungsvektor, der aus dem Artikelinhalt berechnet wurde, unter Verwendung von OpenAI's [`text-embedding-3-large`][openai-link] KI-Modell. |
 
 ## Datensatz-Erstellung
@@ -158,4 +159,5 @@ Bei Fragen zum Datensatz kontaktieren Sie uns bitte [per Mail](mailto:itm.kicc@m
 [<- Zurück zur Übersicht](/datensaetze/index.md#liste-der-datensatze)
 
 <!-- Links -->
+
 [openai-link]: https://platform.openai.com/docs/guides/embeddings/#embedding-models
