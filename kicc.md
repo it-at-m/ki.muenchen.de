@@ -21,7 +21,7 @@ Das **KICC** bündelt das Wissen der Stadtverwaltung im Bereich Künstliche Inte
 - Schulung von Mitarbeiter\*innen
 - und den Betrieb von KI-Systemen.
 
-Ein herausragendes Beispiel für seine Arbeit ist die Entwicklung von [**MUCGPT**](https://opensource.muenchen.de/de/software/mucgpt.html), einem hausinternen KI-Chatbot, der allen städtischen Mitarbeiter\*innen zur Verfügung steht.
+Ein herausragendes Beispiel für seine Arbeit ist die Entwicklung von [**MUCGPT**](/ki-systeme/mucgpt), einem hausinternen KI-Chatbot, der allen städtischen Mitarbeiter\*innen zur Verfügung steht.
 Dieser Service wird kontinuierlich verbessert und optimiert, um den Bedürfnissen der Nutzenden gerecht zu werden.
 
 ## Kontakt
