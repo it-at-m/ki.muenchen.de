@@ -76,7 +76,7 @@ Unser Hoster erhebt in sog. Logfiles folgende Daten, die Ihr Browser übermittel
 IP-Adresse, die Adresse der vorher besuchten Website (Referer Anfrage-Header), Datum und Uhrzeit der Anfrage, Zeitzonendifferenz zur Greenwich Mean Time, Inhalt der Anforderung, HTTP-Statuscode, übertragene Datenmenge, Website, von der die Anforderung kommt und Informationen zu Browser und Betriebssystem.
 
 Das ist erforderlich, um unsere Website anzuzeigen und die Stabilität und Sicherheit zu gewährleisten.
-Dies entspricht unserem berechtigten Interesse im Sinne des Art. 6 Abs. 1 S. 1 lit. f DSGVO.
+Dies entspricht unserem berechtigten Interesse im Sinne des Art. 6 Abs. 1 lit. e) DSGVO i.V.m. Art. 4 BayDSG.
 
 Es erfolgt kein Tracking und wir haben auf diese Daten keinen direkten Zugriff.
 
@@ -87,7 +87,7 @@ Wir setzen für die Zurverfügungstellung unserer Website folgenden Hoster ein:
     San Francisco, CA 94107
     United States
 
-Dieser ist Empfänger Ihrer personenbezogenen Daten. Dies entspricht unserem berechtigten Interesse im Sinne des Art. 6 Abs. 1 S. 1 lit. f DSGVO, selbst keinen Server in unseren Räumlichkeiten vorhalten zu müssen. Serverstandort ist USA.
+Dieser ist Empfänger Ihrer personenbezogenen Daten. Dies entspricht unserem berechtigten Interesse im Sinne des Art. 6 Abs. 1 lit. e) DSGVO i.V.m. Art. 4 BayDSG, selbst keinen Server in unseren Räumlichkeiten vorhalten zu müssen. Serverstandort ist USA.
 
 Weitere Informationen zu Widerspruchs- und Beseitigungsmöglichkeiten gegenüber GitHub finden Sie unter: <https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement#github-pages>
 
