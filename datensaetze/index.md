@@ -20,6 +20,10 @@ Die Dataset Card bietet folgende Vorteile:
 
 ## Liste der Datensätze
 
+::: warning Hinweis
+Diese Liste befindet sich derzeit im Aufbau und wird kontinuierlich erweitert.
+:::
+
 ### Von der Landeshauptstadt München erstellte Datensätze
 
 - [Münchner Verwaltungs-Dienstleistungen / Munich Public Services](/datensaetze/munich-public-services.md)
