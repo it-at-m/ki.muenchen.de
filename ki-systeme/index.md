@@ -27,8 +27,8 @@ Diese Liste befindet sich derzeit im Aufbau und wird kontinuierlich erweitert.
 
 ### Im Bürger\*innen-Kontakt eingesetzte KI-Systeme
 
-- n.n.
+- [inspira_BIB](/ki-systeme/inspira_bib.md): Medienempfehlungssystem für die Münchner Stadtbibliothek
 
 ### KI-Systeme für die Mitarbeiter\*innen
 
-- [MUCGPT](/ki-systeme/mucgpt.md)
+- [MUCGPT](/ki-systeme/mucgpt.md): Interner KI-Assistent für die Münchner Stadtverwaltung
