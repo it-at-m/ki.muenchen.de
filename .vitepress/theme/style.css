@@ -9,13 +9,13 @@
   --vp-button-alt-border: #003ceb;
   --vp-button-alt-bg: #ffffff;
   --vp-button-brand-hover-bg: var(--vp-c-brand-soft);
-  --vp-nav-logo-height: 40px;  /*bigger size for the logo*/
+  --vp-nav-logo-height: 40px; /*bigger size for the logo*/
 }
 
 /* Dark mode specific configurations */
 .dark {
   --muc-logo-filter: invert(1); /* Sets the LHM logo color to white */
-  --vp-button-alt-bg: transparent;  /*alt button is transparent on dark mode */
+  --vp-button-alt-bg: transparent; /*alt button is transparent on dark mode */
 }
 
 /* Enables footer on all pages instead of only the home page */
