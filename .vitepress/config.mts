@@ -26,29 +26,9 @@ const vitepressConfig = defineConfig({
       { text: "Datensätze", link: "/datensaetze/" },
       { text: "KI Competence Center", link: "/kicc" },
     ],
-    sidebar: [
-      // { text: "Überblick", link: "/ueberblick" },
-      // {
-      //   text: "Systeme",
-      //   link: "/systeme",
-      //   items: [
-      //     { text: "KI-Suche im Dienstleistungsfinder ", link: "/systems/dlf" },
-      //   ],
-      // },
-      // {
-      //   text: "Datensätze",
-      //   link: "/datensaetze",
-      //   items: [
-      //     {
-      //       text: "Verwaltungs-Dienstleistungen",
-      //       link: "/datensaetze/munich-public-services",
-      //     },
-      //   ],
-      // },
-      // { text: "KI Competence Center", link: "/kicc" },
-    ],
     outline: {
       level: "deep",
+      label: "Seiteninhalt",
     },
     socialLinks: [
       { icon: "github", link: "https://github.com/it-at-m/ki.muenchen.de" },
