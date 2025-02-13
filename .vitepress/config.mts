@@ -39,6 +39,33 @@ const vitepressConfig = defineConfig({
     },
     search: {
       provider: "local",
+      options: {
+        locales: {
+          root: {
+            translations: {
+              button: {
+                buttonText: "Suche",
+                buttonAriaLabel: "Suche",
+              },
+              modal: {
+                displayDetails: "Details anzeigen",
+                resetButtonTitle: "Suche zurücksetzen",
+                backButtonTitle: "Suche schließen",
+                noResultsText: "Keine Ergebnisse",
+                footer: {
+                  selectText: "Auswählen",
+                  selectKeyAriaLabel: "Eingabetaste",
+                  navigateText: "Navigieren",
+                  navigateUpKeyAriaLabel: "Pfeil nach oben",
+                  navigateDownKeyAriaLabel: "Pfeil nach unten",
+                  closeText: "Schließen",
+                  closeKeyAriaLabel: "esc",
+                },
+              },
+            },
+          },
+        },
+      },
     },
     footer: {
       message: `<a href="https://ki.muenchen.de/impressum.html">Impressum & Datenschutz</a>`,
@@ -48,7 +75,7 @@ const vitepressConfig = defineConfig({
       next: "Nächste Seite",
     },
     darkModeSwitchLabel: "Darstellung",
-    lightModeSwitchTitle: "Zum hellem Modus wechseln",
+    lightModeSwitchTitle: "Zum hellen Modus wechseln",
     darkModeSwitchTitle: "Zum dunklen Modus wechseln",
     sidebarMenuLabel: "Menü",
     returnToTopLabel: "Zurück nach oben",
