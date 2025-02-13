@@ -16,7 +16,7 @@ Die Empfehlungen basieren auf inhaltlichen Ähnlichkeiten zwischen den Medien un
 Das System basiert auf den Einträgen des Webkatalogs der Münchner Stadtbibliothek.
 Hierbei werden Medien, die keinen Beschreibungstext enthalten, aus technischen Gründen nicht berücksichtigt.
 Die Daten des Empfehlungssystems werden im Zyklus von 2 Wochen aktualisiert, sodass sehr neue Medien und kurzfristige Änderungen zum Teil nicht enthalten sind.
-Die Daten enthalten Informationen zu Titel, Autor*in, Medientyp, ISBN, Coverbild und Beschreibungstext.
+Die Daten enthalten Informationen zu Titel, Autor\*in, Medientyp, ISBN, Coverbild und Beschreibungstext.
 
 ## Funktionsweise
 
@@ -62,7 +62,7 @@ Obwohl die Medienempfehlung viele Vorteile bietet, gibt es auch einige Risiken u
 
 - **Vollständigkeit der Daten**: Medien ohne Beschreibungstext werden gar nicht berücksichtigt. Dazu zählen aktuell z.T. auch Sachbücher, deren Beschreibung nur als PDF-Datei vorliegt.
 - **Vollständigkeit der Empfehlungen**: Medien ohne Coverbild werden nicht von anderen Medien aus empfohlen, enthalten aber selbst Empfehlungen.
-- **Aktualität der Daten**: Die Daten werden nur alle 2 Wochen aktualisiert, sodass sehr neue Medien und kurzfristige Änderungen  nicht enthalten sind.
+- **Aktualität der Daten**: Die Daten werden nur alle 2 Wochen aktualisiert, sodass sehr neue Medien und kurzfristige Änderungen nicht enthalten sind.
 
 ---
 

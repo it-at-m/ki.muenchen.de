@@ -1,4 +1,4 @@
-# Datensätze der Landeshauptstadt München
+# Datensätze
 
 Um eigene KI-Modelle zu trainieren oder KI-Systeme im Betrieb mit Informationen zu versorgen, sind Datensätze eine wichtige Grundlage.
 

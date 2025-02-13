@@ -12,7 +12,7 @@ Dieser Datensatz enthält Informationen über die von der Landeshauptstadt Münc
   src="https://huggingface.co/datasets/it-at-m/munich-public-services/embed/viewer/default/train"
   frameborder="0"
   width="100%"
-  height="560px"
+  height="500px"
 ></iframe>
 
 [**zum Datensatz**](https://huggingface.co/datasets/it-at-m/munich-public-services)
@@ -108,8 +108,8 @@ Die Einbettungen wurden mit dem [`text-embedding-3-large`][openai-link] Modell v
 
 <!-- This section describes the people or systems who originally created the data. It should also include self-reported demographic or identity information for the source data creators if this information is available. -->
 
-Die Ersteller der Quelldaten sind die Mitarbeiter der Landeshauptstadt München, die die Artikel geschrieben haben, es gibt keine Zuordnung zu einzelnen Autoren.
-Die Mitarbeiter sind eine vielfältige Gruppe von Menschen, die in der Stadtverwaltung arbeiten und über spezielles Wissen über die öffentlichen Dienstleistungen ihrer jeweiligen Referaten und Fähigkeiten im Verfassen verständlicher Artikel verfügen.
+Die Ersteller der Quelldaten sind die Mitarbeitenden der Landeshauptstadt München, die die Artikel geschrieben haben, es gibt keine Zuordnung zu einzelnen Autor\*innen.
+Die Mitarbeitenden sind eine vielfältige Gruppe von Menschen, die in der Stadtverwaltung arbeiten und über spezielles Wissen über die öffentlichen Dienstleistungen ihrer jeweiligen Referaten und Fähigkeiten im Verfassen verständlicher Artikel verfügen.
 
 #### Persönliche und sensible Informationen
 
@@ -146,7 +146,7 @@ Ein weiterer Ansatz besteht darin, den Datensatz mit einem benutzerdefinierten E
 - **LLM:** Large Language Model, großes Sprachmodell.
 - **Desinformation:** Verbreitung falscher oder irreführender Informationen.
 
-## Autoren der Dataset Card
+## Autor\*innen der Dataset Card
 
 Fabian Reinold - Landeshauptstadt München, it@M, KI Competence Center
 

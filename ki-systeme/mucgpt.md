@@ -18,12 +18,12 @@ MUCGPT ermöglicht die Bearbeitung von Text. In diesem Abschnitt werden einige F
 
 ### Chat
 
-Der Chat ermäglicht die nachrichtenbasierte Interaktion mit einem Sprachmodel. Nutzer können ihren eigenen Kontext mitbringen und so über mehrere Schritte Inhalte transformieren.
+Der Chat ermöglicht die nachrichtenbasierte Interaktion mit einem Sprachmodell. Nutzer\*innen können ihren eigenen Kontext mitbringen und so über mehrere Schritte Inhalte transformieren.
 ![Chat](/img/mucgpt_chat.png)
 
 ### Zusammenfassen
 
-Beim Zusammenfassen werden längere Texte oder PDFs auf die wichtigsen Aussagen reduziert. Dabei werden die wichtigsten Entitäten im Text identifiziert und basierend auf diesen eine Zusammenfassung erstellt.
+Beim Zusammenfassen werden längere Texte oder PDFs auf die wichtigsten Aussagen reduziert. Dabei werden die wichtigsten Entitäten im Text identifiziert und basierend auf diesen eine Zusammenfassung erstellt.
 ![Zusammenfassen](/img/mucgpt_zusammenfassen.png)
 
 ## Brainstorming
@@ -39,10 +39,10 @@ Komplizierte Texte können in leichte oder einfache Sprache übersetzt werden.
 ## Erstellung und Teilen von Assistenten
 
 Für wiederkehrende Aufgaben können eigene Assistenten erstellt werden. Der Prompt dafür kann automatisch generiert werden.
-In Zukunft ist es geplant, dass Assistenten mit allen anderen Nutzern geteilt werden können. Beispiele sind:
+In Zukunft ist es geplant, dass Assistenten mit allen anderen Nutzer\*innen geteilt werden können. Beispiele sind:
 
 - Assistent, der beim Softwaretesten nach ISO-Norm 29119
-- Assisten für Projektleiter, der beim Erstellen von UserStorys hilft
+- Assistent für Projektleiter\*innen, der beim Erstellen von UserStorys hilft
 
 ## KI-Modelle
 
@@ -64,7 +64,7 @@ Momentan verwenden wir:
 Obwohl die MUCGPT viele Vorteile bietet, gibt es auch einige Risiken und Limitierungen:
 
 - **Bias in den Daten**: Die KI-Modelle können Vorurteile aus den Trainingsdaten übernehmen.
-- **Sprachliche Beschränkungen**: Die Qualität der Antworten kann je nach Sprache, ausgwählten Sprachmodell und Formulierung der Anfrage variieren.
+- **Sprachliche Beschränkungen**: Die Qualität der Antworten kann je nach Sprache, ausgewählten Sprachmodell und Formulierung der Anfrage variieren.
 - **Datenschutz**: Es dürfen keine personenbezogenen Daten eingegeben werden, da wir momentan noch KI Modelle über Cloud Betreiber beziehen. Interne Daten sind erlaubt.
 - **Entscheidungsfindung**: MUCGPT darf nicht für abschließende Entscheidungen verwendet werden, die gegenüber Personen rechtliche Wirkung entfalten oder sie in ähnlicher Weise erheblich beeinträchtigen (Art. 22 Abs. 1 DSGVO). Derartige Entscheidungen müssen stets von Menschen getroffen werden.
 
