@@ -52,7 +52,7 @@ Die Wahl des Embedding-Modells erfolgte aufgrund einer Evaluation zwischen dem o
 
 ### Qualität der Empfehlungen
 
-Das Gesamtsystem inklusive der Qualität der Empfehlungen wurde in einer Nutzerstudie mit den Mitarbeiter\*innen der Münchner Stadtbibliothek sowie interessierten Kunden evaluiert.
+Das Gesamtsystem inklusive der Qualität der Empfehlungen wurde in einer Studie mit den Mitarbeiter\*innen der Münchner Stadtbibliothek sowie interessierten Kunden evaluiert.
 Die Rückmeldungen wurden in Kooperation mit dem Statistischen Amt der Landeshauptstadt München ausgewertet.
 Das System erhielt über 85 Prozent positive Bewertungen.
 
