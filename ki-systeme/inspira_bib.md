@@ -15,7 +15,7 @@ Die Empfehlungen basieren auf inhaltlichen Ähnlichkeiten zwischen den Medien un
 
 Das System basiert auf den Einträgen des Webkatalogs der Münchner Stadtbibliothek.
 Hierbei werden Medien, die keinen Beschreibungstext enthalten, aus technischen Gründen nicht berücksichtigt.
-Die Daten des Empfehlungssystems werden im Zyklus von 2 Wochen aktualisiert, sodass sehr neue Medien und kurzfristige Änderungen zum Teil nicht enthalten sind.
+Die Daten des Empfehlungssystems werden im Zyklus von zwei Wochen aktualisiert, sodass sehr neue Medien und kurzfristige Änderungen zum Teil nicht enthalten sind.
 Die Daten enthalten Informationen zu Titel, Autor\*in, Medientyp, ISBN, Coverbild und Beschreibungstext.
 
 ## Funktionsweise
@@ -24,7 +24,7 @@ Den Empfehlungen zugrunde liegt immer nur das aktuell vom Nutzenden betrachtete 
 Das System berechnet die Ähnlichkeit zwischen dem Beschreibungstext des aktuellen Mediums und den Beschreibungstexten aller anderen Medien im Katalog.
 Die Medien mit der höchsten Ähnlichkeit werden als Empfehlungen angezeigt.
 
-Zur Berechnung der Ähnlichkeit werden die Inhaltstexte zuvor bereits in eine Zahlenrepräsentation, ein sog. Embedding, umgewandelt.
+Zur Berechnung der Ähnlichkeit werden die Inhaltstexte zuvor bereits in eine Zahlenrepräsentation, ein sogenanntes Embedding, umgewandelt.
 Dieses Embedding wird dann in Echtzeit mit den Embeddings aller anderen Medien verglichen.
 
 Das System nutzt keine Nutzerdaten, sondern basiert ausschließlich auf den Inhalten der Medien.
@@ -48,21 +48,21 @@ Weitere Informationen finden Sie in folgenden Dokumentationen:
 
 ### Wahl des Embedding-Modells
 
-Die Wahl des Embedding-Modells erfolgte aufgrund einer Evaluation zwischen dem o.g. Modell `embed-multilingual-v3.0` und dem quelloffenen Modell [`intfloat/multilingual-e5-large`](https://huggingface.co/intfloat/multilingual-e5-large) mit einem definierten Test-Datenbestand.
+Die Wahl des Embedding-Modells erfolgte aufgrund einer Evaluation zwischen dem oben genannten Modell `embed-multilingual-v3.0` und dem quelloffenen Modell [`intfloat/multilingual-e5-large`](https://huggingface.co/intfloat/multilingual-e5-large) mit einem definierten Test-Datenbestand.
 
 ### Qualität der Empfehlungen
 
-Das Gesamtsystem inklusive der Qualität der Empfehlungen wurde in einer Nutzerstudie mit den Mitarbeiter\*innen der Münchner Stadtbibliothek sowie interessierten Kund\*innen.
+Das Gesamtsystem inklusive der Qualität der Empfehlungen wurde in einer Nutzerstudie mit den Mitarbeiter\*innen der Münchner Stadtbibliothek sowie interessierten Kunden evaluiert.
 Die Rückmeldungen wurden in Kooperation mit dem Statistischen Amt der Landeshauptstadt München ausgewertet.
-Das System erhielt über 85% positive Bewertungen.
+Das System erhielt über 85 Prozent positive Bewertungen.
 
 ## Risiken und Limitierungen
 
 Obwohl die Medienempfehlung viele Vorteile bietet, gibt es auch einige Risiken und Limitierungen des Systems:
 
-- **Vollständigkeit der Daten**: Medien ohne Beschreibungstext werden gar nicht berücksichtigt. Dazu zählen aktuell z.T. auch Sachbücher, deren Beschreibung nur als PDF-Datei vorliegt.
+- **Vollständigkeit der Daten**: Medien ohne Beschreibungstext werden gar nicht berücksichtigt. Dazu zählen aktuell zum Teil auch Sachbücher, deren Beschreibung nur als PDF-Datei vorliegt.
 - **Vollständigkeit der Empfehlungen**: Medien ohne Coverbild werden nicht von anderen Medien aus empfohlen, enthalten aber selbst Empfehlungen.
-- **Aktualität der Daten**: Die Daten werden nur alle 2 Wochen aktualisiert, sodass sehr neue Medien und kurzfristige Änderungen nicht enthalten sind.
+- **Aktualität der Daten**: Die Daten werden nur alle zwei Wochen aktualisiert, sodass sehr neue Medien und kurzfristige Änderungen nicht enthalten sind.
 
 ---
 

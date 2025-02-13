@@ -23,7 +23,7 @@ Der Chat ermöglicht die nachrichtenbasierte Interaktion mit einem Sprachmodell.
 
 ### Zusammenfassen
 
-Beim Zusammenfassen werden längere Texte oder PDFs auf die wichtigsten Aussagen reduziert. Dabei werden die wichtigsten Entitäten im Text identifiziert und basierend auf diesen eine Zusammenfassung erstellt.
+Beim Zusammenfassen werden längere Texte oder PDF-Dokumente auf die wichtigsten Aussagen reduziert. Dabei werden die wichtigsten Entitäten im Text identifiziert und basierend auf diesen eine Zusammenfassung erstellt.
 ![Zusammenfassen](/img/mucgpt_zusammenfassen.png)
 
 ## Brainstorming
@@ -64,8 +64,8 @@ Momentan verwenden wir:
 Obwohl die MUCGPT viele Vorteile bietet, gibt es auch einige Risiken und Limitierungen:
 
 - **Bias in den Daten**: Die KI-Modelle können Vorurteile aus den Trainingsdaten übernehmen.
-- **Sprachliche Beschränkungen**: Die Qualität der Antworten kann je nach Sprache, ausgewählten Sprachmodell und Formulierung der Anfrage variieren.
-- **Datenschutz**: Es dürfen keine personenbezogenen Daten eingegeben werden, da wir momentan noch KI Modelle über Cloud Betreiber beziehen. Interne Daten sind erlaubt.
+- **Sprachliche Beschränkungen**: Die Qualität der Antworten kann je nach Sprache, ausgwählten Sprachmodell und Formulierung der Anfrage variieren.
+- **Datenschutz**: Es dürfen keine personenbezogenen Daten eingegeben werden, da wir momentan noch KI-Modelle über Cloud Betreiber beziehen. Interne Daten sind erlaubt.
 - **Entscheidungsfindung**: MUCGPT darf nicht für abschließende Entscheidungen verwendet werden, die gegenüber Personen rechtliche Wirkung entfalten oder sie in ähnlicher Weise erheblich beeinträchtigen (Art. 22 Abs. 1 DSGVO). Derartige Entscheidungen müssen stets von Menschen getroffen werden.
 
 ---

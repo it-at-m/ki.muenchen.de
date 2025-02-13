@@ -25,7 +25,7 @@ Dieser Datensatz enthält Informationen über die von der Landeshauptstadt Münc
 
 Der Datensatz "Münchner Verwaltungs-Dienstleistungen" enthält etwa 1.400 Artikel über verschiedene öffentliche Dienstleistungen der Landeshauptstadt München.
 Neben dem Inhalt der Artikel enthält der Datensatz auch Metadaten wie die Sprache des Artikels, das Datum der letzten Änderung und die mit dem Artikel verbundenen Schlüsselwörter.
-Der Datensatz enthält auch Einbettungsvektoren, die aus jedem Artikel berechnet wurden und für Retrieval- oder andere NLP-Aufgaben verwendet werden können.
+Der Datensatz enthält auch Einbettungsvektoren, die aus jedem Artikel berechnet wurden und für Retrieval oder andere Methoden im Bereich der Textverarbeitung verwendet werden können.
 
 - **Kuratiert von:** Landeshauptstadt München, it@M, KI Competence Center
 - **Sprachen:** Deutsch, Englisch

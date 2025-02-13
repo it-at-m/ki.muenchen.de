@@ -14,7 +14,7 @@ Das KI Competence Center ist außerdem als Maßnahme der Digitalisierungsstrateg
 
 ## Aufgaben
 
-Das **KICC** bündelt das Wissen der Stadtverwaltung im Bereich Künstliche Intelligenz und bietet dabei
+Das KI Competence Center bündelt das Wissen der Stadtverwaltung im Bereich Künstliche Intelligenz und bietet dabei
 
 - Beratung der Fachbereiche
 - Entwicklung von KI-basierten Anwendungen
@@ -22,7 +22,7 @@ Das **KICC** bündelt das Wissen der Stadtverwaltung im Bereich Künstliche Inte
 - und den Betrieb von KI-Systemen.
 
 Ein herausragendes Beispiel für seine Arbeit ist die Entwicklung von [**MUCGPT**](/ki-systeme/mucgpt), einem hausinternen KI-Chatbot, der allen städtischen Mitarbeiter\*innen zur Verfügung steht.
-Dieser Service wird kontinuierlich verbessert und optimiert, um den Bedürfnissen der Nutzer\*innen gerecht zu werden.
+Dieser Service wird kontinuierlich verbessert und optimiert, um den Bedürfnissen der Nutzenden gerecht zu werden.
 
 ## Kontakt
 
