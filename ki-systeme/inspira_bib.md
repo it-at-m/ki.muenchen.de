@@ -4,7 +4,7 @@
 
 Diese Dokumentation beschreibt die Funktionsweise und den Einsatz des KI-gestützten Medienempfehlungssystems **inspira_BIB** für die Münchner Stadtbibliothek.
 
-![Screenshot einer Empfehlung](/img/inspira_bib_demo.png)
+![Beispiel des inspira_BIB-Systems: Im Webkatalog erscheinen unter den Daten zu einem Medium eine Reihe von neuen, thematisch ähnlichen Medien, die man durch Klick direkt ansehen kann.](/img/inspira_bib_demo.png)
 
 ## Einführung und Kontext
 

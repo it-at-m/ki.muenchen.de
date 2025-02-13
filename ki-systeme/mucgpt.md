@@ -4,13 +4,13 @@
 
 Diese Dokumentation geht auf die Funktionen und die Limitierungen von MUCGPT ein.
 
-![Screenshot von muenchen.de](/img/mucgpt_frontpage.png)
+![Die Startseite von MUCGPT mit den vordefinierten Funktionen Chat, Zusammenfassen, Brainstorming und Leichte Sprache sowie einigen eigenen Assistenten](/img/mucgpt_frontpage.png)
 
 ## Einführung und Kontext
 
 MUCGPT ist eine Benutzeroberfläche für die Nutzung von großen Sprachmodellen, welches den Mitarbeiter\*innen der Stadt München zur Verfügung steht. MUCGPT kann sich mit beliebigen OpenAI-kompatiblen Sprachmodellen verbinden und ist ein universelles Werkzeug zur Bearbeitung von Text.
 
-MUCGPT ist [OpenSource](https://github.com/it-at-m/mucgpt) und kann überall als Container betrieben werden. Gerne ausprobieren! Wir unterstützen bei den ersten Schritten.
+MUCGPT ist [Open Source](https://github.com/it-at-m/mucgpt) und kann überall als Container betrieben werden. Gerne ausprobieren! Wir unterstützen bei den ersten Schritten.
 
 ## Funktionen
 
@@ -19,22 +19,22 @@ MUCGPT ermöglicht die Bearbeitung von Text. In diesem Abschnitt werden einige F
 ### Chat
 
 Der Chat ermöglicht die nachrichtenbasierte Interaktion mit einem Sprachmodell. Nutzer\*innen können ihren eigenen Kontext mitbringen und so über mehrere Schritte Inhalte transformieren.
-![Chat](/img/mucgpt_chat.png)
+![Chatfenster von MUCGPT, in dem ein Nutzer eine Frage stellt und das KI-Modell mit einer Grafik antwortet](/img/mucgpt_chat.png)
 
 ### Zusammenfassen
 
 Beim Zusammenfassen werden längere Texte oder PDF-Dokumente auf die wichtigsten Aussagen reduziert. Dabei werden die wichtigsten Entitäten im Text identifiziert und basierend auf diesen eine Zusammenfassung erstellt.
-![Zusammenfassen](/img/mucgpt_zusammenfassen.png)
+![Zusammenfassen-Fenster, in dem das KI-Modell zwei Versionen einer Zusammenfassung eines Textes anzeigt. Die Zusammenfassung ist etwa 10 Sätze lang.](/img/mucgpt_zusammenfassen.png)
 
 ## Brainstorming
 
 Beim Brainstorming wird zu einer Idee eine Mindmap erstellt. Diese kann anschließend mit dem Mindmaptool [Freeplane](https://docs.freeplane.org/) weiterverarbeitet werden.
-![Brainstorming](/img/mucgpt_brainstorming.png)
+![Ausgabe des Brainstorming-Tools von MUCGPT: Eine Mindmap, die von der Mitte ausgehend verschiedene Ideen und Begriffe zum Thema "Gründe im München zu Wohnen" enthält.](/img/mucgpt_brainstorming.png)
 
 ## Übersetzung in leichte Sprache
 
 Komplizierte Texte können in leichte oder einfache Sprache übersetzt werden.
-![Leichte Sprache](/img/mucgpt_leichte_sprache.png)
+![Ausschnitt aus dem Leichte-Sprache-Tool von MUCGPT: Ein langer, komplizierter Satz wird in kurze, leicht verständliche Sätze umgewandelt.](/img/mucgpt_leichte_sprache.png)
 
 ## Erstellung und Teilen von Assistenten
 
