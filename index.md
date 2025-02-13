@@ -18,7 +18,7 @@ features:
   - icon: 🗃️
     title: Datensätze
     details: Die Landeshauptstadt München dokumentiert und veröffentlicht Datensätze, die für die Entwicklung von KI-Systemen verwendet wurden und teilweise nachnutzbar sind.
-    link: /datensaetze 
+    link: /datensaetze
   - icon: 🏛️
     title: KI Competence Center
     details: Das KI Competence Center (KICC) ist die zentrale Anlaufstelle für Künstliche Intelligenz in der Landeshauptstadt München. Es unterstützt die Stadtverwaltung bei der Entwicklung und dem Einsatz von KI-Systemen.
