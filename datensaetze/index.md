@@ -6,6 +6,21 @@ Die Landeshauptstadt München stellt verschiedene Datensätze frei zur Verfügun
 
 Neben der hier aufgeführten Liste von Datensätzen sind auch im [Open Data Portal](https://opendata.muenchen.de/) der Landeshauptstadt München unzählige weitere Datensätze verfügbar.
 
+## Liste der Datensätze
+
+::: warning Hinweis
+Diese Liste befindet sich derzeit im Aufbau und wird kontinuierlich erweitert.
+:::
+
+**Erstellte Datensätze**
+
+- [Münchner Verwaltungs-Dienstleistungen / Munich Public Services](/datensaetze/munich-public-services.md)
+
+**Genutzte Datensätze**
+
+- n.n.
+
+
 ## Was ist eine Dataset Card?
 
 Eine Dataset Card ist eine strukturierte Beschreibung eines Datensatzes, die wichtige Informationen über den Datensatz enthält. Sie dient dazu, Nutzern einen schnellen Überblick über die Eigenschaften und den Inhalt des Datensatzes zu geben.
@@ -17,17 +32,3 @@ Die Dataset Card bietet folgende Vorteile:
 - **Qualitätssicherung**: Sie hilft dabei, die Qualität und Relevanz des Datensatzes zu bewerten.
 - **Wiederverwendbarkeit**: Durch die detaillierte Beschreibung wird die Wiederverwendbarkeit des Datensatzes erhöht.
 - **Dokumentation**: Sie dient als umfassende Dokumentation, die den Datensatz für zukünftige Projekte und Nutzer zugänglich macht.
-
-## Liste der Datensätze
-
-::: warning Hinweis
-Diese Liste befindet sich derzeit im Aufbau und wird kontinuierlich erweitert.
-:::
-
-### Von der Landeshauptstadt München erstellte Datensätze
-
-- [Münchner Verwaltungs-Dienstleistungen / Munich Public Services](/datensaetze/munich-public-services.md)
-
-### Von der Landeshauptstadt München genutzte Datensätze
-
-- n.n.
