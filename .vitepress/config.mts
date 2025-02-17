@@ -21,9 +21,24 @@ const vitepressConfig = defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      // { text: "Überblick", link: "/ueberblick" },
-      { text: "KI-Systeme", link: "/ki-systeme/" },
-      { text: "Datensätze", link: "/datensaetze/" },
+      {
+        text: "KI-Systeme",
+        items: [
+          { text: "Überblick", link: "/ki-systeme" },
+          { text: "MUCGPT", link: "/ki-systeme/mucgpt" },
+          { text: "inspira_BIB", link: "/ki-systeme/inspira_bib" },
+        ],
+      },
+      {
+        text: "Datensätze",
+        items: [
+          { text: "Überblick", link: "/datensaetze" },
+          {
+            text: "Münchner Verwaltungs-Dienstleistungen",
+            link: "/datensaetze/munich-public-services",
+          },
+        ],
+      },
       { text: "KI Competence Center", link: "/kicc" },
     ],
     outline: {
