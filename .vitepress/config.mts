@@ -21,34 +21,29 @@ const vitepressConfig = defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      // { text: "Überblick", link: "/ueberblick" },
-      { text: "KI-Systeme", link: "/ki-systeme/" },
-      { text: "Datensätze", link: "/datensaetze/" },
+      {
+        text: "KI-Systeme",
+        items: [
+          { text: "Überblick", link: "/ki-systeme" },
+          { text: "MUCGPT", link: "/ki-systeme/mucgpt" },
+          { text: "inspira_BIB", link: "/ki-systeme/inspira_bib" },
+        ],
+      },
+      {
+        text: "Datensätze",
+        items: [
+          { text: "Überblick", link: "/datensaetze" },
+          {
+            text: "Münchner Verwaltungs-Dienstleistungen",
+            link: "/datensaetze/munich-public-services",
+          },
+        ],
+      },
       { text: "KI Competence Center", link: "/kicc" },
-    ],
-    sidebar: [
-      // { text: "Überblick", link: "/ueberblick" },
-      // {
-      //   text: "Systeme",
-      //   link: "/systeme",
-      //   items: [
-      //     { text: "KI-Suche im Dienstleistungsfinder ", link: "/systems/dlf" },
-      //   ],
-      // },
-      // {
-      //   text: "Datensätze",
-      //   link: "/datensaetze",
-      //   items: [
-      //     {
-      //       text: "Verwaltungs-Dienstleistungen",
-      //       link: "/datensaetze/munich-public-services",
-      //     },
-      //   ],
-      // },
-      // { text: "KI Competence Center", link: "/kicc" },
     ],
     outline: {
       level: "deep",
+      label: "Seiteninhalt",
     },
     socialLinks: [
       { icon: "github", link: "https://github.com/it-at-m/ki.muenchen.de" },
@@ -59,6 +54,33 @@ const vitepressConfig = defineConfig({
     },
     search: {
       provider: "local",
+      options: {
+        locales: {
+          root: {
+            translations: {
+              button: {
+                buttonText: "Suche",
+                buttonAriaLabel: "Suche",
+              },
+              modal: {
+                displayDetails: "Details anzeigen",
+                resetButtonTitle: "Suche zurücksetzen",
+                backButtonTitle: "Suche schließen",
+                noResultsText: "Keine Ergebnisse",
+                footer: {
+                  selectText: "Auswählen",
+                  selectKeyAriaLabel: "Eingabetaste",
+                  navigateText: "Navigieren",
+                  navigateUpKeyAriaLabel: "Pfeil nach oben",
+                  navigateDownKeyAriaLabel: "Pfeil nach unten",
+                  closeText: "Schließen",
+                  closeKeyAriaLabel: "esc",
+                },
+              },
+            },
+          },
+        },
+      },
     },
     footer: {
       message: `<a href="https://ki.muenchen.de/impressum.html">Impressum & Datenschutz</a>`,
@@ -68,7 +90,7 @@ const vitepressConfig = defineConfig({
       next: "Nächste Seite",
     },
     darkModeSwitchLabel: "Darstellung",
-    lightModeSwitchTitle: "Zum hellem Modus wechseln",
+    lightModeSwitchTitle: "Zum hellen Modus wechseln",
     darkModeSwitchTitle: "Zum dunklen Modus wechseln",
     sidebarMenuLabel: "Menü",
     returnToTopLabel: "Zurück nach oben",
