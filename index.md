@@ -3,34 +3,24 @@
 layout: home
 
 hero:
-  name: "KI-Dokumentation"
-  text: "der Landeshauptstadt München"
-  tagline: "Mit Künstlicher Intelligenz Bürgerservice verbessern"
+  name: "Künstliche Intelligenz"
+  text: "für München"
+  tagline: "Erfahren Sie mehr über die KI-Aktivitäten der Landeshauptstadt München"
   image:
-    src: /img/kicc_transp.png
+    src: /img/kicc_transp_border_sm.png
     alt: KI Logo
-  actions:
-    # - theme: brand
-    #   text: Überblick
-    #   link: /ueberblick
-    - theme: brand
-      text: KI-Systeme
-      link: /ki-systeme
-    - theme: alt
-      text: Datensätze
-      link: /datensaetze
-    - theme: alt
-      text: KI Competence Center
-      link: /kicc
 
 features:
-  - icon: 🏙️
-    title: Effiziente Verwaltung
-    details: KI-Systeme optimieren Verwaltungsprozesse und reduzieren Bearbeitungszeiten, was zu einer schnelleren und effizienteren Dienstleistung für Bürger führt.
-  - icon: 📊
-    title: Datenbasierte Entscheidungen
-    details: Durch die Analyse großer Datenmengen unterstützt KI die Stadtverwaltung bei fundierten Entscheidungen und verbessert die Planung und Ressourcennutzung.
-  - icon: 🌐
-    title: Barrierefreiheit und Mehrsprachigkeit
-    details: KI-Systeme bieten barrierefreie und mehrsprachige Unterstützung, indem sie einfache Texte und Antworten in mehreren Sprachen bereitstellen. Dies ermöglicht eine inklusive Kommunikation und verbessert den Zugang zu städtischen Dienstleistungen für alle Bürger.
+  - icon: 🧠
+    title: KI-Systeme
+    details: KI-Systeme unterstützen die Stadtverwaltung bei der Automatisierung von Prozessen, der Verbesserung der Kommunikation mit Bürger*innen und der Bereitstellung von Dienstleistungen.
+    link: /ki-systeme
+  - icon: 🗃️
+    title: Datensätze
+    details: Wir dokumentieren und veröffentlichen Datensätze, die für die Entwicklung von KI-Systemen verwendet wurden und teilweise nachnutzbar sind.
+    link: /datensaetze
+  - icon: 🏛️
+    title: KI Competence Center
+    details: Das KI Competence Center (KICC) ist unsere zentrale Anlaufstelle für Künstliche Intelligenz. Es unterstützt die Stadtverwaltung bei der Entwicklung und dem Einsatz von KI-Systemen.
+    link: /kicc
 ---
