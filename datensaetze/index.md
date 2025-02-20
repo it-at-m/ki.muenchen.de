@@ -20,7 +20,6 @@ Diese Liste befindet sich derzeit im Aufbau und wird kontinuierlich erweitert.
 
 - n.n.
 
-
 ## Was ist eine Dataset Card?
 
 Eine Dataset Card ist eine strukturierte Beschreibung eines Datensatzes, die wichtige Informationen über den Datensatz enthält. Sie dient dazu, Nutzern einen schnellen Überblick über die Eigenschaften und den Inhalt des Datensatzes zu geben.

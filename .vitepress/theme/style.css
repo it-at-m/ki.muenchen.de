@@ -1,10 +1,16 @@
 :root {
   --muc-logo-filter: invert(0); /* Sets the default LHM logo color to black */
+  /*official rit colors*/
+  --vp-c-brand-1: #003ceb;
+  --vp-button-brand-hover-bg: var(--vp-c-brand-soft);
+  --vp-nav-logo-height: 28px; /*bigger size for the logo*/
 }
 
 /* Dark mode specific configurations */
 .dark {
   --muc-logo-filter: invert(1); /* Sets the LHM logo color to white */
+  --vp-button-alt-bg: transparent; /*alt button is transparent on dark mode */
+  --vp-c-brand-1: #69fff5;
 }
 
 /* Enables footer on all pages instead of only the home page */

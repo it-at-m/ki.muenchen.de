@@ -3,7 +3,7 @@ import { withMermaid } from "vitepress-plugin-mermaid"; // https://vitepress.dev
 
 // https://vitepress.dev/reference/site-config
 const vitepressConfig = defineConfig({
-  title: "KI @ LHM",
+  title: " ",
   description: "Dokumentation zu KI-Systemen der Landeshauptstadt München",
   cleanUrls: true,
   head: [
@@ -95,6 +95,11 @@ const vitepressConfig = defineConfig({
     sidebarMenuLabel: "Menü",
     returnToTopLabel: "Zurück nach oben",
     externalLinkIcon: true,
+    logo: {
+      dark: `https://assets.muenchen.de/logos/rit/RIT_Basislogo_blau_weiss-64.png`,
+      light: `https://assets.muenchen.de/logos/rit/RIT_Basislogo_blau_schwarz-64.png`,
+      alt: "Logo des IT-Referats",
+    },
   },
 });
 
