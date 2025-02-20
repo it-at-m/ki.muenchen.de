@@ -98,7 +98,7 @@ const vitepressConfig = defineConfig({
     logo: {
       dark: `https://assets.muenchen.de/logos/rit/RIT_Basislogo_blau_weiss-64.png`,
       light: `https://assets.muenchen.de/logos/rit/RIT_Basislogo_blau_schwarz-64.png`,
-      alt: "RIT Logo",
+      alt: "Logo des IT-Referats",
     },
   },
 });
