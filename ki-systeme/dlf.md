@@ -54,11 +54,10 @@ Das große Sprachmodell "gpt-4o-mini" von OpenAI wird zur Generierung der Nutzer
 
 ## Evaluierung
 
-Die Retrieval-Komponente (Finden der relevanten Dokumente) wurde mithilfe von drei Datensätzen evaluiert. Dabei wird angegeben, in wie vielen Fällen der relevante Artikel das oberste Ergebnis ist. Der Score wird als Mean Reciprocal Rank (MRR) angegeben.
+Die Retrieval-Komponente (Finden der relevanten Dokumente) wurde mithilfe von zwei Datensätzen evaluiert. Dabei wird angegeben, in wie vielen Fällen der relevante Artikel das oberste Ergebnis ist. Der Score wird als Mean Reciprocal Rank (MRR) angegeben.
 
-- **Händisch erstellter Datensatz im Rahmen des Forschungsprojekts x-next**: Score Ø 0.8267
-- **Synthetisch (mit LLM) erstellter deutscher Datensatz**: Score Ø 0.8219
-- **Synthetisch (mit LLM) erstellter englischer Datensatz**: Score Ø 0.8292
+- **Händisch erstellter Datensatz im Rahmen des Forschungsprojekts x-next**: Score Ø 0.8815
+- **Synthetisch (mit LLM) erstellter deutscher Datensatz**: Score Ø 0.8516
 
 Diese Datensätze sind nicht zwingend repräsentativ für die Allgemeinheit.
 
