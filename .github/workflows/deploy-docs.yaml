@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy-pages:
-    uses: it-at-m/.github/workflow-templates/deploy-pages.yml@main
+    uses: it-at-m/.github/.github/workflow-templates/deploy-pages.yml@main
     with:
       sub-path: "."
       node-version: "20"
