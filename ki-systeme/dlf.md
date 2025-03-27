@@ -36,7 +36,18 @@ In dieser Anwendung wird eine hybride Suchmethode verwendet, die BM25 mit den se
 
 BM25 ist ein klassischer Ranking-Algorithmus, der auf der Häufigkeit von Schlüsselwörtern basiert. Die Ergebnisse aus beiden Methoden werden dann zusammengeführt, um die relevantesten Antworten zu liefern.
 
-![Grafik Chain](/img/dlf_chain.png)
+![Grafik Chaindesign](/img/dlf_chaindesign.png)
+
+### Generierung der Antwort mit einem LLM
+
+Für jedes zuvor gefundene Dokument wird mithilfe eines großen Sprachmodells basierend auf der ursprünglichen Frage
+
+- eine KI basierte Antwort generiert
+- ein Zitat aus dem Dokument extrahiert
+
+Falls kein relevantes Zitat gefunden wird, wird das gesamte Dokument nicht angezeigt.
+
+![Grafik Answerchain](/img/dlf_answerchain.png)
 
 ## KI-Modelle
 
