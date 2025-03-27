@@ -14,7 +14,7 @@ Durch die Integration von KI-Technologien wird die Suchfunktion erheblich verbes
 
 ## Datengrundlage
 
-Die KI-Suche basiert auf englischen und deutschen Artikeln von muenchen.de. Hier sind einige Beispiele für die Artikel:
+Die KI-Suche basiert auf den deutschen Artikeln von muenchen.de. Hier sind einige Beispiele für die Artikel:
 
 ### Beispiele
 

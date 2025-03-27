@@ -16,7 +16,7 @@ Diese Liste befindet sich derzeit im Aufbau und wird kontinuierlich erweitert.
 **Im Bürger\*innen-Kontakt eingesetzte KI-Systeme**
 
 - [inspira_BIB](/ki-systeme/inspira_bib.md): Medienempfehlungssystem für die Münchner Stadtbibliothek
-- [DLF](/ki-systeme/dlf.md ): KI-Suche im Dienstleistungsfinder auf muenchen.de 
+- [KI-Suche im Dienstleistungsfinder](/ki-systeme/dlf.md): KI-Suche für Dienstleistungen auf muenchen.de
 
 **KI-Systeme für die Mitarbeiter\*innen**
 
