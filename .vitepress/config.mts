@@ -27,6 +27,10 @@ const vitepressConfig = defineConfig({
           { text: "Überblick", link: "/ki-systeme" },
           { text: "MUCGPT", link: "/ki-systeme/mucgpt" },
           { text: "inspira_BIB", link: "/ki-systeme/inspira_bib" },
+          {
+            text: "KI-Suche im Dienstleistungsfinder",
+            link: "/ki-systeme/dlf",
+          },
         ],
       },
       {
