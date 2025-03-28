@@ -26,7 +26,7 @@ jobs:
       - id: build_docs
         uses: it-at-m/lhm_actions/action-templates/actions/action-build-docs@7757eb7f3c158d5f7935b08ff581b395a89d39ee # v1.0.6
         with:
-            docs-path: "."
+          docs-path: "."
       - id: deploy_docs
         # Only deploy documentation from the main branch to prevent unauthorized changes
 
