@@ -10,6 +10,4 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Dependency Review
-        uses: actions/dependency-review-action@v4
-        with:
-          config-file: it-at-m/.github/workflow-configs/dependency_review.yaml@3b139cfc5fae8b618d3eae3675e383bb1769c019
+        uses: it-at-m/lhm_actions/action-templates/actions/action-dependency-review@v1.0.7
