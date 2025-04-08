@@ -4,6 +4,9 @@
 
 Diese Dokumentation geht auf die Funktionen und die Limitierungen von MUCGPT ein.
 
+
+[Demo-Frontend](https://it-at-m.github.io/mucgpt/)
+
 ![Die Startseite von MUCGPT mit den vordefinierten Funktionen Chat, Zusammenfassen, Brainstorming und Leichte Sprache sowie einigen eigenen Assistenten](/img/mucgpt_frontpage.png)
 
 ## Einführung und Kontext
