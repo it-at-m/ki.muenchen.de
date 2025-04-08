@@ -101,8 +101,8 @@ const vitepressConfig = defineConfig({
     returnToTopLabel: "Zurück nach oben",
     externalLinkIcon: true,
     logo: {
-      dark: `/img/kicc_transp_mini.png`,
-      light: `/img/kicc_transp_mini.png`,
+      dark: `/img/kicc_tuerkis_100px.png`,
+      light: `/img/kicc_tuerkis_100px.png`,
       alt: "KI Competence Center Logo",
     },
   },
