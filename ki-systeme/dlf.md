@@ -1,6 +1,7 @@
 [<- Zurück zur Übersicht](/ki-systeme/index.md)
 
 # KI-Suche im Dienstleistungsfinder auf muenchen.de
+www.muenchen.de/ki-suche
 
 Diese Dokumentation beschreibt die Funktionsweise, Datengrundlage und Evaluierung der KI-Suche im Dienstleistungsfinder auf muenchen.de.
 Die KI nutzt eine Kombination aus Embedding-Modellen und großen Sprachmodellen, um relevante Dokumente zu finden und präzise Antworten auf Nutzeranfragen zu generieren.
