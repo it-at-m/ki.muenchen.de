@@ -4,6 +4,7 @@ import { withMermaid } from "vitepress-plugin-mermaid"; // https://vitepress.dev
 // https://vitepress.dev/reference/site-config
 const vitepressConfig = defineConfig({
   title: " ",
+  titleTemplate: "ki.muenchen.de",
   description: "Dokumentation zu KI-Systemen der Landeshauptstadt München",
   cleanUrls: true,
   head: [
