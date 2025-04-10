@@ -8,7 +8,7 @@ hero:
   text: "für München"
   tagline: "Erfahren Sie mehr über die KI-Aktivitäten der Landeshauptstadt München"
   image:
-    src: /img/kicc_transp_border_sm.png
+    src: /img/kicc_tuerkis_border.png
     alt: KI Logo
 
 features:

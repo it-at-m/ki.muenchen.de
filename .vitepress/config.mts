@@ -12,7 +12,7 @@ const vitepressConfig = defineConfig({
       "link",
       {
         rel: "icon",
-        href: `https://assets.muenchen.de/logos/lhm/icon-lhm-muenchen-32.png`,
+        href: `/favicon.ico`,
       },
     ],
   ],
@@ -101,9 +101,9 @@ const vitepressConfig = defineConfig({
     returnToTopLabel: "Zurück nach oben",
     externalLinkIcon: true,
     logo: {
-      dark: `https://assets.muenchen.de/logos/rit/RIT_Basislogo_blau_weiss-64.png`,
-      light: `https://assets.muenchen.de/logos/rit/RIT_Basislogo_blau_schwarz-64.png`,
-      alt: "Logo des IT-Referats",
+      dark: `/img/kicc_tuerkis_100px.png`,
+      light: `/img/kicc_tuerkis_100px.png`,
+      alt: "KI Competence Center Logo",
     },
   },
 });

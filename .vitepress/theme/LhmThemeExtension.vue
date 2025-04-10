@@ -1,5 +1,8 @@
 <script setup>
+import { useData } from "vitepress";
 import DefaultTheme from "vitepress/theme";
+
+const { isDark } = useData();
 
 const { Layout } = DefaultTheme;
 </script>
@@ -8,12 +11,18 @@ const { Layout } = DefaultTheme;
     <template #nav-bar-content-after>
       <div class="logo">
         <a
-          href="https://www.muenchen.de/"
+          href="https://muenchen.digital/"
           target="_blank"
         >
           <img
-            src="https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg"
-            alt="Logo Landeshauptstadt München"
+            v-if="isDark"
+            src="https://assets.muenchen.de/logos/rit/RIT_Basislogo_blau_weiss-64.png"
+            alt="Logo München. Digital."
+          />
+          <img
+            v-else
+            src="https://assets.muenchen.de/logos/rit/RIT_Basislogo_blau_schwarz-64.png"
+            alt="Logo München. Digital."
           />
         </a>
       </div>
@@ -38,7 +47,7 @@ const { Layout } = DefaultTheme;
 }
 
 .logo img {
-  filter: var(--muc-logo-filter);
+  /* filter: var(--muc-logo-filter); */
   height: 28px;
 }
 </style>
