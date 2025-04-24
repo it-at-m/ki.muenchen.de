@@ -2,6 +2,11 @@
 
 # inspira_BIB: KI-gestütztes Medienempfehlungssystem für die Münchner Stadtbibliothek
 
+<br/>
+<v-btn href="https://ssl.muenchen.de/" target="_blank" variant="tonal" block size="large" rounded="xl">
+    -> Zum Webkatalog mit KI-Empfehlungen
+</v-btn>
+
 Diese Dokumentation beschreibt die Funktionsweise und den Einsatz des KI-gestützten Medienempfehlungssystems **inspira_BIB** für die Münchner Stadtbibliothek.
 
 ![Beispiel des inspira_BIB-Systems: Im Webkatalog erscheinen unter den Daten zu einem Medium eine Reihe von neuen, thematisch ähnlichen Medien, die man durch Klick direkt ansehen kann.](/img/inspira_bib_demo.png)
