@@ -10,4 +10,4 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - name: Dependency Review
-        uses: it-at-m/lhm_actions/action-templates/actions/action-dependency-review@533797a90b5644c4b4e42c8945bbcc5c7c75415d # v1.0.7
+        uses: it-at-m/lhm_actions/action-templates/actions/action-dependency-review@4a2877144098dc4e26cf87c63022b461fd9d258e # v1.0.11
