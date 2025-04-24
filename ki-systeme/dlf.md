@@ -38,7 +38,8 @@ Die KI-Suche benutzt eine Methodik namens _Retrieval-Augmented Generation_ (RAG)
 In dieser werden in einem ersten Schritt zur Frage relevante Dokumente in einer Datenbasis gesucht.
 Anschließend werden zu den relevantesten Artikeln mithilfe eines großen Sprachmodells (LLM) Antworten generiert.
 
-![Darstellung der Funktionsweise von RAG](/img/dlf_rag.png)
+![Darstellung der Funktionsweise von RAG](/img/dlf_rag.png){.light-only}
+![Darstellung der Funktionsweise von RAG](/img/dlf_rag_dark.png){.dark-only}
 
 ### Repräsentation der semantischen Information mit Embeddings
 
@@ -47,7 +48,8 @@ Embeddings sind hochdimensionale Vektoren, die durch ein spezielles KI-Modell ge
 Als Eingabe erhält das Embedding-Modell den jeweiligen Text (z.B. die Dienstleistungsbeschreibung) und gibt einen Vektor zurück.
 Diese Vektoren können dann in einer Datenbank gespeichert und einfach verglichen werden, um die Ähnlichkeit zwischen verschiedenen Texten zu bestimmen.
 
-![Darstellung von Embeddings als Repräsentation von Text](/img/dlf_embeddings.png)
+![Darstellung von Embeddings als Repräsentation von Text](/img/dlf_embeddings.png){.light-only}
+![Darstellung von Embeddings als Repräsentation von Text](/img/dlf_embeddings_dark.png){.dark-only}
 
 ### Hybride Suche mit BM25
 
@@ -55,7 +57,8 @@ In dieser Anwendung wird eine hybride Suchmethode verwendet.
 Sie kombiniert die klassische, stichwortbasierte Methodik BM25 mit den oben beschriebenen semantischen Embeddings.
 So können sowohl zu klassischen Suchanfragen, als auch ausformulierte Fragen, die keine exakten Schlüsselwörter enthalten, Dokumente gefunden werden.
 
-![Darstellung der hybriden Suche](/img/dlf_hybrid_search.png)
+![Darstellung der hybriden Suche](/img/dlf_hybrid_search.png){.light-only}
+![Darstellung der hybriden Suche](/img/dlf_hybrid_search_dark.png){.dark-only}
 
 ### Generierung der Antwort
 
@@ -69,7 +72,8 @@ Das LLM soll basierend auf der ursprünglichen Frage drei Werte zurücklieferen:
 Falls die Frage nicht beantwortet werden kann, wird das Dokument nicht angezeigt.
 Durch diese Methode wird sichergestellt, dass irrelevante Dokumente nicht an die Nutzer\*innen zurückgegeben werden.
 
-![Darstellung der Antwortgenerierung](/img/dlf_answer_generation.png)
+![Darstellung der Antwortgenerierung](/img/dlf_answer_generation.png){.light-only}
+![Darstellung der Antwortgenerierung](/img/dlf_answer_generation_dark.png){.dark-only}
 
 ## KI-Modelle
 
