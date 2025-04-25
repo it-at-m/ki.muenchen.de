@@ -96,6 +96,10 @@ const vitepressConfig = defineConfig({
       md.use(lightbox, {});
     },
   },
+  vite: {
+    ssr: { noExternal: ["vuetify"] },
+    resolve: { alias: { "vuetify/lib": "vuetify" } },
+  },
 });
 
 export default withMermaid(vitepressConfig);

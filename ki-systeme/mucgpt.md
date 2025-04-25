@@ -1,10 +1,13 @@
-[<- Zurück zur Übersicht](/ki-systeme/index.md)
+[<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/ki-systeme/index.md)
 
 # MUCGPT
 
-Diese Dokumentation geht auf die Funktionen und die Limitierungen von MUCGPT ein.
+<br/>
+<v-btn prepend-icon="mdi-open-in-new" href="https://it-at-m.github.io/mucgpt/" target="_blank" variant="tonal" block size="large" rounded="xl">
+     Demo-Frontend ausprobieren
+</v-btn>
 
-[Demo-Frontend](https://it-at-m.github.io/mucgpt/)
+Diese Dokumentation geht auf die Funktionen und die Limitierungen von MUCGPT ein.
 
 ![Die Startseite von MUCGPT mit den vordefinierten Funktionen Chat, Zusammenfassen, Brainstorming und Leichte Sprache sowie einigen eigenen Assistenten](/img/mucgpt_frontpage.png)
 
@@ -72,4 +75,4 @@ Obwohl die MUCGPT viele Vorteile bietet, gibt es auch einige Risiken und Limitie
 
 ---
 
-[<- Zurück zur Übersicht](/ki-systeme/index.md)
+[<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/ki-systeme/index.md)
