@@ -5,7 +5,7 @@
 [-> KI-Suche selbst ausprobieren](https://muenchen.de/ki-suche)
 
 Diese Dokumentation beschreibt die Funktionsweise, Datengrundlage und Evaluierung der KI-Suche im Dienstleistungsfinder auf muenchen.de.
-Die KI-Suche nutzt ein aus Embedding-Modelle und ein großes Sprachmodell, um relevante Dokumente zu finden und präzise Antworten auf Nutzeranfragen zu generieren.
+Die KI-Suche nutzt ein Embedding-Modell und ein großes Sprachmodell, um relevante Dokumente zu finden und präzise Antworten auf Nutzeranfragen zu generieren.
 
 ![Screenshot von muenchen.de/ki-suche](/img/dlf_screenshot_muenchen-de.png)
 
@@ -62,7 +62,7 @@ So können sowohl zu klassischen Suchanfragen, als auch ausformulierte Fragen, d
 
 ### Generierung der Antwort
 
-Für gefundene Dokument wird separat ein großes Sprachmodell (engl. kurz LLM) aufgerufen.
+Für gefundene Dokumente wird separat ein großes Sprachmodell (engl. kurz LLM) aufgerufen.
 Das LLM soll basierend auf der ursprünglichen Frage drei Werte zurücklieferen:
 
 1. eine ausformulierte Antwort auf die gestellte Frage
