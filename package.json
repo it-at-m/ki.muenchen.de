@@ -15,5 +15,8 @@
     "vitepress": "1.6.3",
     "vitepress-plugin-mermaid": "2.0.17",
     "vuetify": "^3.8.2"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.4.47"
   }
 }

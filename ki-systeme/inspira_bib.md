@@ -1,10 +1,10 @@
-[<- Zurück zur Übersicht](/ki-systeme/index.md)
+[<v-icon>mdi-arrow-left</v-icon>  Zurück zur Übersicht](/ki-systeme/index.md)
 
 # inspira_BIB: KI-gestütztes Medienempfehlungssystem für die Münchner Stadtbibliothek
 
 <br/>
-<v-btn href="https://ssl.muenchen.de/" target="_blank" variant="tonal" block size="large" rounded="xl">
-    -> Zum Webkatalog mit KI-Empfehlungen
+<v-btn prepend-icon="mdi-open-in-new" href="https://ssl.muenchen.de/" target="_blank" variant="tonal" block size="large" rounded="xl">
+    Zum Webkatalog mit KI-Empfehlungen
 </v-btn>
 
 Diese Dokumentation beschreibt die Funktionsweise und den Einsatz des KI-gestützten Medienempfehlungssystems **inspira_BIB** für die Münchner Stadtbibliothek.
@@ -71,4 +71,4 @@ Obwohl die Medienempfehlung viele Vorteile bietet, gibt es auch einige Risiken u
 
 ---
 
-[<- Zurück zur Übersicht](/ki-systeme/index.md)
+[<v-icon>mdi-arrow-left</v-icon>  Zurück zur Übersicht](/ki-systeme/index.md)

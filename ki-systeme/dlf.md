@@ -1,10 +1,11 @@
-[<- Zurück zur Übersicht](/ki-systeme/index.md)
+[<v-icon>mdi-arrow-left</v-icon>  Zurück zur Übersicht](/ki-systeme/index.md)
 
 # KI-Suche im Dienstleistungsfinder auf muenchen.de
 
 <br/>
-<v-btn href="https://muenchen.de/ki-suche" target="_blank" variant="tonal" block size="large" rounded="xl">
-    -> KI-Suche selbst ausprobieren
+
+<v-btn prepend-icon="mdi-open-in-new" href="https://muenchen.de/ki-suche" target="_blank" variant="tonal" block size="large" rounded="xl">
+    KI-Suche selbst ausprobieren
 </v-btn>
 
 Diese Dokumentation beschreibt die Funktionsweise, Datengrundlage und Evaluierung der KI-Suche im Dienstleistungsfinder auf muenchen.de.
@@ -98,4 +99,4 @@ Obwohl die KI-Suche viele Vorteile bietet, gibt es auch einige Risiken und Limit
 
 ---
 
-[<- Zurück zur Übersicht](/ki-systeme/index.md)
+[<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/ki-systeme/index.md)

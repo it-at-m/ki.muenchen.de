@@ -1,4 +1,4 @@
-[<- Zurück zur Übersicht](/datensaetze/index.md#liste-der-datensatze)
+[<v-icon>mdi-arrow-left</v-icon>  Zurück zur Übersicht](/datensaetze/index.md#liste-der-datensatze)
 
 # Münchner Verwaltungs-Dienstleistungen
 
@@ -156,7 +156,7 @@ Bei Fragen zum Datensatz kontaktieren Sie uns bitte [per Mail](mailto:itm.kicc@m
 
 ---
 
-[<- Zurück zur Übersicht](/datensaetze/index.md#liste-der-datensatze)
+[<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/datensaetze/index.md#liste-der-datensatze)
 
 <!-- Links -->
 

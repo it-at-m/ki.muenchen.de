@@ -1,10 +1,10 @@
-[<- Zurück zur Übersicht](/ki-systeme/index.md)
+[<v-icon>mdi-arrow-left</v-icon>  Zurück zur Übersicht](/ki-systeme/index.md)
 
 # MUCGPT
 
 <br/>
-<v-btn href="https://it-at-m.github.io/mucgpt/" target="_blank" variant="tonal" block size="large" rounded="xl">
-    -> Demo-Frontend ausprobieren
+<v-btn prepend-icon="mdi-open-in-new" href="https://it-at-m.github.io/mucgpt/" target="_blank" variant="tonal" block size="large" rounded="xl">
+     Demo-Frontend ausprobieren
 </v-btn>
 
 Diese Dokumentation geht auf die Funktionen und die Limitierungen von MUCGPT ein.
@@ -75,4 +75,4 @@ Obwohl die MUCGPT viele Vorteile bietet, gibt es auch einige Risiken und Limitie
 
 ---
 
-[<- Zurück zur Übersicht](/ki-systeme/index.md)
+[<v-icon>mdi-arrow-left</v-icon>  Zurück zur Übersicht](/ki-systeme/index.md)
