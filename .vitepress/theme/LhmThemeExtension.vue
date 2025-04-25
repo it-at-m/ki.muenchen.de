@@ -1,8 +1,8 @@
 <script setup>
-import { useData, useRouter } from "vitepress";
-import { onMounted } from "vue";
 import mediumZoom from "medium-zoom";
+import { useData, useRouter } from "vitepress";
 import DefaultTheme from "vitepress/theme";
+import { onMounted } from "vue";
 
 const { isDark } = useData();
 const { Layout } = DefaultTheme;

@@ -95,7 +95,7 @@ const vitepressConfig = defineConfig({
       // Use lightbox plugin
       md.use(lightbox, {});
     },
-  }
+  },
 });
 
 export default withMermaid(vitepressConfig);
