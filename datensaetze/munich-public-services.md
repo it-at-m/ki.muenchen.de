@@ -1,4 +1,4 @@
-[<v-icon>mdi-arrow-left</v-icon>  Zurück zur Übersicht](/datensaetze/index.md#liste-der-datensatze)
+[<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/datensaetze/index.md#liste-der-datensatze)
 
 # Münchner Verwaltungs-Dienstleistungen
 

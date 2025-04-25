@@ -1,4 +1,4 @@
-[<v-icon>mdi-arrow-left</v-icon>  Zurück zur Übersicht](/ki-systeme/index.md)
+[<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/ki-systeme/index.md)
 
 # MUCGPT
 
@@ -75,4 +75,4 @@ Obwohl die MUCGPT viele Vorteile bietet, gibt es auch einige Risiken und Limitie
 
 ---
 
-[<v-icon>mdi-arrow-left</v-icon>  Zurück zur Übersicht](/ki-systeme/index.md)
+[<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/ki-systeme/index.md)

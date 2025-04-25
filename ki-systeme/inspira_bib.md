@@ -1,4 +1,4 @@
-[<v-icon>mdi-arrow-left</v-icon>  Zurück zur Übersicht](/ki-systeme/index.md)
+[<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/ki-systeme/index.md)
 
 # inspira_BIB: KI-gestütztes Medienempfehlungssystem für die Münchner Stadtbibliothek
 
@@ -71,4 +71,4 @@ Obwohl die Medienempfehlung viele Vorteile bietet, gibt es auch einige Risiken u
 
 ---
 
-[<v-icon>mdi-arrow-left</v-icon>  Zurück zur Übersicht](/ki-systeme/index.md)
+[<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/ki-systeme/index.md)

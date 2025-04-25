@@ -91,10 +91,11 @@ const vitepressConfig = defineConfig({
     },
   },
   markdown: {
-      config: (md) => {
-        // Use lightbox plugin
-        md.use(lightbox, {});
-      },},
+    config: (md) => {
+      // Use lightbox plugin
+      md.use(lightbox, {});
+    },
+  },
   vite: {
     ssr: { noExternal: ["vuetify"] },
     resolve: { alias: { "vuetify/lib": "vuetify" } },

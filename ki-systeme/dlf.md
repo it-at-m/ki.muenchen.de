@@ -1,4 +1,4 @@
-[<v-icon>mdi-arrow-left</v-icon>  Zurück zur Übersicht](/ki-systeme/index.md)
+[<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/ki-systeme/index.md)
 
 # KI-Suche im Dienstleistungsfinder auf muenchen.de
 
