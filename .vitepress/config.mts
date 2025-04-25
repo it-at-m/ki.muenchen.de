@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import lightbox from "vitepress-plugin-lightbox";
 import { withMermaid } from "vitepress-plugin-mermaid"; // https://vitepress.dev/reference/site-config
 
 // https://vitepress.dev/reference/site-config
@@ -7,15 +8,7 @@ const vitepressConfig = defineConfig({
   titleTemplate: "ki.muenchen.de",
   description: "Dokumentation zu KI-Systemen der Landeshauptstadt München",
   cleanUrls: true,
-  head: [
-    [
-      "link",
-      {
-        rel: "icon",
-        href: `/favicon.ico`,
-      },
-    ],
-  ],
+  head: [["link", { rel: "icon", href: `/favicon.ico` }]],
   lang: "de-DE",
   lastUpdated: true,
   themeConfig: {
@@ -46,10 +39,7 @@ const vitepressConfig = defineConfig({
       },
       { text: "KI Competence Center", link: "/kicc" },
     ],
-    outline: {
-      level: "deep",
-      label: "Seiteninhalt",
-    },
+    outline: { level: "deep", label: "Seiteninhalt" },
     socialLinks: [
       { icon: "github", link: "https://github.com/it-at-m/ki.muenchen.de" },
     ],
@@ -63,10 +53,7 @@ const vitepressConfig = defineConfig({
         locales: {
           root: {
             translations: {
-              button: {
-                buttonText: "Suche",
-                buttonAriaLabel: "Suche",
-              },
+              button: { buttonText: "Suche", buttonAriaLabel: "Suche" },
               modal: {
                 displayDetails: "Details anzeigen",
                 resetButtonTitle: "Suche zurücksetzen",
@@ -90,10 +77,7 @@ const vitepressConfig = defineConfig({
     footer: {
       message: `<a href="https://ki.muenchen.de/impressum.html">Impressum & Datenschutz</a>`,
     },
-    docFooter: {
-      prev: "Vorherige Seite",
-      next: "Nächste Seite",
-    },
+    docFooter: { prev: "Vorherige Seite", next: "Nächste Seite" },
     darkModeSwitchLabel: "Darstellung",
     lightModeSwitchTitle: "Zum hellen Modus wechseln",
     darkModeSwitchTitle: "Zum dunklen Modus wechseln",
@@ -106,6 +90,12 @@ const vitepressConfig = defineConfig({
       alt: "KI Competence Center Logo",
     },
   },
+  markdown: {
+    config: (md) => {
+      // Use lightbox plugin
+      md.use(lightbox, {});
+    },
+  }
 });
 
 export default withMermaid(vitepressConfig);
