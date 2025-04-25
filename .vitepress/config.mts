@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import lightbox from "vitepress-plugin-lightbox";
 import { withMermaid } from "vitepress-plugin-mermaid"; // https://vitepress.dev/reference/site-config
 
 // https://vitepress.dev/reference/site-config
@@ -89,6 +90,11 @@ const vitepressConfig = defineConfig({
       alt: "KI Competence Center Logo",
     },
   },
+  markdown: {
+      config: (md) => {
+        // Use lightbox plugin
+        md.use(lightbox, {});
+      },},
   vite: {
     ssr: { noExternal: ["vuetify"] },
     resolve: { alias: { "vuetify/lib": "vuetify" } },
