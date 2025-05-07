@@ -40,7 +40,7 @@ const vitepressConfig = defineConfig({
       },
       { text: "KI Competence Center", link: "/kicc" },
     ],
-    outline: { level: "deep", label: "Seiteninhalt" },
+    outline: { level: [2, 3], label: "Seiteninhalt" },
     socialLinks: [
       { icon: "github", link: "https://github.com/it-at-m/ki.muenchen.de" },
     ],
