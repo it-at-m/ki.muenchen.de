@@ -55,7 +55,6 @@ const members = [
     name: "Lena Barth",
     title: "Data Scientist",
     links: [
-      { icon: "github", link: "https://github.com/lenabMUC" },
       { icon: "linkedin", link: "https://www.linkedin.com/in/lena-barth-56b48a18b/" },
       { icon: "maildotru", link: "mailto:lena.barth@muenchen.de"},
     ],
@@ -66,7 +65,6 @@ const members = [
     title: "ML Engineer",
     links: [
       { icon: "github", link: "https://github.com/shteenft" },
-    
       { icon: "maildotru", link: "mailto:stefan.hentschel@muenchen.de"},
     ],
   },
