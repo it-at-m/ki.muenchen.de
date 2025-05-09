@@ -89,7 +89,7 @@ const members = [
     ],
   },
   {
-    avatar: "",
+    avatar: "img/aw.jpg",
     name: "Annalena Wittmann",
     title: "ML Engineer",
     links: [
