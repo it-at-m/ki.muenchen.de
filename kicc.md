@@ -24,6 +24,95 @@ Das KI Competence Center bündelt das Wissen der Stadtverwaltung im Bereich Kün
 Ein herausragendes Beispiel für seine Arbeit ist die Entwicklung von [**MUCGPT**](/ki-systeme/mucgpt), einem hausinternen KI-Chatbot, der allen städtischen Mitarbeiter\*innen zur Verfügung steht.
 Dieser Service wird kontinuierlich verbessert und optimiert, um den Bedürfnissen der Nutzenden gerecht zu werden.
 
+## Team
+
+<script setup>
+import { VPTeamMembers } from "vitepress/theme"
+
+const members = [
+  {
+    avatar: "/img/ll.jpg",
+    name: "Leon Lukas",
+    title: "Team Lead",
+    links: [
+      { icon: "github", link: "https://github.com/l0renor" },
+      { icon: "linkedin", link: "https://www.linkedin.com/in/leonlukasmuc/" },
+      { icon: "maildotru", link: "mailto:leon.lukas@muenchen.de"},
+    ],
+  },
+  {
+    avatar: "/img/fr.jpg",
+    name: "Fabian Reinold",
+    title: "ML Engineer",
+    links: [
+      { icon: "github", link: "https://github.com/freinold" },
+      { icon: "linkedin", link: "https://www.linkedin.com/in/fabian-reinold/" },
+      { icon: "maildotru", link: "mailto:fabian.reinold@muenchen.de"},
+    ],
+  },
+  {
+    avatar: "/img/lb.jpg",
+    name: "Lena Barth",
+    title: "Data Scientist",
+    links: [
+      { icon: "linkedin", link: "https://www.linkedin.com/in/lena-barth-56b48a18b/" },
+      { icon: "maildotru", link: "mailto:lena.barth@muenchen.de"},
+    ],
+  },
+  {
+    avatar: "/img/sh.jpg",
+    name: "Stefan Hentschel",
+    title: "ML Engineer",
+    links: [
+      { icon: "github", link: "https://github.com/shteenft" },
+      { icon: "maildotru", link: "mailto:stefan.hentschel@muenchen.de"},
+    ],
+  },
+  {
+    avatar: "/img/mj.jpg",
+    name: "Michael Jaumann",
+    title: "ML Engineer",
+    links: [
+      { icon: "github", link: "https://github.com/Meteord" },
+      { icon: "linkedin", link: "https://www.linkedin.com/in/michael-jaumann-a4736a263/" },
+      { icon: "maildotru", link: "mailto:michael.jaumann@muenchen.de"},
+    ],
+  },
+  {
+    avatar: "/img/pi.jpg",
+    name: "Paul Ilitz",
+    title: "ML Engineer",
+    links: [
+      { icon: "github", link: "https://github.com/pilitz" },
+      { icon: "linkedin", link: "https://www.linkedin.com/in/paul-ilitz-a80397269/" },
+      { icon: "maildotru", link: "mailto:paul.ilitz@muenchen.de"},
+    ],
+  },
+  {
+    avatar: "img/aw.jpg",
+    name: "Annalena Wittmann",
+    title: "ML Engineer",
+    links: [
+      { icon: "github", link: "https://github.com/a-wittmann" },
+      { icon: "linkedin", link: "https://www.linkedin.com/in/annalenawittmann/" },
+      { icon: "maildotru", link: "mailto:annalena.wittmann@muenchen.de"},
+    ],
+  },
+  {
+    avatar: "/img/sb.jpg",
+    name: "Sebastian Berger",
+    title: "Werkstudent",
+    links: [
+      { icon: "github", link: "https://github.com/illuminate97" },
+      { icon: "linkedin", link: "https://www.linkedin.com/in/sebastian-berger-35625a280/" },
+      { icon: "maildotru", link: "mailto:sebastian.berger@muenchen.de"},
+    ],
+  },
+]
+</script>
+
+<VPTeamMembers size="medium" :members />
+
 ## Kontakt
 
 Das KI Competence Center ist erreichbar unter: <itm.kicc@muenchen.de>.
