@@ -1,10 +1,9 @@
 <script setup>
 import mediumZoom from "medium-zoom";
-import { useData, useRouter } from "vitepress";
+import { useRouter } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import { onMounted } from "vue";
 
-const { isDark } = useData();
 const { Layout } = DefaultTheme;
 const router = useRouter();
 
@@ -19,7 +18,12 @@ const setupMediumZoom = () => {
 onMounted(setupMediumZoom);
 
 // Subscribe to route changes to re-apply medium zoom effect
-router.onAfterRouteChanged = setupMediumZoom;
+router.onAfterRouteChange = setupMediumZoom;
+
+// Define links for logo images
+const ritLogo =
+  "https://assets.muenchen.de/logos/rit/RIT_Basislogo_umbragrau-64.png";
+const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
 </script>
 
 <template>
@@ -31,14 +35,22 @@ router.onAfterRouteChanged = setupMediumZoom;
           target="_blank"
         >
           <img
-            v-if="isDark"
-            src="https://assets.muenchen.de/logos/rit/RIT_Basislogo_blau_weiss-64.png"
+            :src="ritLogo"
             alt="Logo München. Digital."
           />
+        </a>
+      </div>
+    </template>
+
+    <template #layout-bottom>
+      <div class="bottom-logo">
+        <a
+          href="https://stadt.muenchen.de/"
+          target="_blank"
+        >
           <img
-            v-else
-            src="https://assets.muenchen.de/logos/rit/RIT_Basislogo_blau_schwarz-64.png"
-            alt="Logo München. Digital."
+            :src="lhmLogo"
+            alt="Logo Landeshauptstadt München"
           />
         </a>
       </div>
@@ -63,8 +75,22 @@ router.onAfterRouteChanged = setupMediumZoom;
 }
 
 .logo img {
-  /* filter: var(--muc-logo-filter); */
+  filter: var(--muc-logo-filter);
   height: 28px;
+}
+
+.bottom-logo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.bottom-logo a img {
+  width: 200px;
+}
+
+.bottom-logo img {
+  filter: var(--muc-logo-filter);
 }
 </style>
 
