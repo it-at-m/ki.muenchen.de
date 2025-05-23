@@ -4,6 +4,7 @@
   --vp-c-brand-1: #003ceb;
   --vp-button-brand-hover-bg: var(--vp-c-brand-soft);
   --vp-nav-logo-height: 28px; /*bigger size for the logo*/
+  --vp-doc-top-height: 40px; /*height of the sidebar*/
 }
 
 /* Dark mode specific configurations */
