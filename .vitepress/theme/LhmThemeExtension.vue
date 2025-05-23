@@ -92,13 +92,18 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
   /* Use VitePress background color variable for theme consistency */
   padding: 1rem;
   /* Use rem for scalable padding */
-  padding-top: calc(var(--vp-nav-height) + 1rem);
-  /* Adjust top padding to account for nav bar height */
   text-align: center;
   color: var(--vp-c-text-1);
   /* Use VitePress text color variable */
   border-bottom: 1px solid var(--vp-c-divider);
   /* Add a subtle bottom border */
+}
+
+@media (min-width: 768px) {
+  .banner {
+    padding-top: calc(var(--vp-nav-height) + 1rem);
+    /* Adjust top padding to account for nav bar height on larger screens */
+  }
 }
 
 .banner p {
