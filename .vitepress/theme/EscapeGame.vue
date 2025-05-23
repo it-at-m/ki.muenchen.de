@@ -144,7 +144,9 @@ const nextLevel = () => {
     player.value.y = 350;
     player.value.velocityY = 0;
   } else {
-    endGame("🏆 Glückwunsch! Du hast alle Level geschafft! Du gewinnst!");
+    endGame(
+      "🏆 Glückwunsch! Du hast alle angestaubten Disketten eingesammelt! Der Weg ist frei!"
+    );
   }
 };
 
@@ -246,7 +248,9 @@ const updateGame = () => {
     } else {
       // Only show final win message and navigate when completing the last level
       score.value += 500; // Bonus for completing final level
-      endGame("🏆 Glückwunsch! Du hast alle Level geschafft! Du gewinnst!");
+      endGame(
+        "🏆 Glückwunsch! Du hast alle angestaubten Disketten eingesammelt! Der Weg ist frei!"
+      );
     }
   }
 };
@@ -255,13 +259,9 @@ const endGame = (msg) => {
   message.value = msg;
   gameWon.value = true;
   clearInterval(gameLoop);
-
-  // Only navigate to homepage after completing all levels (level 2)
-  if (msg.includes("Du gewinnst") && currentLevel.value >= levels.length) {
-    setTimeout(() => {
-      window.location.href = "/";
-    }, 2000); // 2 second delay to show win message
-  }
+  setTimeout(() => {
+    window.location.href = "/";
+  }, 2000); // 2 second delay to show win message
 };
 
 const goToHomepage = () => {
