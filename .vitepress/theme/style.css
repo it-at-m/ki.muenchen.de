@@ -1,5 +1,5 @@
 :root {
-  --muc-logo-filter: invert(0); /* Sets the default LHM logo color to black */
+  --muc-logo-filter: invert(0);
   /*official rit colors*/
   --vp-c-brand-1: #003ceb;
   --vp-button-brand-hover-bg: var(--vp-c-brand-soft);
@@ -8,7 +8,7 @@
 
 /* Dark mode specific configurations */
 .dark {
-  --muc-logo-filter: invert(1); /* Sets the LHM logo color to white */
+  --muc-logo-filter: invert(1);
   --vp-button-alt-bg: transparent; /*alt button is transparent on dark mode */
   --vp-c-brand-1: #69fff5;
 }
