@@ -4,6 +4,8 @@ import { useRouter } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import { onMounted } from "vue";
 
+import EscapeGame from "./EscapeGame.vue";
+
 const { Layout } = DefaultTheme;
 const router = useRouter();
 
@@ -28,6 +30,9 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
 
 <template>
   <Layout>
+    <template #not-found>
+      <EscapeGame />
+    </template>
     <template #nav-bar-content-after>
       <div class="logo">
         <a
