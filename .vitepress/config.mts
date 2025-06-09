@@ -100,7 +100,11 @@ const vitepressConfig = defineConfig({
   vite: {
     ssr: { noExternal: ["vuetify"] },
     resolve: { alias: { "vuetify/lib": "vuetify" } },
-    plugins: [llmstxt()],
+    plugins: [
+      llmstxt({
+        ignoreFiles: ["CODE_OF_CONDUCT.md", "README.md", "impressum.md"],
+      }),
+    ],
   },
 });
 
