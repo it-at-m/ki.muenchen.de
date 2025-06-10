@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
 import lightbox from "vitepress-plugin-lightbox";
+import llmstxt from "vitepress-plugin-llms";
 import { withMermaid } from "vitepress-plugin-mermaid"; // https://vitepress.dev/reference/site-config
 
 // https://vitepress.dev/reference/site-config
@@ -99,6 +100,11 @@ const vitepressConfig = defineConfig({
   vite: {
     ssr: { noExternal: ["vuetify"] },
     resolve: { alias: { "vuetify/lib": "vuetify" } },
+    plugins: [
+      llmstxt({
+        ignoreFiles: ["CODE_OF_CONDUCT.md", "README.md", "impressum.md"],
+      }),
+    ],
   },
 });
 
