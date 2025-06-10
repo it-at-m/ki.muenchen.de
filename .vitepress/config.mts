@@ -1,3 +1,4 @@
+import { buildEndGenerateOpenGraphImages } from "@nolebase/vitepress-plugin-og-image/vitepress";
 import { defineConfig } from "vitepress";
 import lightbox from "vitepress-plugin-lightbox";
 import llmstxt from "vitepress-plugin-llms";
@@ -105,6 +106,15 @@ const vitepressConfig = defineConfig({
         ignoreFiles: ["CODE_OF_CONDUCT.md", "README.md", "impressum.md"],
       }),
     ],
+  },
+  async buildEnd(siteConfig) {
+    const newBuilder = buildEndGenerateOpenGraphImages({
+      baseUrl: "https://ki.muenchen.de",
+      category: {
+        fallbackWithFrontmatter: true,
+      },
+    });
+    await newBuilder(siteConfig);
   },
 });
 
