@@ -3,8 +3,8 @@ import mediumZoom from "medium-zoom";
 import { useRouter } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import { onMounted } from "vue";
-import Banner from "./Banner.vue";
 
+import Banner from "./Banner.vue";
 import EscapeGame from "./EscapeGame.vue";
 
 const { Layout } = DefaultTheme;
