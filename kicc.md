@@ -31,7 +31,7 @@ import { VPTeamMembers } from "vitepress/theme"
 
 const members = [
   {
-    avatar: "/img/ll.jpg",
+    avatar: "/img/people/ll.jpg",
     name: "Leon Lukas",
     title: "Team Lead",
     links: [
@@ -41,7 +41,7 @@ const members = [
     ],
   },
   {
-    avatar: "/img/fr.jpg",
+    avatar: "/img/people/fr.jpg",
     name: "Fabian Reinold",
     title: "ML Engineer",
     links: [
@@ -51,7 +51,7 @@ const members = [
     ],
   },
   {
-    avatar: "/img/lb.jpg",
+    avatar: "/img/people/lb.jpg",
     name: "Lena Barth",
     title: "Data Scientist",
     links: [
@@ -60,7 +60,7 @@ const members = [
     ],
   },
   {
-    avatar: "/img/sh.jpg",
+    avatar: "/img/people/sh.jpg",
     name: "Stefan Hentschel",
     title: "ML Engineer",
     links: [
@@ -69,7 +69,7 @@ const members = [
     ],
   },
   {
-    avatar: "/img/mj.jpg",
+    avatar: "/img/people/mj.jpg",
     name: "Michael Jaumann",
     title: "ML Engineer",
     links: [
@@ -79,7 +79,7 @@ const members = [
     ],
   },
   {
-    avatar: "/img/pi.jpg",
+    avatar: "/img/people/pi.jpg",
     name: "Paul Ilitz",
     title: "ML Engineer",
     links: [
@@ -89,7 +89,7 @@ const members = [
     ],
   },
   {
-    avatar: "img/aw.jpg",
+    avatar: "/img/people/aw.jpg",
     name: "Annalena Wittmann",
     title: "ML Engineer",
     links: [
@@ -99,7 +99,7 @@ const members = [
     ],
   },
   {
-    avatar: "/img/sb.jpg",
+    avatar: "/img/people/sb.jpg",
     name: "Sebastian Berger",
     title: "Werkstudent",
     links: [
