@@ -12,6 +12,10 @@ hero:
     alt: KI Logo
 
 features:
+  - icon: 📝
+    title: Blog
+    details: In unserem Blog finden Sie aktuelle Artikel zu unseren KI-Aktivitäten, Projekten und Neuigkeiten.
+    link: /blog
   - icon: 🧠
     title: KI-Systeme
     details: KI-Systeme unterstützen die Stadtverwaltung bei der Automatisierung von Prozessen, der Verbesserung der Kommunikation mit Bürger*innen und der Bereitstellung von Dienstleistungen.
