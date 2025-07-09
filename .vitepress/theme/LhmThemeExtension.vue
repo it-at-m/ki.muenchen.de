@@ -61,12 +61,14 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
         </a>
       </div>
     </template>
+    <!-- comment this in for a banner on every page
     <template #doc-before>
       <Banner />
     </template>
     <template #home-hero-before>
       <Banner />
     </template>
+    -->
   </Layout>
 </template>
 
