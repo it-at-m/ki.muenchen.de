@@ -5,13 +5,28 @@
     rel="noopener noreferrer"
     v-bind="$attrs"
   >
-    <div class="blogpost-card-img" v-if="img">
-      <img :src="img" :alt="title" />
-      <span v-if="date" class="blogpost-card-date">{{ date }}</span>
+    <div
+      class="blogpost-card-img"
+      v-if="img"
+    >
+      <img
+        :src="img"
+        :alt="title"
+      />
+      <span
+        v-if="date"
+        class="blogpost-card-date"
+        >{{ date }}</span
+      >
     </div>
     <div class="blogpost-card-content">
       <h3 class="blogpost-card-title">{{ title }}</h3>
-      <p class="blogpost-card-teaser" v-if="teaser">{{ teaser }}</p>
+      <p
+        class="blogpost-card-teaser"
+        v-if="teaser"
+      >
+        {{ teaser }}
+      </p>
     </div>
   </a>
 </template>
@@ -34,10 +49,12 @@ defineProps({
   color: var(--vp-c-text-1);
   border: 1px solid var(--vp-c-divider);
   border-radius: 12px;
-  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
   text-decoration: none;
   overflow: hidden;
-  transition: box-shadow 0.2s, border-color 0.2s;
+  transition:
+    box-shadow 0.2s,
+    border-color 0.2s;
   cursor: pointer;
   margin-bottom: 1.5rem;
 }
@@ -82,7 +99,7 @@ defineProps({
   font-weight: 600;
   padding: 0.2em 0.7em;
   border-radius: 8px;
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.07);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.07);
   z-index: 2;
 }
 
