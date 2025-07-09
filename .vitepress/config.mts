@@ -17,6 +17,10 @@ const vitepressConfig = defineConfig({
     nav: [
       { text: "Home", link: "/" },
       {
+        text: "Blog",
+        link: "/blog",
+      },
+      {
         text: "KI-Systeme",
         items: [
           { text: "Überblick", link: "/ki-systeme" },
