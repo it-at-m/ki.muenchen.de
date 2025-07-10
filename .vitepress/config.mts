@@ -17,6 +17,10 @@ const vitepressConfig = defineConfig({
     nav: [
       { text: "Home", link: "/" },
       {
+        text: "Blog",
+        link: "/blog",
+      },
+      {
         text: "KI-Systeme",
         items: [
           { text: "Überblick", link: "/ki-systeme" },
@@ -40,7 +44,7 @@ const vitepressConfig = defineConfig({
       },
       { text: "KI Competence Center", link: "/kicc" },
     ],
-    outline: { level: "deep", label: "Seiteninhalt" },
+    outline: { level: [2, 3], label: "Seiteninhalt" },
     socialLinks: [
       { icon: "github", link: "https://github.com/it-at-m/ki.muenchen.de" },
     ],
