@@ -2,5 +2,5 @@
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
   extends: ["github>it-at-m/.github//renovate-configs/renovate-config.json5"],
   labels: ["renovate"],
-  reviewers: ["freinold", "Meteord", "l0renor"]
+  reviewers: ["freinold", "Meteord", "l0renor"],
 }
