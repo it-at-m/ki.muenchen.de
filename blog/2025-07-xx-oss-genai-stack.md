@@ -6,7 +6,7 @@ Seit der Veröffentlichung von ChatGPT haben generative KI-Modelle enorm an Bede
 Anfangs stand dabei oft nur eine Benutzeroberfläche zum einfachen Chatten mit den großen Sprachmodellen im Fokus. Inzwischen arbeiten viele daran, KI tief in ihre Systeme zu integrieren und mithilfe von KI-Agenten Workflows zu orchestrieren.
 
 Um diese komplexen Systeme im Enterprise-Umfeld korrekt und nachvollziehbar bereitzustellen, sind zahlreiche Funktionalitäten erforderlich.
-Neben Start-ups mit SaaS-Lösungen und Hyperscalern mit End-to-End-Systemen können diese auch mithilfe von Open-Source-Software-Komponenten (OSS) abgedeckt werden.  OSS wahrt dabei die digitale Souveränität und hilft gleichzeitig, Kosten zu sparen.
+Neben Start-ups mit SaaS-Lösungen und Hyperscalern mit End-to-End-Systemen können diese auch mithilfe von Open-Source-Software-Komponenten (OSS) abgedeckt werden. OSS wahrt dabei die digitale Souveränität und hilft gleichzeitig, Kosten zu sparen.
 
 Welchen Softwarestack das [KI Competence Center](/kicc) (KICC) der Stadt München für die städtischen KI-Systeme bereitstellt, erklären wir in diesem Artikel.
 
@@ -41,14 +41,14 @@ Weitere mögliche Bestandteile, die in diesem Artikel **nicht** betrachtet werde
 - **MCP-Registry**: [Das Model Context Protocol](https://modelcontextprotocol.io/introduction) (MCP) ist ein Protokoll, das den Zugriff auf Anwendungen mittels Sprachmodellen standardisiert. Eine MCP-Registry bündelt den Zugriff auf eine Vielzahl von MCP-Services.
 - **Persistenz für Graphen**: Mithilfe von Sprachmodellen können auch die Beziehungen von Entitäten in Texten extrahiert und in strukturierter Form als Graphen abgebildet werden. Anschließend können die extrahierten Graphen für Suchen und Analysen genutzt werden..
 
-Ein Überblick über mögliche Komponenten ( von uns verwendete Komponenten in 🟩), sowohl Open Source, als auch in   ist in folgender Grafik zu finden.
+Ein Überblick über mögliche Komponenten ( von uns verwendete Komponenten in 🟩), sowohl Open Source, als auch in ist in folgender Grafik zu finden.
 
 ![Auswahl möglicher Komponenten](/img/blog/genai-component-map.png){.light-only}
 ![Auswahl möglicher Komponenten](/img/blog/genai-component-map_dark.png){.dark-only}
 
 > Auswahl möglicher Komponenten, Quelle: Eigene Darstellung
 
-##  Der Münchner Open Source GenAI Stack
+## Der Münchner Open Source GenAI Stack
 
 Um die digitale Souveränität der Stadt München zu wahren und gleichzeitig die Kosten im Rahmen zu halten, haben wir uns bewusst für einen Open-Source-Software-Stack entschieden.
 
@@ -65,8 +65,7 @@ Unsere Eigenentwicklungen nutzen eine Open-Source-LLM-Orchestrierungssoftware un
 Um die Abhängigkeit von der API eines bestimmten Modellanbieters zu umgehen, kann der Modellzugriff mithilfe eines LLM-Integration-Frameworks wie LangChain abstrahiert werden. Das Gleiche trifft auch auf weitere Komponenten wie Vektordatenbanken zu.
 Darüber hinaus vereinfacht `LangChain` die Abbildung sequenzieller Workflows mit Sprachmodellen.
 
- `LangGraph` erweitert dieses Konzept für autonome Agenten, indem Workflows nun auf Graphen basieren.
-
+`LangGraph` erweitert dieses Konzept für autonome Agenten, indem Workflows nun auf Graphen basieren.
 
 - `LangChain` setzen wir in der [KI-Suche im Dienstleistungsfinder](/ki-systeme/dl) ein.
 - `LangGraph` setzen wir in [MUCGPT](/ki-systeme/mucgpt) ein.

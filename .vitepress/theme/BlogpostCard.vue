@@ -54,8 +54,8 @@ defineProps({
   text-decoration: none;
   overflow: hidden;
   transition:
-    box-shadow 0.25s cubic-bezier(.4,2,.6,1),
-    transform 0.18s cubic-bezier(.4,2,.6,1),
+    box-shadow 0.25s cubic-bezier(0.4, 2, 0.6, 1),
+    transform 0.18s cubic-bezier(0.4, 2, 0.6, 1),
     border-color 0.2s;
   cursor: pointer;
   margin-bottom: 2rem;
@@ -83,7 +83,7 @@ defineProps({
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.35s cubic-bezier(.4,2,.6,1);
+  transition: transform 0.35s cubic-bezier(0.4, 2, 0.6, 1);
 }
 
 .blogpost-card:hover .blogpost-card-img img {
@@ -93,7 +93,11 @@ defineProps({
 .blogpost-card-img-gradient {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg,rgba(0,0,0,0.00) 60%,rgba(0,0,0,0.18) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.18) 100%
+  );
   pointer-events: none;
   z-index: 1;
 }
@@ -103,7 +107,7 @@ defineProps({
   top: 0.8rem;
   right: 0.8rem;
   color: #fff;
-  background: rgba(0,0,0,0.48);
+  background: rgba(0, 0, 0, 0.48);
   font-size: 0.92rem;
   font-weight: 600;
   padding: 0.22em 0.9em;
@@ -142,7 +146,7 @@ defineProps({
   .blogpost-card {
     margin-bottom: 1.2rem;
     border-radius: 10px;
-    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.06);
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.06);
   }
   .blogpost-card-img {
     height: 130px;

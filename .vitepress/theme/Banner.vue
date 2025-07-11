@@ -1,12 +1,15 @@
 <template>
   <div class="banner">
     <div class="banner-content">
-      <h1>
-        🎉 Unser Blog ist live!
-      </h1>
+      <h1>🎉 Unser Blog ist live!</h1>
       <p>
-        Entdecken Sie spannende Artikel, Neuigkeiten und Einblicke in unsere Projekte.<br>
-        <a href="/blog" class="banner-link">Jetzt entdecken &rarr;</a>
+        Entdecken Sie spannende Artikel, Neuigkeiten und Einblicke in unsere
+        Projekte.<br />
+        <a
+          href="/blog"
+          class="banner-link"
+          >Jetzt entdecken &rarr;</a
+        >
       </p>
     </div>
   </div>
