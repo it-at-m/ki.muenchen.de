@@ -1,29 +1,14 @@
 <template>
   <div class="banner">
-    <h1>
-      Trefft uns auf dem
-      <a
-        href="https://m-digital.lineupr.com/digitaltag-2025/schedule"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Digitaltag 2025</a
-      >
-    </h1>
-    <p>
-      <a
-        href="https://veranstaltungen.muenchen.de/rit/veranstaltungen/digitaltag_2025/"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Anmeldung</a
-      >
-      |
-      <a
-        href="https://m-digital.lineupr.com/digitaltag-2025/item/workshop-open-source-ai-and-so"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Enterprise grade GenAI-Architektur - geht das auch OpenSource?</a
-      >
-    </p>
+    <div class="banner-content">
+      <h1>
+        🎉 Unser Blog ist live!
+      </h1>
+      <p>
+        Entdecken Sie spannende Artikel, Neuigkeiten und Einblicke in unsere Projekte.<br>
+        <a href="/blog" class="banner-link">Jetzt entdecken &rarr;</a>
+      </p>
+    </div>
   </div>
 </template>
 
