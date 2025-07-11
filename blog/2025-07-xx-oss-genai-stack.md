@@ -84,6 +84,11 @@ Qdrant ermöglicht eine performante Suche und Filterung von Vektordaten. Zudem n
 
 `LiteLLM` ist ein API-Gateway für Sprachmodelle. Es ermöglicht die Anbindung verschiedener Modellprovider wie Azure hinter einer gemeinsamen API. Dadurch ist es möglich, ohne großen Aufwand zu einem anderen Anbieter zu wechseln. Als Organisation können wir uns an dieser zentralen Stelle um den Modellzyklus kümmern und so einen Wildwuchs innerhalb unserer Organisation verhindern.
 
+![LiteLLM](/img/blog/litellm.png){.light-only}
+![LiteLLM](/img/blog/litellm-dark.png){.dark-only}
+
+> Beispielhafte Verwendung von LiteLLM, Quelle: Eigene Darstellung
+
 Nutzer können einfach virtuelle API-Keys für bestimmte Modelle zugewiesen bekommen. Dies erlaubt das schnelle Ausprobieren von Prototypen. Zusätzlich können Budgets und Ratelimits festgelegt werden.
 
 ### 🔎 Nachvollziehbarkeit & Evaluation: [Langfuse](https://langfuse.com/)
