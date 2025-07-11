@@ -48,7 +48,7 @@ Ein Überblick über mögliche Komponenten ( von uns verwendete Komponenten in �
 
 > Auswahl möglicher Komponenten, Quelle: Eigene Darstellung
 
-## Der Münchner Open Source GenAI Stack
+##  Der Münchner Open Source GenAI Stack
 
 Um die digitale Souveränität der Stadt München zu wahren und gleichzeitig die Kosten im Rahmen zu halten, haben wir uns bewusst für einen Open-Source-Software-Stack entschieden.
 
@@ -60,15 +60,18 @@ Unsere Eigenentwicklungen nutzen eine Open-Source-LLM-Orchestrierungssoftware un
 
 > Münchner Open Source GenAI Stack, Quelle: Eigene Darstellung
 
-### Logik & Orchestrierung: [LangChain](https://github.com/langchain-ai/langchain) & [LangGraph](https://github.com/langchain-ai/langgraph)
+### 🎼 Logik & Orchestrierung: [LangChain](https://github.com/langchain-ai/langchain) & [LangGraph](https://github.com/langchain-ai/langgraph)
 
 Um die Abhängigkeit von der API eines bestimmten Modellanbieters zu umgehen, kann der Modellzugriff mithilfe eines LLM-Integration-Frameworks wie LangChain abstrahiert werden. Das Gleiche trifft auch auf weitere Komponenten wie Vektordatenbanken zu.
-Darüber hinaus vereinfacht `LangChain` die Abbildung sequenzieller Workflows mit Sprachmodellen. `LangGraph` erweitert dieses Konzept für autonome Agenten, indem Workflows nun auf Graphen basieren.
+Darüber hinaus vereinfacht `LangChain` die Abbildung sequenzieller Workflows mit Sprachmodellen.
+
+ `LangGraph` erweitert dieses Konzept für autonome Agenten, indem Workflows nun auf Graphen basieren.
+
 
 - `LangChain` setzen wir in der [KI-Suche im Dienstleistungsfinder](/ki-systeme/dl) ein.
 - `LangGraph` setzen wir in [MUCGPT](/ki-systeme/mucgpt) ein.
 
-### Persistenz: [Qdrant](https://qdrant.tech/), [pgvector](https://github.com/pgvector/pgvector) & [Valkey](https://valkey.io/)
+### 💾 Persistenz: [Qdrant](https://qdrant.tech/), [pgvector](https://github.com/pgvector/pgvector) & [Valkey](https://valkey.io/)
 
 Um in einem Sprachmodell auf eigene Daten zugreifen zu können, müssen diese in den Kontext des Sprachmodells eingefügt werden. Falls mehr Daten vorhanden sind als Platz, müssen diese zunächst sinnvoll ausgewählt werden. Hierfür hat sich die Technik Retrieval Augmented Generation (RAG) etabliert, die die Auswahl der Daten mittels einer Suche trifft ([Funktionsweise am Beispiel DLF](/ki-systeme/dlf#funktionsweise)).
 
@@ -78,13 +81,13 @@ Qdrant ermöglicht eine performante Suche und Filterung von Vektordaten. Zudem n
 
 `Valkey` ist ein Hochleistungs-Key/Value-Store, den wir vor allem zur Zwischenspeicherung kurzfristiger Informationen nutzen. Beispielsweise können damit die Zustände eines Agentensystems zwischengespeichert werden.
 
-### KI-Modellzugriff: [LiteLLM](https://www.litellm.ai/)
+### 🧠 KI-Modellzugriff: [LiteLLM](https://www.litellm.ai/)
 
 `LiteLLM` ist ein API-Gateway für Sprachmodelle. Es ermöglicht die Anbindung verschiedener Modellprovider wie Azure hinter einer gemeinsamen API. Dadurch ist es möglich, ohne großen Aufwand zu einem anderen Anbieter zu wechseln. Als Organisation können wir uns an dieser zentralen Stelle um den Modellzyklus kümmern und so einen Wildwuchs innerhalb unserer Organisation verhindern.
 
 Nutzer können einfach virtuelle API-Keys für bestimmte Modelle zugewiesen bekommen. Dies erlaubt das schnelle Ausprobieren von Prototypen. Zusätzlich können Budgets und Ratelimits festgelegt werden.
 
-### Nachvollziehbarkeit & Evaluation: [Langfuse](https://langfuse.com/)
+### 🔎 Nachvollziehbarkeit & Evaluation: [Langfuse](https://langfuse.com/)
 
 `Langfuse` ist eine Komponente zur Evaluierung von Sprachmodell Anwendungen. Zwischenschritte in der Logik von KI-Anwendungen können damit nachvollziehbar gespeichert werden. Außerdem können Ergebnisse entweder mit Nutzerfeedback oder mittels KI basierter Evaluatoren bewertet werden. So lässt sich quantitativ nachvollziehen, wie gut eine bestimmte Version des Systems funktioniert.
 
@@ -92,9 +95,13 @@ Für die Entwicklung nutzen wir zusätzlich Datensätze, auf denen einzelne Eval
 
 Darüber hinaus nutzen wir `Langfuse` für die Versionierung und das Speichern von Prompts.
 
-### Dokumenten-Parsing: [Docling](https://docling-project.github.io/docling/)
+### 📃 Dokumenten-Parsing: [Docling](https://docling-project.github.io/docling/)
 
-### Websuche: [SearXNG](https://github.com/searxng/searxng)
+`Docling` ist ein Open-Source-Tool zur Extraktion und Strukturierung von Informationen aus unterschiedlichen Dokumentenformaten wie PDF, Word oder HTML. In GenAI-Systemen ist es essenziell, Inhalte aus verschiedensten Quellen automatisiert und zuverlässig in ein maschinenlesbares Format zu überführen. Nur so können die Daten effizient vektorisiert, durchsucht und für KI-Anwendungen nutzbar gemacht werden. `Docling` unterstützt dabei, Metadaten und Textinhalte sauber zu extrahieren und ermöglicht so eine konsistente Weiterverarbeitung in angeschlossenen KI-Systemen.
+
+### 🌏 Websuche: [SearXNG](https://github.com/searxng/searxng)
+
+`SearXNG` ist eine Open-Source-Metasuchmaschine, die Suchanfragen an verschiedene Anbieter weiterleitet und die Ergebnisse aggregiert. Damit lässt sich Websuche datenschutzfreundlich und unabhängig von großen Suchmaschinen in eigene Systeme integrieren. Im Rahmen unseres GenAI-Stacks planen wir, `SearXNG` einzusetzen, um aktuelle Webinformationen für KI-Anwendungen bereitzustellen – etwa für RAG-Szenarien. Ein Vorteil: Durch die direkte Abfrage aktueller Daten entfällt das aufwändige Parsen und Speichern großer Datenmengen als Embeddings in einer Vektordatenbank.
 
 ## Fazit
 
