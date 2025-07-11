@@ -1,3 +1,5 @@
+[<v-icon>mdi-arrow-left</v-icon> Zurück zum Blog](/blog/index.md)
+
 # Unser Open Source Stack für den souveränen Betrieb von KI-Anwendungen
 
 Seit der Veröffentlichung von ChatGPT haben generative KI-Modelle enorm an Bedeutung gewonnen. Gleichzeitig wurde die Evolution eines ganzen Ökosystems an Werkzeugen vorangetrieben, die die Fähigkeiten der Modelle einfacher und sicherer nutzbar machten.
@@ -101,3 +103,5 @@ Durch den Einsatz bewährter OSS-Projekte kann die Stadt München ihre digitale 
 
 Die verschiedenen Komponenten des Stacks ermöglichen eine nahtlose Integration und Orchestrierung von KI-Systemen, die für die spezifischen Anforderungen der Stadt angepasst sind.
 So wird sichergestellt, dass die städtischen KI-Systeme nicht nur leistungsfähig, sondern auch transparent und nachvollziehbar sind.
+
+[<v-icon>mdi-arrow-left</v-icon> Zurück zum Blog](/blog/index.md)
