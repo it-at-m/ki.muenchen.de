@@ -2,7 +2,7 @@
 
 # Unser Open Source Stack für den souveränen Betrieb von KI-Anwendungen
 
-Seit der Veröffentlichung von ChatGPT haben generative KI-Modelle enorm an Bedeutung gewonnen. Gleichzeitig wurde die Evolution eines ganzen Ökosystems an Werkzeugen vorangetrieben, die die Fähigkeiten der Modelle einfacher und sicherer nutzbar machten.
+Seit der Veröffentlichung von `ChatGPT` haben generative KI-Modelle enorm an Bedeutung gewonnen. Gleichzeitig wurde die Evolution eines ganzen Ökosystems an Werkzeugen vorangetrieben, die die Fähigkeiten der Modelle einfacher und sicherer nutzbar machten.
 Anfangs stand dabei oft nur eine Benutzeroberfläche zum einfachen Chatten mit den großen Sprachmodellen im Fokus. Inzwischen arbeiten viele daran, KI tief in ihre Systeme zu integrieren und mithilfe von KI-Agenten Workflows zu orchestrieren.
 
 Um diese komplexen Systeme im Enterprise-Umfeld korrekt und nachvollziehbar bereitzustellen, sind zahlreiche Funktionalitäten erforderlich.
