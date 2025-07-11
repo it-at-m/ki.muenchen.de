@@ -76,7 +76,7 @@ Qdrant ermöglicht eine performante Suche und Filterung von Vektordaten. Zudem n
 
 `Valkey` ist ein Hochleistungs-Key/Value-Store, den wir vor allem zur Zwischenspeicherung kurzfristiger Informationen nutzen. Beispielsweise können damit die Zustände eines Agentensystems zwischengespeichert werden.
 
-### KI-Modellzugriff: LiteLLM
+### KI-Modellzugriff: [LiteLLM](https://www.litellm.ai/)
 
 `LiteLLM` ist ein API-Gateway für Sprachmodelle. Es ermöglicht die Anbindung verschiedener Modellprovider wie Azure hinter einer gemeinsamen API. Dadurch ist es möglich, ohne großen Aufwand zu einem anderen Anbieter zu wechseln. Als Organisation können wir uns an dieser zentralen Stelle um den Modellzyklus kümmern und so einen Wildwuchs innerhalb unserer Organisation verhindern.
 
