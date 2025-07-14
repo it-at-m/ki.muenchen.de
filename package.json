@@ -17,6 +17,6 @@
     "vitepress-plugin-lightbox": "1.0.2",
     "vitepress-plugin-llms": "1.7.0",
     "vitepress-plugin-mermaid": "2.0.17",
-    "vuetify": "3.8.12"
+    "vuetify": "3.9.0"
   }
 }
