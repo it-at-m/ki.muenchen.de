@@ -6,7 +6,7 @@
 
 # Unser Open Source KI-Stack
 
-Seit der Veröffentlichung von `ChatGPT` haben generative KI-Modelle enorm an Bedeutung gewonnen. Gleichzeitig wurde die Evolution eines ganzen Ökosystems an Werkzeugen vorangetrieben, die die Fähigkeiten der Modelle einfacher und sicherer nutzbar machten.
+Seit der Veröffentlichung von _ChatGPT_ haben generative KI-Modelle enorm an Bedeutung gewonnen. Gleichzeitig wurde die Evolution eines ganzen Ökosystems an Werkzeugen vorangetrieben, die die Fähigkeiten der Modelle einfacher und sicherer nutzbar machten.
 Anfangs stand dabei oft nur eine Benutzeroberfläche zum einfachen Chatten mit den großen Sprachmodellen im Fokus. Inzwischen arbeiten viele daran, KI tief in ihre Systeme zu integrieren und mithilfe von KI-Agenten Workflows zu orchestrieren.
 
 Um diese komplexen Systeme im Enterprise-Umfeld korrekt und nachvollziehbar bereitzustellen, sind zahlreiche Funktionalitäten erforderlich.
@@ -43,9 +43,9 @@ Die wichtigsten Bestandteile, die in einem modernen GenAI-System benötigt werde
 Weitere mögliche Bestandteile, die in diesem Artikel **nicht** betrachtet werden:
 
 - **MCP-Registry**: [Das Model Context Protocol](https://modelcontextprotocol.io/introduction) (MCP) ist ein Protokoll, das den Zugriff auf Anwendungen mittels Sprachmodellen standardisiert. Eine MCP-Registry bündelt den Zugriff auf eine Vielzahl von MCP-Services.
-- **Persistenz für Graphen**: Mithilfe von Sprachmodellen können auch die Beziehungen von Entitäten in Texten extrahiert und in strukturierter Form als Graphen abgebildet werden. Anschließend können die extrahierten Graphen für Suchen und Analysen genutzt werden..
+- **Persistenz für Graphen**: Mithilfe von Sprachmodellen können auch die Beziehungen von Entitäten in Texten extrahiert und in strukturierter Form als Graphen abgebildet werden. Anschließend können die extrahierten Graphen für Suchen und Analysen genutzt werden.
 
-Ein Überblick über mögliche Komponenten ( von uns verwendete Komponenten in 🟩), sowohl Open Source, als auch in ist in folgender Grafik zu finden.
+Ein Überblick über mögliche Komponenten (von uns verwendete Komponenten in 🟩), sowohl Open Source, als auch in ist in folgender Grafik zu finden.
 
 ![Auswahl möglicher Komponenten](/img/blog/genai-component-map.png){.light-only}
 ![Auswahl möglicher Komponenten](/img/blog/genai-component-map_dark.png){.dark-only}
@@ -71,7 +71,7 @@ Darüber hinaus vereinfacht `LangChain` die Abbildung sequenzieller Workflows mi
 
 `LangGraph` erweitert dieses Konzept für autonome Agenten, indem Workflows nun auf Graphen basieren.
 
-- `LangChain` setzen wir in der [KI-Suche im Dienstleistungsfinder](/ki-systeme/dl) ein.
+- `LangChain` setzen wir in der [KI-Suche im Dienstleistungsfinder](/ki-systeme/dlf) ein.
 - `LangGraph` setzen wir in [MUCGPT](/ki-systeme/mucgpt) ein.
 
 ### 💾 Persistenz: [Qdrant](https://qdrant.tech/), [pgvector](https://github.com/pgvector/pgvector) & [Valkey](https://valkey.io/)
