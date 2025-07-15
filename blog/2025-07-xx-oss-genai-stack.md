@@ -119,4 +119,39 @@ Durch den Einsatz bewährter OSS-Projekte kann die Stadt München ihre digitale 
 Die verschiedenen Komponenten des Stacks ermöglichen eine nahtlose Integration und Orchestrierung von KI-Systemen, die für die spezifischen Anforderungen der Stadt angepasst sind.
 So wird sichergestellt, dass die städtischen KI-Systeme nicht nur leistungsfähig, sondern auch transparent und nachvollziehbar sind.
 
+---
+
+<p align="center"><strong>Autor*innen</strong></p>
+
+<script setup>
+import { VPTeamMembers } from "vitepress/theme"
+
+const members = [
+  {
+    avatar: "/img/people/fr.jpg",
+    name: "Fabian Reinold",
+    title: "ML Engineer",
+    links: [
+      { icon: "github", link: "https://github.com/freinold" },
+      { icon: "linkedin", link: "https://www.linkedin.com/in/fabian-reinold/" },
+      { icon: "maildotru", link: "mailto:fabian.reinold@muenchen.de"},
+    ],
+  },
+  {
+    avatar: "/img/people/mj.jpg",
+    name: "Michael Jaumann",
+    title: "ML Engineer",
+    links: [
+      { icon: "github", link: "https://github.com/Meteord" },
+      { icon: "linkedin", link: "https://www.linkedin.com/in/michael-jaumann-a4736a263/" },
+      { icon: "maildotru", link: "mailto:michael.jaumann@muenchen.de"},
+    ],
+  },
+]
+</script>
+
+<VPTeamMembers size="small" :members />
+
+---
+
 [<v-icon>mdi-arrow-left</v-icon> Zurück zum Blog](/blog/index.md)
