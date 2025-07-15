@@ -6,7 +6,7 @@ title: Startseite
 hero:
   name: "Künstliche Intelligenz"
   text: "für München"
-  tagline: "Wir setzen auf KI, um die Stadtverwaltung schneller zu digitalisieren und den Bürger*innen bessere Dienstleistungen anbieten zu können."
+  tagline: "Wir setzen auf KI, um die Stadtverwaltung schneller zu digitalisieren und den Bürger*innen bessere Dienstleistungen bereitzustellen."
   image:
     src: /img/logo/kicc_mascot.png
     alt: KICC Maskottchen
