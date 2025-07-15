@@ -1,5 +1,9 @@
 [<v-icon>mdi-arrow-left</v-icon> Zurück zum Blog](/blog/index.md)
 
+<p align="right"><em>05. Februar 2025</em></p>
+
+---
+
 # Pressemeldung: Wenn die KI Lektüretipps gibt: Neues Feature bei der Stadtbibliothek
 
 ::: info Info

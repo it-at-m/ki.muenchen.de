@@ -1,5 +1,9 @@
 [<v-icon>mdi-arrow-left</v-icon> Zurück zum Blog](/blog/index.md)
 
+<p align="right"><em>31. März 2025</em></p>
+
+---
+
 # Pressemeldung: Dienstleistungsfinder der Stadt sucht künftig per KI
 
 Die Stadt München hat einen weiteren bedeutenden Schritt in Richtung Digitalisierung und Benutzerfreundlichkeit unternommen. Auf der Suche nach den passenden städtischen Dienstleistungen hilft einem künftig Künstliche Intelligenz (KI). Dafür hat das KI Competence Center im IT-Referat eine innovative KI-Suche in den stadtweiten Dienstleistungsfinder unter https://stadt.muenchen.de/buergerservice/ki-suche.html integriert.
