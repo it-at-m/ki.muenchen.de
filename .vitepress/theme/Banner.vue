@@ -1,14 +1,14 @@
 <template>
   <div class="banner">
     <div class="banner-content">
-      <h1>🎉 Unser Blog ist live!</h1>
+      <h1>🎉 Neuer Blogpost: Unser Open Source KI-Stack</h1>
       <p>
-        Entdecken Sie spannende Artikel, Neuigkeiten und Einblicke in unsere
-        Projekte.<br />
+        Erfahren Sie, auf welche quelloffenen Komponenten die Stadt München
+        setzt, um digital souverän zu bleiben.<br />
         <a
-          href="/blog"
+          href="/blog/2025-07-16-oss-genai-stack"
           class="banner-link"
-          >Jetzt entdecken &rarr;</a
+          >Jetzt reinlesen &rarr;</a
         >
       </p>
     </div>
