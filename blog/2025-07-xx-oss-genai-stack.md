@@ -1,6 +1,10 @@
 [<v-icon>mdi-arrow-left</v-icon> Zurück zum Blog](/blog/index.md)
 
-# Unser Open Source Stack für den souveränen Betrieb von KI-Anwendungen
+<p align="right"><em>16. Juli 2025</em></p>
+
+---
+
+# Unser Open Source KI-Stack
 
 Seit der Veröffentlichung von `ChatGPT` haben generative KI-Modelle enorm an Bedeutung gewonnen. Gleichzeitig wurde die Evolution eines ganzen Ökosystems an Werkzeugen vorangetrieben, die die Fähigkeiten der Modelle einfacher und sicherer nutzbar machten.
 Anfangs stand dabei oft nur eine Benutzeroberfläche zum einfachen Chatten mit den großen Sprachmodellen im Fokus. Inzwischen arbeiten viele daran, KI tief in ihre Systeme zu integrieren und mithilfe von KI-Agenten Workflows zu orchestrieren.
