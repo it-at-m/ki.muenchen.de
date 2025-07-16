@@ -405,7 +405,11 @@ onUnmounted(() => {
               transform: player.facingRight ? 'scaleX(1)' : 'scaleX(-1)',
             }"
           >
-            🤖
+            <img
+              src="/img/logo/kicc_mascot.png"
+              alt="KICC Maskottchen"
+              class="mascot-img"
+            />
           </div>
         </div>
 
@@ -538,6 +542,13 @@ onUnmounted(() => {
   font-size: 24px;
   transition: transform 0.1s;
   filter: drop-shadow(0 0 3px var(--vp-c-brand-1));
+}
+
+.mascot-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
 }
 
 .coin {
