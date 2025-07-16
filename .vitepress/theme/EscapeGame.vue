@@ -307,13 +307,16 @@ onUnmounted(() => {
   <div class="kicc-escape">
     <!-- Mobile 404 Message -->
     <div v-if="isMobile">
-      <h1>404</h1>
+      <h1><b>404</b></h1>
       <h2>Seite nicht gefunden</h2>
+      <button @click="goToHomepage" class="game-button secondary">
+        Zurück zur Startseite
+      </button>
     </div>
 
     <!-- Desktop Game -->
     <div v-else>
-      <h1>Du hast dich in unser Rechenzentrum verirrt!</h1>
+      <h1><b>Du hast dich in unser Rechenzentrum verirrt!</b></h1>
       <p>
         Glücklicherweise gibt es einen Weg zurück. Unsere Admins haben ihn auf
         altertümlichen Datenspeichern💾 gesichert. Sammle alle Disketten und
