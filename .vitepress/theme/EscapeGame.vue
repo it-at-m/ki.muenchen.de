@@ -406,7 +406,7 @@ onUnmounted(() => {
             }"
           >
             <img
-              src="/img/logo/kicc_mascot.png"
+              src="/img/logo/kicc_mascot_mini.png"
               alt="KICC Maskottchen"
               class="mascot-img"
             />
