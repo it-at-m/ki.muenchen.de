@@ -444,9 +444,6 @@ onUnmounted(() => {
 
 .kicc-escape h1 {
   color: var(--vp-c-text-1);
-  text-shadow:
-    0 0 5px var(--vp-c-brand-1),
-    0 0 10px var(--vp-c-brand-1);
   margin-bottom: 1rem;
 }
 
