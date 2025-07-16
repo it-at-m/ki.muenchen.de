@@ -8,8 +8,8 @@ hero:
   text: "für München"
   tagline: "Wir setzen auf KI, um die Stadtverwaltung schneller zu digitalisieren und den Bürger*innen bessere Dienstleistungen bereitzustellen."
   image:
-    src: /img/logo/kicc_mascot.png
-    alt: KICC Maskottchen
+    src: /img/logo/kicc_tuerkis_border.png
+    alt: KI Logo
 
 features:
   - icon: 📝

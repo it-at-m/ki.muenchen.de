@@ -108,6 +108,15 @@ const members = [
       { icon: "maildotru", link: "mailto:sebastian.berger@muenchen.de"},
     ],
   },
+    {
+    avatar: "/img/logo/kicc_mascot.png",
+    name: "MUCKI",
+    title: "KICC Maskottchen",
+    links: [
+      { icon: "github", link: "https://github.com/it-at-m/ki.muenchen.de" },
+      { icon: "maildotru", link: "mailto:itm.kicc@muenchen.de"},
+    ],
+  },
 ]
 </script>
 
