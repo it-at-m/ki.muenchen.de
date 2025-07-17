@@ -1,3 +1,9 @@
+[<v-icon>mdi-arrow-left</v-icon> Zurück zum Blog](/blog/index.md)
+
+<p align="right"><em>05. Februar 2025</em></p>
+
+---
+
 # Pressemeldung: Wenn die KI Lektüretipps gibt: Neues Feature bei der Stadtbibliothek
 
 ::: info Info
@@ -20,3 +26,5 @@ Das KI-System basiert technisch auf einem sogenannten Embedding-Modell und einer
 Eine personalisierte Beratung bietet die Münchner Stadtbibliothek den Münchner\*innen auch weiterhin durch ihre erfahrenen Mitarbeiter\*innen an. Der Online-Katalog der Münchner Stadtbibliothek kann sowohl vor Ort in den Bibliotheken als auch online unter www.muenchner-stadtbibliothek.de/katalog genutzt werden.
 
 > Dieser Beitrag erschien ursprünglich im Pressedient "Rathaus Umschau" der Landeshauptstadt München vom 05. Februar 2025 (Ausgabe 62/2025) und ist im Original hier zu finden: [zur "Rathaus Umschau"](https://ru.muenchen.de/2025/24/Wenn-die-KI-Lektueretipps-gibt-Neues-Feature-bei-der-Stadtbibliothek-116839).
+
+[<v-icon>mdi-arrow-left</v-icon> Zurück zum Blog](/blog/index.md)
