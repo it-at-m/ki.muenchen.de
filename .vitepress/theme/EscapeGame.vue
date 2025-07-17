@@ -309,7 +309,10 @@ onUnmounted(() => {
     <div v-if="isMobile">
       <h1><b>404</b></h1>
       <h2>Seite nicht gefunden</h2>
-      <button @click="goToHomepage" class="game-button secondary">
+      <button
+        @click="goToHomepage"
+        class="game-button secondary"
+      >
         Zurück zur Startseite
       </button>
     </div>
