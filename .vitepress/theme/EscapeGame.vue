@@ -307,13 +307,16 @@ onUnmounted(() => {
   <div class="kicc-escape">
     <!-- Mobile 404 Message -->
     <div v-if="isMobile">
-      <h1>404</h1>
+      <h1><b>404</b></h1>
       <h2>Seite nicht gefunden</h2>
+      <button @click="goToHomepage" class="game-button secondary">
+        Zurück zur Startseite
+      </button>
     </div>
 
     <!-- Desktop Game -->
     <div v-else>
-      <h1>Du hast dich in unser Rechenzentrum verirrt!</h1>
+      <h1><b>Du hast dich in unser Rechenzentrum verirrt!</b></h1>
       <p>
         Glücklicherweise gibt es einen Weg zurück. Unsere Admins haben ihn auf
         altertümlichen Datenspeichern💾 gesichert. Sammle alle Disketten und
@@ -405,7 +408,11 @@ onUnmounted(() => {
               transform: player.facingRight ? 'scaleX(1)' : 'scaleX(-1)',
             }"
           >
-            🤖
+            <img
+              src="/img/logo/kicc_mascot_mini.png"
+              alt="KICC Maskottchen"
+              class="mascot-img"
+            />
           </div>
         </div>
 
@@ -440,9 +447,6 @@ onUnmounted(() => {
 
 .kicc-escape h1 {
   color: var(--vp-c-text-1);
-  text-shadow:
-    0 0 5px var(--vp-c-brand-1),
-    0 0 10px var(--vp-c-brand-1);
   margin-bottom: 1rem;
 }
 
@@ -538,6 +542,13 @@ onUnmounted(() => {
   font-size: 24px;
   transition: transform 0.1s;
   filter: drop-shadow(0 0 3px var(--vp-c-brand-1));
+}
+
+.mascot-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
 }
 
 .coin {
