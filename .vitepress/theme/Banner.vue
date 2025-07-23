@@ -1,29 +1,17 @@
 <template>
   <div class="banner">
-    <h1>
-      Trefft uns auf dem
-      <a
-        href="https://m-digital.lineupr.com/digitaltag-2025/schedule"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Digitaltag 2025</a
-      >
-    </h1>
-    <p>
-      <a
-        href="https://veranstaltungen.muenchen.de/rit/veranstaltungen/digitaltag_2025/"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Anmeldung</a
-      >
-      |
-      <a
-        href="https://m-digital.lineupr.com/digitaltag-2025/item/workshop-open-source-ai-and-so"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Enterprise grade GenAI-Architektur - geht das auch OpenSource?</a
-      >
-    </p>
+    <div class="banner-content">
+      <h1>🎉 Neuer Blogpost: Unser Open Source KI-Stack</h1>
+      <p>
+        Erfahren Sie, auf welche quelloffenen Komponenten die Stadt München
+        setzt, um digital souverän zu bleiben.<br />
+        <a
+          href="/blog/2025-07-23-oss-genai-stack"
+          class="banner-link"
+          >Jetzt reinlesen &rarr;</a
+        >
+      </p>
+    </div>
   </div>
 </template>
 
