@@ -1,6 +1,6 @@
 [<v-icon>mdi-arrow-left</v-icon> Zurück zum Blog](/blog/index.md)
 
-<p align="right"><em>16. Juli 2025</em></p>
+<p align="right"><em>23. Juli 2025</em></p>
 
 ---
 

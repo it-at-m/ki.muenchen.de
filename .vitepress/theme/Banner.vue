@@ -6,7 +6,7 @@
         Erfahren Sie, auf welche quelloffenen Komponenten die Stadt München
         setzt, um digital souverän zu bleiben.<br />
         <a
-          href="/blog/2025-07-16-oss-genai-stack"
+          href="/blog/2025-07-23-oss-genai-stack"
           class="banner-link"
           >Jetzt reinlesen &rarr;</a
         >

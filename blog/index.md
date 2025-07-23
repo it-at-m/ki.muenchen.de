@@ -15,9 +15,9 @@ Hier finden Sie spannende Einblicke in die Arbeit des KI Competence Centers und 
 
 <BlogpostCard
   title="Unser Open Source KI-Stack"
-  link="/blog/2025-07-16-oss-genai-stack"
+  link="/blog/2025-07-23-oss-genai-stack"
   teaser="Generative KI (GenAI) wird für Unternehmen immer wichtiger. Neben SaaS-Lösungen und Hyperscalern bieten Open Source-Stacks eine attraktive Alternative für digitale Souveränität. Auf welche Komponenten das  KI Competence Center der Stadt München setzt, erklären wir euch in diesem Artikel."
-  date="2025-07-16"
+  date="2025-07-23"
   img="/img/blog/kicc-muc-stack.png"
 />
 
