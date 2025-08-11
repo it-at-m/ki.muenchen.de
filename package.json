@@ -13,7 +13,7 @@
     "@mdi/font": "7.4.47",
     "@muenchen/prettier-codeformat": "1.0.2",
     "mermaid": "11.9.0",
-    "vitepress": "1.6.3",
+    "vitepress": "1.6.4",
     "vitepress-plugin-lightbox": "1.0.2",
     "vitepress-plugin-llms": "1.7.2",
     "vitepress-plugin-mermaid": "2.0.17",
