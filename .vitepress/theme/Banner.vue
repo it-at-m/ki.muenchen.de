@@ -1,14 +1,20 @@
 <template>
   <div class="banner">
     <div class="banner-content">
-      <h1>🎉 Neuer Blogpost: Unser Open Source KI-Stack</h1>
+      <h1>🗳️ Wir brauchen Ihre Stimme!</h1>
       <p>
-        Erfahren Sie, auf welche quelloffenen Komponenten die Stadt München
-        setzt, um digital souverän zu bleiben.<br />
+        Unser
         <a
           href="/blog/2025-07-23-oss-genai-stack"
           class="banner-link"
-          >Jetzt reinlesen &rarr;</a
+          >KI-Stack</a
+        >
+        wurde als Einreichung beim Open Source Wettbewerb akzeptiert und
+        benötigt Ihre Unterstützung!<br />
+        <a
+          href="https://open-source-wettbewerb.de/voting/ki-service-layer/"
+          class="banner-link"
+          >Jetzt abstimmen &rarr;</a
         >
       </p>
     </div>
