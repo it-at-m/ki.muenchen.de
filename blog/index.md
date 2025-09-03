@@ -14,6 +14,14 @@ Hier finden Sie spannende Einblicke in die Arbeit des KI Competence Centers und 
 ## Artikel
 
 <BlogpostCard
+  title="KI-Hackathon 2025: 11 Challenges in vier Tagen"
+  link="https://muenchen.digital/meldungen/2025/ki-hackathon-2025.html"
+  teaser="Der KI-Hackathon vom 21. bis 24 Juli für Entwickler*innen und Expert*innen stand heuer unter den Schwerpunkten MUCGPT, GenAI, BI & Datenanalyse sowie klassisches ML."
+  date="2025-07-31"
+  img="/img/blog/kihack25.jpg"
+/>
+
+<BlogpostCard
   title="Unser Open Source KI-Stack"
   link="/blog/2025-07-23-oss-genai-stack"
   teaser="Generative KI (GenAI) wird für Unternehmen immer wichtiger. Neben SaaS-Lösungen und Hyperscalern bieten Open Source-Stacks eine attraktive Alternative für digitale Souveränität. Auf welche Komponenten das  KI Competence Center der Stadt München setzt, erklären wir euch in diesem Artikel."
