@@ -137,15 +137,12 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
 .social-links .social-icon img {
   width: 20px;
   height: 20px;
-  filter: var(
-    --vp-icon-filter,
-    brightness(0) invert(0.5)
-  ); /* Default grayscale filter */
+  filter: var(--vp-icon-filter, brightness(0) invert(0.5));
   transition: filter 0.2s ease;
 }
 
 .social-links .social-icon {
-  background: transparent; /* keep button background unchanged */
+  background: transparent;
   border-radius: 6px;
   color: var(--vp-c-text-1);
   display: inline-flex;
@@ -156,10 +153,7 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
 
 .social-links .social-icon:hover img,
 .social-links .social-icon:hover svg {
-  filter: var(
-    --vp-icon-hover-filter,
-    brightness(0) invert(0.8)
-  ); /* Lighter on hover */
+  filter: var(--vp-icon-hover-filter, brightness(0) invert(0.8));
 }
 
 @media (max-width: 768px) {
