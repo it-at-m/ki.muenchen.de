@@ -34,8 +34,14 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
     </template>
     <template #nav-bar-content-after>
       <div class="logo">
-        <a href="https://muenchen.digital/" target="_blank">
-          <img :src="lhmLogo" alt="Logo Landeshauptstadt München" />
+        <a
+          href="https://muenchen.digital/"
+          target="_blank"
+        >
+          <img
+            :src="lhmLogo"
+            alt="Logo Landeshauptstadt München"
+          />
         </a>
       </div>
     </template>
@@ -55,7 +61,7 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
 }
 
 @media (min-width: 768px) {
-  .extra+.logo:before {
+  .extra + .logo:before {
     margin-right: 16px;
     margin-left: 16px;
     width: 1px;
@@ -107,14 +113,14 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
   filter: var(--muc-logo-filter);
 }
 
-  .footer-center {
-    display: flex;
-    gap: 18px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex: 1 1 auto;
-  }
+.footer-center {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 1 1 auto;
+}
 
 .footer-right {
   display: flex;
@@ -131,7 +137,10 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
 .social-links .social-icon img {
   width: 20px;
   height: 20px;
-  filter: var(--vp-icon-filter, brightness(0) invert(0.5)); /* Default grayscale filter */
+  filter: var(
+    --vp-icon-filter,
+    brightness(0) invert(0.5)
+  ); /* Default grayscale filter */
   transition: filter 0.2s ease;
 }
 
@@ -147,10 +156,11 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
 
 .social-links .social-icon:hover img,
 .social-links .social-icon:hover svg {
-  filter: var(--vp-icon-hover-filter, brightness(0) invert(0.8)); /* Lighter on hover */
+  filter: var(
+    --vp-icon-hover-filter,
+    brightness(0) invert(0.8)
+  ); /* Lighter on hover */
 }
-
-
 
 @media (max-width: 768px) {
   .site-footer {
