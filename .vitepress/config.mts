@@ -80,7 +80,18 @@ const vitepressConfig = defineConfig({
       },
     },
     footer: {
-      message: `<a href="https://ki.muenchen.de/impressum.html">Impressum & Datenschutz</a>`,
+      message: `
+        <div class="site-footer" role="contentinfo">
+          <div class="footer-left">
+            <a href="https://stadt.muenchen.de/" target="_blank" rel="noopener">
+              <img src="https://assets.muenchen.de/logos/rit/RIT_Basislogo_umbragrau-64.png" alt="Logo München Digital" />
+            </a>
+          </div>
+          <div class="footer-center">
+            <a href="/impressum.html">Impressum & Datenschutz</a>
+          </div>
+        </div>
+      `,
     },
     docFooter: { prev: "Vorherige Seite", next: "Nächste Seite" },
     darkModeSwitchLabel: "Darstellung",

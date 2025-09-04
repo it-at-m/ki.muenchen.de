@@ -24,8 +24,6 @@ onMounted(setupMediumZoom);
 router.onAfterRouteChange = setupMediumZoom;
 
 // Define links for logo images
-const ritLogo =
-  "https://assets.muenchen.de/logos/rit/RIT_Basislogo_umbragrau-64.png";
 const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
 </script>
 
@@ -36,28 +34,8 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
     </template>
     <template #nav-bar-content-after>
       <div class="logo">
-        <a
-          href="https://muenchen.digital/"
-          target="_blank"
-        >
-          <img
-            :src="ritLogo"
-            alt="Logo München. Digital."
-          />
-        </a>
-      </div>
-    </template>
-
-    <template #layout-bottom>
-      <div class="bottom-logo">
-        <a
-          href="https://stadt.muenchen.de/"
-          target="_blank"
-        >
-          <img
-            :src="lhmLogo"
-            alt="Logo Landeshauptstadt München"
-          />
+        <a href="https://muenchen.digital/" target="_blank">
+          <img :src="lhmLogo" alt="Logo Landeshauptstadt München" />
         </a>
       </div>
     </template>
@@ -77,7 +55,7 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
 }
 
 @media (min-width: 768px) {
-  .extra + .logo:before {
+  .extra+.logo:before {
     margin-right: 16px;
     margin-left: 16px;
     width: 1px;
@@ -91,20 +69,6 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
   filter: var(--muc-logo-filter);
   height: 28px;
 }
-
-.bottom-logo {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 30px;
-}
-
-.bottom-logo a img {
-  width: 200px;
-}
-
-.bottom-logo img {
-  filter: var(--muc-logo-filter);
-}
 </style>
 
 <style>
@@ -115,5 +79,55 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
 .medium-zoom-overlay,
 .medium-zoom-image--opened {
   z-index: 999;
+}
+
+/* Global footer styles for config-provided footer HTML */
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.footer-left img {
+  height: 32px;
+  width: auto;
+  max-width: 100%;
+  filter: var(--muc-logo-filter);
+}
+
+.footer-center {
+  text-align: center;
+  flex: 1 1 auto;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+
+@media (max-width: 768px) {
+  .site-footer {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .footer-left img {
+    height: 32px;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .footer-right {
+    justify-content: center;
+  }
+
+  .footer-center {
+    order: 2;
+  }
 }
 </style>
