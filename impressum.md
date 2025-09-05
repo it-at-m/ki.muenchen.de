@@ -99,6 +99,11 @@ Die Verarbeitung der unter diesem Abschnitt angegebenen Daten ist weder gesetzli
 
 GitHub hat Compliance-Maßnahmen für internationale Datenübermittlungen umgesetzt. Diese gelten für alle weltweiten Aktivitäten, bei denen GitHub personenbezogene Daten von natürlichen Personen in der EU verarbeitet. Diese Maßnahmen basieren auf den EU-Standardvertragsklauseln (SCCs). Weitere Informationen finden Sie unter: <https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-data-protection-addendum#attachment-1–the-standard-contractual-clauses-processors>
 
+## Bild- und Icon‑Quellen / Lizenzen
+
+Icons für Sozial Media Buttons: Alex Mitov — Social Media Icon Pack. Originalquelle: [Social Media Icon Pack](https://www.iconfinder.com/iconsets/social-media-outline-6) (Iconset) und [Alex Mitov](https://www.iconfinder.com/alexmitov) (Autor). Lizenziert unter
+[Creative Commons Attribution 3.0 Unported (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/).
+
 ## Danksagung
 
 - Logo auf der Startseite von Andrea Stockinger
