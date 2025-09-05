@@ -106,11 +106,19 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
   gap: 12px;
 }
 
-.footer-left img {
-  height: 32px;
-  width: auto;
-  max-width: 100%;
-  filter: var(--muc-logo-filter);
+/* Make the three footer sections take equal width */
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1 1 0; /* grow | shrink | basis -> equal share */
+  min-width: 0; /* allow items to shrink inside flex containers */
+}
+
+/* Align content inside each section */
+.footer-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .footer-center {
@@ -119,13 +127,20 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex: 1 1 auto;
 }
 
 .footer-right {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   gap: 12px;
+}
+
+.footer-left img {
+  height: 32px;
+  width: auto;
+  max-width: 100%;
+  filter: var(--muc-logo-filter);
 }
 
 .follow-label {
