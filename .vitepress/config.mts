@@ -83,7 +83,7 @@ const vitepressConfig = defineConfig({
       message: `
         <div class="site-footer" role="contentinfo">
           <div class="footer-left">
-            <a href="https://stadt.muenchen.de/" target="_blank" rel="noopener">
+            <a href="https://muenchen.digital/" target="_blank" rel="noopener">
               <img src="https://assets.muenchen.de/logos/rit/RIT_Basislogo_umbragrau-64.png" alt="Logo München Digital" />
             </a>
           </div>

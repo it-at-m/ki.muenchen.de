@@ -35,7 +35,7 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
     <template #nav-bar-content-after>
       <div class="logo">
         <a
-          href="https://muenchen.digital/"
+          href="https://stadt.muenchen.de/"
           target="_blank"
         >
           <img
