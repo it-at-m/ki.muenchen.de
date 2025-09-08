@@ -1,6 +1,32 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  extends: ["github>it-at-m/.github//renovate-configs/renovate-config.json5"],
+  description: "Renovate config for it-at-m",
+  extends: [
+    "config:best-practices",
+    "customManagers:githubActionsVersions",
+    "helpers:pinGitHubActionDigestsToSemver",
+    ":pinAllExceptPeerDependencies",
+    "schedule:weekly",
+    ":separateMultipleMajorReleases",
+    ":timezone(Europe/Berlin)",
+    "security:openssf-scorecard",
+  ],
   labels: ["renovate"],
+  lockFileMaintenance: {
+    enabled: true,
+  },
   reviewers: ["freinold", "Meteord", "l0renor"],
+  packageRules: [
+    {
+      matchManagers: ["npm"],
+      matchUpdateTypes: ["minor", "patch"],
+      groupName: "npm: non-major updates",
+      groupSlug: "npm-non-major",
+    },
+    {
+      matchManagers: ["github-actions"],
+      groupName: "GitHub Actions dependencies",
+      groupSlug: "github-actions",
+    },
+  ],
 }
