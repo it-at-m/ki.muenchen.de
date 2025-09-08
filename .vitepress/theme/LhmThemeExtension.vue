@@ -6,6 +6,7 @@ import { onMounted } from "vue";
 
 import Banner from "./Banner.vue";
 import EscapeGame from "./EscapeGame.vue";
+import SiteFooter from "./SiteFooter.vue";
 
 const { Layout } = DefaultTheme;
 const router = useRouter();
@@ -50,6 +51,9 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
     </template>
     <template #home-hero-before>
       <Banner v-if="!router.route.path.includes('/blog')" />
+    </template>
+    <template #layout-bottom>
+      <SiteFooter />
     </template>
   </Layout>
 </template>
@@ -104,6 +108,8 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  padding: 8px 64px;
+  border-top: 1px solid var(--vp-c-gutter);
 }
 
 /* Make the three footer sections take equal width */
@@ -176,6 +182,7 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
     flex-direction: column;
     gap: 12px;
     text-align: center;
+    padding-left: 24px;
   }
 
   .footer-left img {
