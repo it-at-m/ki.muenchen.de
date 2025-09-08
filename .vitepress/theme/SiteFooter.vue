@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { withBase } from "vitepress";
+</script>
+
 <template>
   <footer
     class="site-footer"
@@ -22,7 +26,7 @@
         rel="noopener"
         >Kontakt IT-Referat</a
       >
-      <a href="/impressum.html">Impressum &amp; Datenschutz</a>
+      <a :href="withBase('/impressum.html')">Impressum &amp; Datenschutz</a>
     </div>
     <div class="footer-right">
       <div class="follow-label">Folgen Sie uns auf:</div>
@@ -38,7 +42,7 @@
           aria-label="Instagram"
         >
           <img
-            src="/img/social/instagram.svg"
+            :src="withBase('/img/social/instagram.svg')"
             alt="Instagram"
           />
         </a>
@@ -50,7 +54,7 @@
           aria-label="YouTube"
         >
           <img
-            src="/img/social/youtube.svg"
+            :src="withBase('/img/social/youtube.svg')"
             alt="YouTube"
           />
         </a>
@@ -62,7 +66,7 @@
           aria-label="LinkedIn"
         >
           <img
-            src="/img/social/linkedin.svg"
+            :src="withBase('/img/social/linkedin.svg')"
             alt="LinkedIn"
           />
         </a>
@@ -74,7 +78,7 @@
           aria-label="Newsletter"
         >
           <img
-            src="/img/social/newsletter.svg"
+            :src="withBase('/img/social/newsletter.svg')"
             alt="Newsletter"
           />
         </a>
@@ -82,7 +86,3 @@
     </div>
   </footer>
 </template>
-
-<script setup lang="ts">
-// purely presentational footer rendered via layout slot
-</script>
