@@ -61,12 +61,14 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
         </a>
       </div>
     </template>
+    <!--
     <template #doc-before>
       <Banner v-if="!router.route.path.includes('/blog')" />
     </template>
     <template #home-hero-before>
       <Banner v-if="!router.route.path.includes('/blog')" />
     </template>
+    -->
   </Layout>
 </template>
 
