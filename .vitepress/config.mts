@@ -79,9 +79,6 @@ const vitepressConfig = defineConfig({
         },
       },
     },
-    footer: {
-      message: `<a href="https://ki.muenchen.de/impressum.html">Impressum & Datenschutz</a>`,
-    },
     docFooter: { prev: "Vorherige Seite", next: "Nächste Seite" },
     darkModeSwitchLabel: "Darstellung",
     lightModeSwitchTitle: "Zum hellen Modus wechseln",
