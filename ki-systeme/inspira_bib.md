@@ -43,6 +43,7 @@ Das System nutzt das Embedding-Modell `text-embedding-3-large` des Herstellers O
 Das Modell nimmt Texte mit einer Länge von bis zu 8191 Token (Wortteile) entgegen und gibt ein Embedding mit 1024 Dimensionen zurück.
 
 Weitere Informationen finden Sie in folgenden Dokumentationen:
+
 - <https://ai.azure.com/catalog/models/text-embedding-3-large>
 - <https://platform.openai.com/docs/guides/embeddings>
 - <https://platform.openai.com/docs/guides/retrieval#semantic-search>
