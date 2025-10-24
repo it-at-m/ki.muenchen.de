@@ -39,21 +39,20 @@ Das System nutzt keine Nutzerdaten, sondern basiert ausschließlich auf den Inha
 ### Embedding-Modell
 
 Embeddings (zu deutsch _Texteinbettungen_) messen die Ähnlichkeit von natürlichsprachlichen Texten.
-Das System nutzt das Embedding-Modell `embed-multilingual-v3.0` des Herstellers Cohere, welches über den Cloud-Provider Microsoft Azure in einem europäischen Rechenzentrum bereitgestellt wird.
-Das Modell nimmt Texte mit einer Länge von bis zu 512 Token (Wortteile) entgegen und gibt ein Embedding mit 1024 Dimensionen zurück.
+Das System nutzt das Embedding-Modell `text-embedding-3-large` des Herstellers OpenAI, welches über den Cloud-Provider Microsoft Azure in einem europäischen Rechenzentrum bereitgestellt wird.
+Das Modell nimmt Texte mit einer Länge von bis zu 8191 Token (Wortteile) entgegen und gibt ein Embedding mit 1024 Dimensionen zurück.
 
 Weitere Informationen finden Sie in folgenden Dokumentationen:
-
-- <https://docs.cohere.com/reference/embed>
-- <https://docs.cohere.com/docs/semantic-search>
-- <https://docs.cohere.com/v2/docs/cohere-on-microsoft-azure>
-- <https://learn.microsoft.com/en-us/azure/ai-studio/how-to/deploy-models-cohere-embed?tabs=cohere-embed-v3-english&pivots=programming-language-python>
+- <https://ai.azure.com/catalog/models/text-embedding-3-large>
+- <https://platform.openai.com/docs/guides/embeddings>
+- <https://platform.openai.com/docs/guides/retrieval#semantic-search>
+- <https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure?pivots=azure-openai&tabs=global-standard-aoai%2Cstandard-chat-completions%2Cglobal-standard#embeddings>
 
 ## Evaluierung
 
 ### Wahl des Embedding-Modells
 
-Die Wahl des Embedding-Modells erfolgte aufgrund einer Evaluation zwischen dem oben genannten Modell `embed-multilingual-v3.0` und dem quelloffenen Modell [`intfloat/multilingual-e5-large`](https://huggingface.co/intfloat/multilingual-e5-large) mit einem definierten Test-Datenbestand.
+Die Wahl des Embedding-Modells erfolgte aufgrund einer Evaluation mit einem definierten Test-Datenbestand.
 
 ### Qualität der Empfehlungen
 
