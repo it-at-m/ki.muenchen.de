@@ -1,3 +1,4 @@
+[<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/ki-systeme/index.md)
 # Plausibilisierungsservice für Verkehrsdaten
 
 Verkehrsdaten sind für Planung, Wissenschaft, Verwaltung, Politik und Bevölkerung von großem Interesse und unerlässlich für regionale und städtische Verkehrsprojekte sowie zur Bewertung von bspw. Klimaschutzmaßnahmen.
@@ -10,20 +11,20 @@ Aufgrund der großen Datenmengen ist ein automatisiertes Verfahren zur Plausibil
 ### Karte der Messstellen in München
 In München wurden etwa 100 Messstellen zur Erfassung des Kfz-Verkehrs mittels Induktionsschleifen installiert. Diese erfassen die Anzahl und Art der Fahrzeuge in 15-Minuten-Intervallen. Die Daten müssen regelmäßig auf Störungen und besondere Verkehrssituationen geprüft werden, um qualitativ hochwertige Verkehrsinformationen zu gewährleisten.
 
-![alt text](image-2.png)
+![alt text](img/detektor/image-2.png)
 
 ### Bilder der Sensorik
 
-![alt text](image.png)
+![alt text](img/detektor/image.png)
 
-![alt text](image-1.png)
+![alt text](img/detektorimage-1.png)
 
 
 
 
 ### Ganglinien der Dedektoren einer Messtelle
 Beispielhafte Ganglinie einer Messtelle mit 4 Spuren/Detektoren. 
-![alt text](image-3.png)
+![alt text](img/detektor/image-3.png)
 
 
 
@@ -37,7 +38,7 @@ Durch die Festlegung von Schwellenwerten für die pro Tag zulässigen Nullwerte,
 #### Intervallregel
 Um Auffälligkeiten zu erkennen, die nicht von der Nullwertregel erfasst werden, wird für jeden Detektor täglich ein neues Machine-Learning-Modell trainiert, das ein Intervall für den typischen Verkehrsverlauf des Tages prognostiziert. Anschließend wird geprüft, wie oft die Messwerte außerhalb dieses Intervalls liegen. Auch hier werden Messstellen als auffällig gekennzeichnet, die einen festgelegten Grenzwert überschreiten.
 **Beispiel**
-![alt text](image-4.png)
+![alt text](img/detektor/image-4.png)
 
 
 ### Ergebnisse der Datenprüfung
@@ -67,3 +68,6 @@ Obwohl der Plausibilisierungsservice viele Vorteile bietet, gibt es auch einige 
 
 ### Keine eindeutige Datengrundlage
 Da es nur sehr begrenzte menschliche Vergleichszählungen gibt, konnte der Algorithmus nicht mit einem typischen Testdatensatz evaluiert werden. 
+
+---
+[<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/ki-systeme/index.md)

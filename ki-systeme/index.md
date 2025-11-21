@@ -21,6 +21,7 @@ Diese Liste befindet sich derzeit im Aufbau und wird kontinuierlich erweitert.
 **KI-Systeme für die Mitarbeiter\*innen**
 
 - [MUCGPT](/ki-systeme/mucgpt.md): Interner KI-Assistent für die Münchner Stadtverwaltung
+- [Verkehrsdaten-Plausibilisierung](/ki-systeme/detektor_plausi.md): Plausibilisierung von Detektordaten des Mobilitätsreferats der Stadt München
 
 ## Was ist eine System Card?
 
