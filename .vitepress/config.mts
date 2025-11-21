@@ -30,6 +30,10 @@ const vitepressConfig = defineConfig({
             text: "KI-Suche im Dienstleistungsfinder",
             link: "/ki-systeme/dlf",
           },
+          {
+            text: "Verkehrsdaten-Plausibilisierung",
+            link: "/ki-systeme/plausibilisierung-verkehrsdaten",
+          },
         ],
       },
       {
