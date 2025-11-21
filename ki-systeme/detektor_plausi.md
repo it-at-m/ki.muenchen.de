@@ -29,16 +29,13 @@ Beispielhafte Ganglinie einer Messtelle mit 4 Spuren/Detektoren.
 
 ## Funktionsweise
 ### Überprüfung der Sensordaten
-Für jeden Sensor wird tälich ein auf maschinellem Lernen basierendes Modell entwickelt, das ein Konfidenzintervall prognostiziert. Die gemessenen Daten werden mit diesem Intervall verglichen, um deren Plausibilität zu prüfen.
-
-### Erkennung von Ausreißern
-Die Erkennung von Ausreißern erfolgt durch zwei Algorithmen:
+Die Daten jedes Detektors werden einmal täglich auf Auffälligkeiten überprüft. Dazu werden zwei Prüfmechanismen verwendet.
 
 #### Nullwertregel
-Durch die Festlegung von Schwellenwerten für pro Tag zulässige Nullwerte, die auf dem durchschnittlichen Verkehrsaufkommen des Sensors basieren, werden Komplettausfälle erkannt. Sensoren, die diese Schwellenwerte überschreiten, werden als auffällig markiert.
 
+Durch die Festlegung von Schwellenwerten für die pro Tag zulässigen Nullwerte, basierend auf dem durchschnittlichen Verkehrsaufkommen des Sensors, werden Komplettausfälle erkannt. Sensoren, die diese Schwellenwerte überschreiten, werden als auffällig gekennzeichnet.
 #### Intervallregel
-Um Fehler in gemessenen Sensorwerten zu erkennen, wird für jeden Detektor pro Tag ein neues Machine-Learning-Modell trainiert, das ein Intervall eines typischen Verkehrsverlaufs für den Tag prognostiziert. Anschließend wird überprüft, wie oft die Messwerte außerhalb dieses Intervalls liegen. Auch hier werden Messstellen als auffällig markiert, die einen Grenzwert überschreiten.
+Um Auffälligkeiten zu erkennen, die nicht von der Nullwertregel erfasst werden, wird für jeden Detektor täglich ein neues Machine-Learning-Modell trainiert, das ein Intervall für den typischen Verkehrsverlauf des Tages prognostiziert. Anschließend wird geprüft, wie oft die Messwerte außerhalb dieses Intervalls liegen. Auch hier werden Messstellen als auffällig gekennzeichnet, die einen festgelegten Grenzwert überschreiten.
 **Beispiel**
 ![alt text](image-4.png)
 
@@ -49,12 +46,6 @@ Auffällige Daten werden speziell markiert, wenn sie signifikant vom durchschnit
 ### Visualisierung durch Dashboards
 Die Überprüfungsfunktion des Modells erstellt Dashboards, um den Fachbereichen detaillierte Einblicke in die Häufigkeit von Auffälligkeiten zu geben. So können auffällige Sensoren schnell erkannt und Ursachen für Abweichungen gründlich untersucht werden.
 
-## KI-Modelle
-### Statistisches Modell
-Das statistische Modell wird genutzt, um Konfidenzintervalle für die Sensordaten zu prognostizieren. Es basiert auf historischen Verkehrsdaten und maschinellem Lernen (Gradient Boosting der sklearn Bibliothek). Für jeden Detektor wird ein eigenes Modell trainiert, das dessen typischen Verlauf lernt und ein Intervall für plausible Werte vorhersagt.
-
-### Regelbasiertes Modell
-Das regelbasierte Modell legt Schwellenwerte für die Erkennung von Ausreißern fest. Diese Schwellenwerte basieren auf dem durchschnittlichen Verkehrsaufkommen des Sensors.
 
 ## Evaluation
 Die Plausibilisierungs-Komponente wurde mithilfe des Fachbereichs getestet und evaluiert. Die Genauigkeit des Algorithmus ist schwer exakt zu bestimmen, da neben den Sensorzählungen keine vergleichbaren alternativen Zählungen existieren.
