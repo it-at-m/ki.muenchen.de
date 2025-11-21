@@ -11,20 +11,20 @@ Aufgrund der großen Datenmengen ist ein automatisiertes Verfahren zur Plausibil
 ### Karte der Messstellen in München
 In München wurden etwa 100 Messstellen zur Erfassung des Kfz-Verkehrs mittels Induktionsschleifen installiert. Diese erfassen die Anzahl und Art der Fahrzeuge in 15-Minuten-Intervallen. Die Daten müssen regelmäßig auf Störungen und besondere Verkehrssituationen geprüft werden, um qualitativ hochwertige Verkehrsinformationen zu gewährleisten.
 
-![alt text](img/detektor/image-2.png)
+![Karte des Messtellen in München](/img/detektor/image-2.png)
 
 ### Bilder der Sensorik
 
-![alt text](img/detektor/image.png)
+![sensorik bild](/img/detektor/image.png)
 
-![alt text](img/detektorimage-1.png)
+![sensorik bild](/img/detektorimage-1.png)
 
 
 
 
 ### Ganglinien der Dedektoren einer Messtelle
 Beispielhafte Ganglinie einer Messtelle mit 4 Spuren/Detektoren. 
-![alt text](img/detektor/image-3.png)
+![ganglineien eines detektors = digramm wie viele Autos fahren](/img/detektor/image-3.png)
 
 
 
@@ -38,7 +38,7 @@ Durch die Festlegung von Schwellenwerten für die pro Tag zulässigen Nullwerte,
 #### Intervallregel
 Um Auffälligkeiten zu erkennen, die nicht von der Nullwertregel erfasst werden, wird für jeden Detektor täglich ein neues Machine-Learning-Modell trainiert, das ein Intervall für den typischen Verkehrsverlauf des Tages prognostiziert. Anschließend wird geprüft, wie oft die Messwerte außerhalb dieses Intervalls liegen. Auch hier werden Messstellen als auffällig gekennzeichnet, die einen festgelegten Grenzwert überschreiten.
 **Beispiel**
-![alt text](img/detektor/image-4.png)
+![veranschulichung des algorithmus](/img/detektor/image-4.png)
 
 
 ### Ergebnisse der Datenprüfung
