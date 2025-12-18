@@ -3,15 +3,13 @@
 # Plausibilisierung von Verkehrsdaten
 
 Verkehrsdaten sind für Planung, Wissenschaft, Verwaltung, Politik und Bevölkerung von großem Interesse und unerlässlich für regionale und städtische Verkehrsprojekte sowie zur Bewertung von bspw. Klimaschutzmaßnahmen.
-In München wurden etwa 100 Messstellen zur Erfassung des Kfz-Verkehrs mittels Induktionsschleifen installiert.
-Diese erfassen die Anzahl und Art der Fahrzeuge.
+
 Um qualitativ hochwertige Verkehrsinformationen zu gewährleisten, müssen die Daten regelmäßig auf Störungen (z.B. Beschädigung, Fehler bei der Datenübertragung) und besondere Verkehrssituationen (z.B. Unfall, Stau) geprüft werden.
-Die Messstellen liefern Daten getrennt nach Fahrstreifen in 15-Minuten-Intervallen.
 Aufgrund der großen Datenmengen ist ein automatisiertes Verfahren zur Plausibilisierung notwendig.
 
 ## Datengrundlage
 
-### Karte der Messstellen in München
+### Standorte der Messstellen in München
 
 In München sind etwa 100 Messstellen zur Erfassung des Kfz-Verkehrs mittels Induktionsschleifen installiert.
 Diese erfassen die Anzahl und Art der Fahrzeuge in 15-Minuten-Intervallen.
@@ -25,9 +23,9 @@ Die Daten müssen regelmäßig auf Störungen und besondere Verkehrssituationen 
 
 ![Induktionsschleifen im Straßenbelag](/img/plausibilisierung-verkehrsdaten/strasse.png)
 
-### Ganglinien der Dedektoren einer Messtelle
+### Ganglinien der Detektoren einer Messtelle
 
-Beispielhafte Ganglinie einer Messtelle mit 4 Spuren/Detektoren.
+Beispielhafte Ganglinie einer Messtelle mit 4 Fahrstreifen/Detektoren.
 
 ![Ganglinien eines Detektors](/img/plausibilisierung-verkehrsdaten/ganglinie-beispiel.png)
 
@@ -64,22 +62,19 @@ Die Genauigkeit des Algorithmus ist schwer exakt zu bestimmen, da neben den Sens
 
 | datetime            | 4001011 | 4001012 | 4001013 | 4001014 |
 | ------------------- | ------- | ------- | ------- | ------- |
-| 2016-01-01 00:00:00 | 8.0     | 9.0     | 10.0    | 3.0     |
-| 2016-01-01 00:15:00 | 7.0     | 20.0    | 5.0     | 3.0     |
-| 2016-01-01 00:30:00 | 14.0    | 19.0    | 11.0    | 10.0    |
-| 2016-01-01 00:45:00 | 21.0    | 33.0    | 12.0    | 20.0    |
-| 2016-01-01 01:00:00 | 21.0    | 21.0    | 21.0    | 12.0    |
-| 2016-01-01 01:15:00 | 28.0    | 42.0    | 33.0    | 34.0    |
-| 2016-01-01 01:30:00 | 27.0    | 34.0    | 24.0    | 20.0    |
-| 2016-01-01 01:45:00 | 33.0    | 30.0    | 24.0    | 32.0    |
+| 2016-01-01 00:00:00 | 8     | 9     | 10    | 3     |
+| 2016-01-01 00:15:00 | 7     | 20    | 5     | 3     |
+| 2016-01-01 00:30:00 | 14    | 19    | 11    | 10    |
+| 2016-01-01 00:45:00 | 21    | 33    | 12    | 20    |
+| 2016-01-01 01:00:00 | 21    | 21    | 21    | 12    |
+| 2016-01-01 01:15:00 | 28    | 42    | 33    | 34    |
+| 2016-01-01 01:30:00 | 27    | 34    | 24    | 20    |
+| 2016-01-01 01:45:00 | 33    | 30    | 24    | 32    |
 
 ## Risiken und Limitierungen
 
-Obwohl der Plausibilisierungsservice viele Vorteile bietet, gibt es auch einige Risiken und Limitierungen:
-
-### Keine eindeutige Datengrundlage
-
-Da es nur sehr begrenzte menschliche Vergleichszählungen gibt, konnte der Algorithmus nicht mit einem typischen Testdatensatz evaluiert werden.
+Obwohl der Plausibilisierungsservice viele Vorteile bietet, können Fehler des Systems nicht gänzlich ausgeschlossen werden.
+Da es nur sehr begrenzte manuelle Vergleichszählungen gibt, konnte der Algorithmus nicht mit einem typischen Testdatensatz evaluiert werden.
 
 ---
 
