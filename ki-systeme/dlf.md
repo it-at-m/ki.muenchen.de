@@ -14,7 +14,7 @@ Diese Dokumentation gibt einen Überblick über die Datengrundlage, die technisc
 
 ## Einführung und Kontext
 
-Die KI-Suche im Dienstleistungsfinder wurde entwickelt, um Bürger*innen sowie Mitarbeitenden der Stadt München einen effizienten und zielgerichteten Zugang zu Informationen über städtische Dienstleistungen zu ermöglichen. Technisch basiert sie auf einem Retrieval-Augmented-Generation-(RAG)-Ansatz, bei dem relevante Dokumente zunächst automatisiert abgerufen und anschließend mithilfe eines großen Sprachmodells kontextualisiert verarbeitet werden. Durch diese Kombination aus Dokumentensuche und generativer KI wird die Qualität der Suchergebnisse deutlich gesteigert und eine präzisere Beantwortung von Suchanfragen ermöglicht.
+Die KI-Suche im Dienstleistungsfinder wurde entwickelt, um Bürger\*innen sowie Mitarbeitenden der Stadt München einen effizienten und zielgerichteten Zugang zu Informationen über städtische Dienstleistungen zu ermöglichen. Technisch basiert sie auf einem Retrieval-Augmented-Generation-(RAG)-Ansatz, bei dem relevante Dokumente zunächst automatisiert abgerufen und anschließend mithilfe eines großen Sprachmodells kontextualisiert verarbeitet werden. Durch diese Kombination aus Dokumentensuche und generativer KI wird die Qualität der Suchergebnisse deutlich gesteigert und eine präzisere Beantwortung von Suchanfragen ermöglicht.
 
 ## Datengrundlage
 
@@ -69,7 +69,6 @@ Ergänzend zum Re-Ranking werden die Suchergebnisse auf Basis aktueller Seitenau
 ![Darstellung des Re-Ranking und Boosting Prozesses](/img/dlf/dlf_reranking_and_boosting.png){.light-only}
 ![Darstellung des Re-Ranking und Boosting Prozesses](/img/dlf/dlf_reranking_and_boosting_dark.png){.dark-only}
 
-
 ### Generierung der Antwort
 
 Für jedes aus der Suche extrahierte Dokument wird ein großes Sprachmodell (engl. Large Language Model, LLM) aufgerufen. Basierend auf der Nutzeranfrage und dem jeweiligen Dokumenteninhalt erzeugt das LLM drei Ausgaben:
@@ -78,7 +77,7 @@ Für jedes aus der Suche extrahierte Dokument wird ein großes Sprachmodell (eng
 2. ein inhaltlich passendes wörtliches Zitat aus dem Dokument,
 3. eine Einschätzung, ob das Dokument zur Beantwortung der Frage geeignet ist.
 
-Kann die Frage anhand eines Dokuments nicht beantwortet werden, wird dieses nicht angezeigt. Auf diese Weise wird sichergestellt, dass Suchergebnisse, die trotz Re-Ranking und Boosting nicht ausreichend relevant für eine präzise Beantwortung der Anfrage sind, nicht an die Nutzer*innen zurückgegeben werden.
+Kann die Frage anhand eines Dokuments nicht beantwortet werden, wird dieses nicht angezeigt. Auf diese Weise wird sichergestellt, dass Suchergebnisse, die trotz Re-Ranking und Boosting nicht ausreichend relevant für eine präzise Beantwortung der Anfrage sind, nicht an die Nutzer\*innen zurückgegeben werden.
 
 ![Darstellung der Antwortgenerierung](/img/dlf/dlf_answer_generation.png){.light-only}
 ![Darstellung der Antwortgenerierung](/img/dlf/dlf_answer_generation_dark.png){.dark-only}
