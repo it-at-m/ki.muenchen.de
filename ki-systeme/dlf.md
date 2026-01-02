@@ -91,8 +91,8 @@ Semantische Vektoren von Texten (Text-Embeddings) erfassen die inhaltliche Ähnl
 
 ### Großes Sprachmodell (LLM)
 
-Das große Sprachmodell "gpt-4o-mini" von OpenAI wird zur Generierung der Nutzerantworten genutzt.
-[Mehr Informationen zum Modell](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/)
+Das große Sprachmodell "gpt-4.1-mini" von OpenAI wird zur Generierung der Nutzerantworten genutzt.
+[Mehr Informationen zum Modell](https://openai.com/index/gpt-4-1/)
 
 ## Evaluation
 
