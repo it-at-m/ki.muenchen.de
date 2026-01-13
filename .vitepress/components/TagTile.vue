@@ -1,4 +1,3 @@
-
 <template lang="html">
   <div class="tagtile">
     <div class="grid">
@@ -82,33 +81,35 @@ const pagesWithTags = computed(() => {
 
     // Filter by excluded tags/pages if needed (e.g. by tag or path)
     if (props.exclude && props.exclude.length > 0) {
-        // Simple exclusion logic based on tags for now, similar to opensource.muenchen.de
-        if (systemTags && systemTags.some(tag => props.exclude.includes(tag))) {
-            continue;
-        }
+      // Simple exclusion logic based on tags for now, similar to opensource.muenchen.de
+      if (systemTags && systemTags.some((tag) => props.exclude.includes(tag))) {
+        continue;
+      }
     }
 
     if (systemTags) {
-       // Filter logic
-       if (props.filter && props.filter.length > 0) {
-           const hasRequiredTag = systemTags.some(tag => props.filter.includes(tag));
-           if (!hasRequiredTag) continue;
-       }
-       filteredSoftware.push(systemEntry);
+      // Filter logic
+      if (props.filter && props.filter.length > 0) {
+        const hasRequiredTag = systemTags.some((tag) =>
+          props.filter.includes(tag)
+        );
+        if (!hasRequiredTag) continue;
+      }
+      filteredSoftware.push(systemEntry);
     } else if (!props.filter || props.filter.length === 0) {
-        // If no filter and no tags on system, we might still want to show it? 
-        // opensource logic seems to rely on tags being present.
-        // If we want to show all systems, we should include them even without tags if no filter set.
-        filteredSoftware.push(systemEntry);
+      // If no filter and no tags on system, we might still want to show it?
+      // opensource logic seems to rely on tags being present.
+      // If we want to show all systems, we should include them even without tags if no filter set.
+      filteredSoftware.push(systemEntry);
     }
   }
-  
+
   // Sort alphabetically by title
-  filteredSoftware.sort((a,b) => {
-      const titleA = a.frontmatter.title || "";
-      const titleB = b.frontmatter.title || "";
-      return titleA.localeCompare(titleB);
-  })
+  filteredSoftware.sort((a, b) => {
+    const titleA = a.frontmatter.title || "";
+    const titleB = b.frontmatter.title || "";
+    return titleA.localeCompare(titleB);
+  });
 
   return filteredSoftware;
 });
@@ -117,7 +118,10 @@ function cleanExcerpt(excerpt) {
   if (!excerpt) return "";
 
   // Remove "Zurück zur Übersicht" link and its potential paragraph wrapper
-  let cleaned = excerpt.replace(/<p.*?>\s*<a.*?>.*?Zurück zur Übersicht.*?<\/a>\s*<\/p>/gi, "");
+  let cleaned = excerpt.replace(
+    /<p.*?>\s*<a.*?>.*?Zurück zur Übersicht.*?<\/a>\s*<\/p>/gi,
+    ""
+  );
   cleaned = cleaned.replace(/<a.*?>.*?Zurück zur Übersicht.*?<\/a>/gi, "");
 
   // Remove <br> tags

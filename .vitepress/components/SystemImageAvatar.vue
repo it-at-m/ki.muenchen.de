@@ -12,7 +12,7 @@
       :cover="false"
     />
     <span v-else>
-      {{ frontmatter.title ? frontmatter.title[0] : '' }}
+      {{ frontmatter.title ? frontmatter.title[0] : "" }}
     </span>
   </v-avatar>
 </template>

@@ -12,9 +12,7 @@ defineProps({
 </script>
 
 <template>
-  <v-chip
-    :value="tag"
-  >
+  <v-chip :value="tag">
     {{ tag }}
     <span
       style="padding-left: 4px"
