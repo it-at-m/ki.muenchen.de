@@ -1,11 +1,23 @@
+---
+system_type: KI-System
+title: inspira_BIB
+logo: /img/logo/m_bib.png
+linkapplication: https://ssl.muenchen.de/
+tags:
+  - Empfehlungssystem
+  - Bibliothek
+  - Embeddings
+  - extern
+description: inspira_BIB ist ein KI-gestütztes Medienempfehlungssystem, das Nutzer*innen des Webkatalogs der Münchner Stadtbibliothek passende Lektüre- und Medienvorschläge unterbreitet.
+---
+
 [<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/ki-systeme/index.md)
 
-# inspira_BIB: KI-gestütztes Medienempfehlungssystem für die Münchner Stadtbibliothek
+# inspira_BIB
 
-<br/>
-<v-btn prepend-icon="mdi-open-in-new" href="https://ssl.muenchen.de/" target="_blank" variant="tonal" block size="large" rounded="xl">
-    Zum Webkatalog mit KI-Empfehlungen
-</v-btn>
+inspira_BIB ist ein KI-gestütztes Medienempfehlungssystem, das Nutzer\*innen des Webkatalogs der Münchner Stadtbibliothek passende Lektüre- und Medienvorschläge unterbreitet.
+
+---
 
 Diese Dokumentation beschreibt die Funktionsweise und den Einsatz des KI-gestützten Medienempfehlungssystems **inspira_BIB** für die Münchner Stadtbibliothek.
 
@@ -13,7 +25,7 @@ Diese Dokumentation beschreibt die Funktionsweise und den Einsatz des KI-gestüt
 
 ## Einführung und Kontext
 
-Der [Webkatalog der Münchner Stadtbibliothek](https://ssl.muenchen.de/) erhält mit **inspira_BIB** eine neue Funktion, die mithilfe von KI-Algorithmen während des Stöberns Medienempfehlungen präsentiert.
+Der Webkatalog der Münchner Stadtbibliothek erhält mit **inspira_BIB** eine neue Funktion, die mithilfe von KI-Algorithmen während des Stöberns Medienempfehlungen präsentiert.
 Die Empfehlungen basieren auf inhaltlichen Ähnlichkeiten zwischen den Medien und sollen Nutzer\*innen inspirieren und ihnen neue Entdeckungen ermöglichen.
 
 ## Datengrundlage
