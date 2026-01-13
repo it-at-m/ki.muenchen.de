@@ -22,29 +22,11 @@ const vitepressConfig = defineConfig({
       },
       {
         text: "KI-Systeme",
-        items: [
-          { text: "Überblick", link: "/ki-systeme" },
-          { text: "MUCGPT", link: "/ki-systeme/mucgpt" },
-          { text: "inspira_BIB", link: "/ki-systeme/inspira_bib" },
-          {
-            text: "KI-Suche im Dienstleistungsfinder",
-            link: "/ki-systeme/dlf",
-          },
-          {
-            text: "Verkehrsdaten-Plausibilisierung",
-            link: "/ki-systeme/plausibilisierung-verkehrsdaten",
-          },
-        ],
+        link: "/ki-systeme",
       },
       {
         text: "Datensätze",
-        items: [
-          { text: "Überblick", link: "/datensaetze" },
-          {
-            text: "Münchner Verwaltungs-Dienstleistungen",
-            link: "/datensaetze/munich-public-services",
-          },
-        ],
+        link: "/datensaetze",
       },
       { text: "KI Competence Center", link: "/kicc" },
     ],
