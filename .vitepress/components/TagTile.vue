@@ -52,11 +52,11 @@ import TagChipGroup from "./TagChipGroup.vue";
 const props = defineProps({
   filter: {
     type: Array,
-    default: [],
+    default: () => [],
   },
   exclude: {
     type: Array,
-    default: [],
+    default: () => [],
   },
   showTags: {
     type: Boolean,
