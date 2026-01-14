@@ -7,7 +7,7 @@ import TagChip from "./TagChip.vue";
 const props = defineProps({
   modelValue: {
     type: Array,
-    default: [],
+    default: () => [],
   },
 });
 
