@@ -62,7 +62,7 @@ defineProps({
         <span v-else>App anzeigen</span>
       </v-btn>
 
-      <tag-chip-group :tags="frontmatter.tags" />
+      <tag-chip-group v-if="frontmatter.tags" :tags="frontmatter.tags" />
 
       <div v-if="frontmatter.license">
         <v-tooltip
