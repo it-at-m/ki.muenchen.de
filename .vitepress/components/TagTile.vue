@@ -72,6 +72,9 @@ const pagesWithTags = computed(() => {
   let filteredSoftware = [];
 
   for (let systemEntry of systemsData) {
+    if (!systemEntry.frontmatter) {
+      continue;
+    }
     // Only show pages that have system_type defined
     if (!systemEntry.frontmatter.system_type) {
       continue;
