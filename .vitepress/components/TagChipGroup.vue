@@ -13,7 +13,7 @@ import TagChip from "./TagChip.vue";
 defineProps({
   tags: {
     type: Array,
-    default: [],
+    default: () => [],
   },
 });
 </script>
