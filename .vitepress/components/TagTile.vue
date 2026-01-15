@@ -17,8 +17,14 @@
               {{ page.frontmatter.title }}
             </span>
             <v-chip
-              v-if="page.frontmatter.tags && page.frontmatter.tags.includes('in Arbeit')"
-              style="background-color: var(--vp-c-warning-soft); color: var(--vp-c-warning-1)"
+              v-if="
+                page.frontmatter.tags &&
+                page.frontmatter.tags.includes('in Arbeit')
+              "
+              style="
+                background-color: var(--vp-c-warning-soft);
+                color: var(--vp-c-warning-1);
+              "
               size="x-small"
               class="ml-2"
               variant="flat"
