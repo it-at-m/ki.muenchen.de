@@ -7,6 +7,7 @@
         variant="flat"
         :href="page.frontmatter.external_link || withBase(page.url)"
         :target="page.frontmatter.external_link ? '_blank' : undefined"
+        :rel="page.frontmatter.external_link ? 'noopener noreferrer' : undefined"
         class="card"
       >
         <v-card-title class="pt-5">
