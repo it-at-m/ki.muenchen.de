@@ -1,11 +1,24 @@
+---
+system_type: KI-System
+title: MUCGPT
+logo: /img/logo/mucgpt.png
+code: https://github.com/it-at-m/mucgpt
+linkapplication: https://it-at-m.github.io/mucgpt/
+license: MIT
+tags:
+  - LLM
+  - Open Source
+  - intern
+description: MUCGPT ist ein interner KI-Assistent für die Stadtverwaltung München, der Mitarbeiter*innen sicher und datenschutzkonform den Zugang zu großen Sprachmodellen ermöglicht.
+---
+
 [<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/ki-systeme/index.md)
 
 # MUCGPT
 
-<br/>
-<v-btn prepend-icon="mdi-open-in-new" href="https://it-at-m.github.io/mucgpt/" target="_blank" variant="tonal" block size="large" rounded="xl">
-     Demo-Frontend ausprobieren
-</v-btn>
+MUCGPT ist ein interner KI-Assistent für die Stadtverwaltung München, der Mitarbeiter\*innen sicher und datenschutzkonform den Zugang zu großen Sprachmodellen ermöglicht.
+
+---
 
 Diese Dokumentation geht auf die Funktionen und die Limitierungen von MUCGPT ein.
 
@@ -15,7 +28,7 @@ Diese Dokumentation geht auf die Funktionen und die Limitierungen von MUCGPT ein
 
 MUCGPT ist eine Benutzeroberfläche für die Nutzung von großen Sprachmodellen, welches den Mitarbeiter\*innen der Stadt München zur Verfügung steht. MUCGPT kann sich mit beliebigen OpenAI-kompatiblen Sprachmodellen verbinden und ist ein universelles Werkzeug zur Bearbeitung von Text.
 
-MUCGPT ist [Open Source](https://github.com/it-at-m/mucgpt) und kann überall als Container betrieben werden. Gerne ausprobieren! Wir unterstützen bei den ersten Schritten.
+MUCGPT ist Open Source und kann überall als Container betrieben werden. Gerne ausprobieren! Wir unterstützen bei den ersten Schritten.
 
 ## Funktionen
 

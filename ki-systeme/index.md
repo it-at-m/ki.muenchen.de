@@ -1,4 +1,34 @@
+<script setup>
+import TagTile from "../.vitepress/components/TagTile.vue";
+import TagFilter from "../.vitepress/components/TagFilter.vue";
+import { ref } from 'vue';
+
+const selectedFilters = ref([])
+</script>
+
 # KI-Systeme
+
+Nachfolgend finden Sie eine Übersicht der KI-Systeme, die von der Landeshauptstadt München eingesetzt werden.
+
+::: warning Hinweis
+Diese Liste befindet sich derzeit im Aufbau und wird kontinuierlich erweitert.
+:::
+
+<ClientOnly>
+
+<TagFilter
+v-model="selectedFilters"
+/>
+
+<TagTile
+:filter="selectedFilters"
+show-tags
+show-excerpt
+/>
+
+</ClientOnly>
+
+## Was sind KI-Systeme?
 
 KI-Systeme sind alle IT-Systeme, die Künstliche Intelligenz (KI) verwenden, um bestimmte Teil-Aufgaben und Arbeitsschritte zu automatisieren oder zu unterstützen.
 Diese Definition umfasst nicht nur vollständige Anwendungen, die im Kern auf KI-Technologien wie große Sprachmodelle aufbauen, sondern auch solche, die KI-Technologien als zum Teil kleine Teil-Komponente einer größeren Anwendung bereitstellen.
@@ -6,22 +36,6 @@ Diese Definition umfasst nicht nur vollständige Anwendungen, die im Kern auf KI
 Die Landeshauptstadt München setzt bereits heute diverse KI-Systeme ein, um Verwaltungsprozesse zu optimieren, datenbasierte Entscheidungen zu treffen und die Barrierefreiheit und Mehrsprachigkeit von Dienstleistungen zu verbessern.
 
 In dieser Dokumentation finden Sie Informationen zu den eingesetzten KI-Systemen, deren Funktionalität und Anwendungsbereich.
-
-## Liste der KI-Systeme
-
-::: warning Hinweis
-Diese Liste befindet sich derzeit im Aufbau und wird kontinuierlich erweitert.
-:::
-
-**Im Bürger\*innen-Kontakt eingesetzte KI-Systeme**
-
-- [inspira_BIB](/ki-systeme/inspira_bib.md): Medienempfehlungssystem für die Münchner Stadtbibliothek
-- [KI-Suche im Dienstleistungsfinder](/ki-systeme/dlf.md): KI-Suche für Dienstleistungen auf muenchen.de
-
-**KI-Systeme für die Mitarbeiter\*innen**
-
-- [MUCGPT](/ki-systeme/mucgpt.md): Interner KI-Assistent für die Münchner Stadtverwaltung
-- [Verkehrsdaten-Plausibilisierung](/ki-systeme/plausibilisierung-verkehrsdaten.md): Plausibilisierung von Detektordaten des Mobilitätsreferats der Stadt München
 
 ## Was ist eine System Card?
 
