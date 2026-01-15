@@ -5,7 +5,8 @@
         v-for="page in pagesWithTags"
         :key="page.url"
         variant="flat"
-        :href="withBase(page.url)"
+        :href="page.frontmatter.external_link || withBase(page.url)"
+        :target="page.frontmatter.external_link ? '_blank' : undefined"
         class="card"
       >
         <v-card-title class="pt-5">
@@ -15,6 +16,15 @@
             <span style="overflow: hidden; text-overflow: ellipsis">
               {{ page.frontmatter.title }}
             </span>
+            <v-chip
+              v-if="page.frontmatter.tags && page.frontmatter.tags.includes('in Arbeit')"
+              style="background-color: var(--vp-c-warning-soft); color: var(--vp-c-warning-1)"
+              size="x-small"
+              class="ml-2"
+              variant="flat"
+            >
+              in Arbeit
+            </v-chip>
           </div>
         </v-card-title>
         <v-card-text>
@@ -107,8 +117,16 @@ const pagesWithTags = computed(() => {
     }
   }
 
-  // Sort alphabetically by title
+  // Sort alphabetically by title, but put "in Arbeit" at the bottom
   filteredSoftware.sort((a, b) => {
+    const tagsA = a.frontmatter.tags || [];
+    const tagsB = b.frontmatter.tags || [];
+    const isWipA = tagsA.includes("in Arbeit");
+    const isWipB = tagsB.includes("in Arbeit");
+
+    if (isWipA && !isWipB) return 1;
+    if (!isWipA && isWipB) return -1;
+
     const titleA = a.frontmatter.title || "";
     const titleB = b.frontmatter.title || "";
     return titleA.localeCompare(titleB);
