@@ -19,9 +19,8 @@ defineProps({
     :class="'infobox ' + (horizontal ? 'horizontal' : '')"
   >
     <img
-      v-if="frontmatter.logo"
-      :alt="'Logo ' + frontmatter.title"
-      :src="withBase(frontmatter.logo)"
+      :alt="'Logo ' + (frontmatter.title || 'KICC')"
+      :src="withBase(frontmatter.logo || '/img/logo/kicc_mascot.png')"
     />
     <div class="infos">
       <v-btn
