@@ -7,7 +7,7 @@ tags:
   - Empfehlungssystem
   - Bibliothek
   - Embeddings
-  - extern
+  - öffentlich
 description: inspira_BIB ist ein KI-gestütztes Medienempfehlungssystem, das Nutzer*innen des Webkatalogs der Münchner Stadtbibliothek passende Lektüre- und Medienvorschläge unterbreitet.
 ---
 
