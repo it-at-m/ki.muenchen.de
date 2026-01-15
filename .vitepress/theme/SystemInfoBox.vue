@@ -74,7 +74,7 @@ defineProps({
 
       <div v-if="frontmatter.license">
         <v-tooltip
-          text="Licence"
+          text="Lizenz"
           location="start"
         >
           <template v-slot:activator="{ props }">
