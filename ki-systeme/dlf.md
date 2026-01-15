@@ -1,12 +1,24 @@
+---
+system_type: KI-System
+title: Dienstleistungsfinder
+logo: /img/logo/dlf_logo.png
+linkapplication: https://muenchen.de/ki-suche
+tags:
+  - RAG
+  - LLM
+  - Embeddings
+  - Bürgerservice
+  - extern
+description: Die KI-Suche im Dienstleistungsfinder nutzt moderne Sprachmodelle, um Bürger*innen bei der Suche nach städtischen Dienstleistungen auf muenchen.de zu unterstützen.
+---
+
 [<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/ki-systeme/index.md)
 
 # KI-Suche im Dienstleistungsfinder
 
-<br/>
+Die KI-Suche im Dienstleistungsfinder nutzt moderne Sprachmodelle, um Bürger\*innen bei der Suche nach städtischen Dienstleistungen auf muenchen.de zu unterstützen.
 
-<v-btn prepend-icon="mdi-open-in-new" href="https://muenchen.de/ki-suche" target="_blank" variant="tonal" block size="large" rounded="xl">
-    KI-Suche selbst ausprobieren
-</v-btn>
+---
 
 Diese Dokumentation gibt einen Überblick über die Datengrundlage, die technische Funktionsweise sowie die Evaluierung der KI-Suche im Dienstleistungsfinder. Sie dient als Grundlage zum Verständnis des Systems und seiner Leistungsfähigkeit im praktischen Einsatz.
 

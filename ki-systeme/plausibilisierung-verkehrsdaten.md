@@ -1,6 +1,22 @@
+---
+system_type: KI-System
+title: Verkehrsdaten-Plausibilisierung
+logo: /img/logo/plausi.png
+tags:
+  - Verkehr
+  - Datenanalyse
+  - Machine Learning
+  - intern
+description: Dieses System nutzt Machine Learning zur automatisierten Plausibilisierung von Verkehrsdaten, um die Qualität städtischer Mobilitätsinformationen sicherzustellen.
+---
+
 [<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/ki-systeme/index.md)
 
-# Plausibilisierung von Verkehrsdaten
+# Verkehrsdaten-Plausibilisierung
+
+Dieses System nutzt Machine Learning zur automatisierten Plausibilisierung von Verkehrsdaten, um die Qualität städtischer Mobilitätsinformationen sicherzustellen.
+
+---
 
 Verkehrsdaten sind für Planung, Wissenschaft, Verwaltung, Politik und Bevölkerung von großem Interesse und unerlässlich für regionale und städtische Verkehrsprojekte sowie zur Bewertung von bspw. Klimaschutzmaßnahmen.
 

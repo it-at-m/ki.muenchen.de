@@ -7,7 +7,5 @@ jobs:
   dependency-review:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
       - name: Dependency Review
         uses: it-at-m/lhm_actions/action-templates/actions/action-dependency-review@12966547963631f8429d42bab860485b413003c2 # v1.0.22

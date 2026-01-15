@@ -7,6 +7,7 @@ import { onMounted } from "vue";
 import Banner from "./Banner.vue";
 import EscapeGame from "./EscapeGame.vue";
 import SiteFooter from "./SiteFooter.vue";
+import SystemInfoBox from "./SystemInfoBox.vue";
 
 const { Layout } = DefaultTheme;
 const router = useRouter();
@@ -32,6 +33,17 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
   <Layout>
     <template #not-found>
       <EscapeGame />
+    </template>
+    <template #aside-top>
+      <system-info-box :frontmatter="$frontmatter" />
+    </template>
+
+    <template #doc-before>
+      <system-info-box
+        :frontmatter="$frontmatter"
+        horizontal
+        class="mobile"
+      />
     </template>
     <template #nav-bar-content-after>
       <div class="logo">
@@ -80,6 +92,16 @@ const lhmLogo = "https://assets.muenchen.de/logos/lhm/logo-lhm-muenchen.svg";
 .logo img {
   filter: var(--muc-logo-filter);
   height: 28px;
+}
+
+.mobile {
+  display: none;
+}
+
+@media all and (max-width: 1279px) {
+  .mobile {
+    display: flex;
+  }
 }
 </style>
 

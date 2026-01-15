@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
@@ -7,7 +8,7 @@
     "fix": "prettier . --write"
   },
   "engines": {
-    "node": ">=20 <=22"
+    "node": ">=20 <=24"
   },
   "devDependencies": {
     "@mdi/font": "7.4.47",
@@ -15,8 +16,8 @@
     "mermaid": "11.12.2",
     "vitepress": "1.6.4",
     "vitepress-plugin-lightbox": "1.0.3",
-    "vitepress-plugin-llms": "1.9.3",
+    "vitepress-plugin-llms": "1.10.0",
     "vitepress-plugin-mermaid": "2.0.17",
-    "vuetify": "3.11.2"
+    "vuetify": "3.11.6"
   }
 }
