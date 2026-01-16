@@ -6,14 +6,10 @@
     class="thumb mr-2 rounded"
   >
     <v-img
-      v-if="frontmatter && frontmatter.logo"
-      :alt="frontmatter.title + ' logo'"
-      :src="withBase(frontmatter.logo)"
+      :alt="(frontmatter.title || 'KICC') + ' logo'"
+      :src="withBase(frontmatter.logo || '/img/logo/kicc_mascot.png')"
       :cover="false"
     />
-    <span v-else>
-      {{ frontmatter.title ? frontmatter.title[0] : "" }}
-    </span>
   </v-avatar>
 </template>
 

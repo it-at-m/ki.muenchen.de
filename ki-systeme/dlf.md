@@ -8,7 +8,7 @@ tags:
   - LLM
   - Embeddings
   - Bürgerservice
-  - extern
+  - öffentlich
 description: Die KI-Suche im Dienstleistungsfinder nutzt moderne Sprachmodelle, um Bürger*innen bei der Suche nach städtischen Dienstleistungen auf muenchen.de zu unterstützen.
 ---
 
