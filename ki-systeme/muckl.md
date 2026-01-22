@@ -36,7 +36,9 @@ Der Chatbot ist eine fiktive Persönlichkeit und zeichnet sich durch seine Freun
 
 Bereits im April 2023 ging der städtische Chatbot „Muckl“ erstmalig für die Bürger\*innen der Landeshauptstadt München an den Start. Damals konnte er ausschließlich Themen zur anstehenden Landtagswahl beantworten, dennoch tat er dies sehr erfolgreich. In den Wochen und Monaten darauf ergänzte sich sein Wissen um diverse Themen wie etwa soziales Wohnen, Müll entsorgen oder Themen zu KITA.
 
-Um Muckls Wissenstand auf alle städtischen Verwaltungsthemen zu erweitern, wurde Muckl um eine KI-Komponente ergänzt. In dieser Form ist der Chatbot seit dem 24. September 2025 auf allen stadt.muenchen.de Website unter den Rubriken „Rathaus“ und „Bürgerservice“ umfassend verfügbar. Er kennt nun die Informationen zu städtischen Dienstleistungen, Angeboten und Veranstaltungen und beantwortet Fragen dazu rund um die Uhr.
+Um Muckls Wissenstand auf alle städtischen Verwaltungsthemen zu erweitern, wurde Muckl um eine KI-Komponente ergänzt.
+In dieser Form ist der Chatbot seit dem 24. September 2025 auf allen stadt.muenchen.de-Websites unter den Rubriken „Rathaus“ und „Bürgerservice“ umfassend verfügbar.
+Er kennt nun die Informationen zu städtischen Dienstleistungen, Angeboten und Veranstaltungen und beantwortet Fragen dazu rund um die Uhr.
 
 ![Demo des Chatbots Muckl](/img/muckl/muckl_demo.png)
 
