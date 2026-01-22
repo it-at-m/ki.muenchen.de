@@ -1,6 +1,6 @@
 ---
 system_type: KI-System
-title: Bürger*innen-Chatbot Muckl
+title: Bürger\*innen-Chatbot Muckl
 linkapplication: https://stadt.muenchen.de/
 logo: /img/logo/muckl_logo.png
 tags:
@@ -8,7 +8,7 @@ tags:
   - Embeddings
   - Bürgerservice
   - öffentlich
-description: Der Bürger*innen-Chatbot Muckl beantwortet Fragen zu städtischen Dienstleistungen direkt und verständlich im Dialog.
+description: Der Bürger\*innen-Chatbot Muckl beantwortet Fragen zu städtischen Dienstleistungen direkt und verständlich im Dialog.
 ---
 
 [<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/ki-systeme/index.md)
@@ -26,13 +26,39 @@ Der Chatbot hilft Bürger\*innen, Informationen zu städtischen Themen effizient
 
 ## Einführung und Kontext
 
-Der Bürger\*innen-Chatbot Muckl wurde entwickelt, damit Bürger\*innen und Mitarbeitende der Stadt München effizienter Informationen zu städtischen Themen und Dienstleistungen finden können. Durch die Integration von KI-Technologie wird das Suchen von Inhalten auf muenchen.de und zukünftig auch Münchner Microsites erheblich verbessert, was zu einer schnelleren und präzisen Beantwortung von Anfragen führt.
+Der Bürger\*innen-Chatbot Muckl ist ein Kommunikations-Bot, der vollautomatisiert Fragen von Bürger\*innen im Dialog beantwortet. Auf Basis von Textanalyse und maschinellem Lernen ergänzt er FAQ-Seiten und Kontaktformulare.
+
+Ziel ist der Einsatz eines „single-channel FAQ-Chatbots“ im Bereich des Bürgerservices. Der Chatbot soll so die Hotlines der Stadtverwaltung entlasten und schnelle Antworten für die Fragen der Münchner*innen liefern. Durch die automatisierte Beantwortung von Standardfragen kann der Chatbot die Mitarbeiter*innen in den Referaten und Eigenbetrieben von wiederkehrenden Anfragen entlasten und so die Effizienz steigern. Als Kommunikationskanal sorgt der Chatbot für durchgehende Erreichbarkeit und arbeitet Anfragen der Bürger\*innen in Echtzeit und automatisiert ab.
+
+Der Chatbot ist eine fiktive Persönlichkeit und zeichnet sich durch seine Freundlichkeit und Hilfsbereitschaft aus. Er kommuniziert wie die Zielgruppen: einfach, locker und partnerschaftlich. Dabei verwendet er die direkte und persönliche Ansprache.
+
+### Entwicklung
+
+Bereits im April 2023 ging der städtische Chatbot „Muckl“ erstmalig für die Bürger\*innen der Landeshauptstadt München an den Start. Damals konnte er ausschließlich Themen zur anstehenden Landtagswahl beantworten, dennoch tat er dies sehr erfolgreich. In den Wochen und Monaten darauf ergänzte sich sein Wissen um diverse Themen wie etwa soziales Wohnen, Müll entsorgen oder Themen zu KITA.
+
+Um Muckls Wissenstand auf alle städtischen Verwaltungsthemen zu erweitern, wurde Muckl um eine KI-Komponente ergänzt. In dieser Form ist der Chatbot seit dem 24. September 2025 auf allen stadt.muenchen.de Website unter den Rubriken „Rathaus“ und „Bürgerservice“ umfassend verfügbar. Er kennt nun die Informationen zu städtischen Dienstleistungen, Angeboten und Veranstaltungen und beantwortet Fragen dazu rund um die Uhr.
 
 ![Demo des Chatbots Muckl](/img/muckl/muckl_demo.png)
 
+## Funktionsumfang
+
+- **Beantwortung häufig gestellter Fragen**: Einfache Automatisierung von Standardanfragen.
+- **Skalierbarkeit**: Kann mit einer beliebigen Anzahl an Personen zur gleichen Zeit sprechen.
+- **Technische Einbindung**: Integration auf öffentlichen Webseiten per Snippet.
+- **Design**: Angepasstes Design für entsprechende Einsatzbereiche.
+- **Live-Chat Anbindung**: Optionaler Live-Chatbetrieb durch Mitarbeiter\*innen möglich.
+
 ## Datengrundlage
 
-Die Datengrundlage des Bürger\*innen-Chatbot Muckl basiert aktuell auf allen stadt.muenchen.de Seiten in Deutsch. Dies sind alle Seiten der Reiter ,,Rathaus“ (Rathaus – Landeshauptstadt München) und ,,Bürgerservice“ (Bürgerservice – Landeshauptstadt München).
+Die Datengrundlage des Bürger\*innen-Chatbot Muckl basiert aktuell auf allen stadt.muenchen.de Seiten in Deutsch. Dies sind alle Seiten der Reiter „Rathaus“ (Rathaus – Landeshauptstadt München) und „Bürgerservice“ (Bürgerservice – Landeshauptstadt München).
+
+Um sicherzustellen, dass die Informationen aktuell bleiben, überprüft Muckl alle 24 Stunden die entsprechenden Seiten auf Änderungen und aktualisiert seine Datenbank gegebenenfalls.
+
+**Wichtige Einschränkungen:**
+
+- Muckl bezieht seine Informationen ausschließlich von den offiziellen Websites von stadt.muenchen.de.
+- Der Chatbot hat keinen Zugriff auf das gesamte Internet oder externe Links.
+- Er kann keine Inhalte aus PDFs lesen.
 
 ### Beispiele für verzeichnete Dienstleistungen
 
@@ -76,6 +102,20 @@ Die Stadtkämmerei in München hat eine zentrale Rolle in der Finanzverwaltung d
 ## Funktionsweise
 
 Der Bürger\*innen Chatbot Muckl nutzt ein Embedding-Modell und ein großes Sprachmodell, um relevante Dokumente zu finden und präzise Antworten auf Nutzerfragen zu generieren.
+Technische Basis ist das [Ubitec Bot Framework](https://ubitec.at/de/produkte/ubitec-bot-framework/).
+
+Der Chatbot sucht nicht nur auf einer bestimmten Seite, sondern auch auf allen anderen Seiten von stadt.muenchen.de nach Antworten. Dadurch kann es vorkommen, dass die Informationen nicht immer direkt zur jeweiligen Fragestellung passen (z.B. durch veraltete Informationen auf älteren Webseiten).
+
+## Optimierung der Inhalte
+
+Fachbereiche tragen aktiv zur Optimierung der Wissensbasis bei:
+
+1.  **Veraltete Informationen entfernen**: Löschen oder Aktualisieren alter Webseiten.
+2.  **Fehlende Inhalte ergänzen**: Wichtige Inhalte direkt auf der Webseite einbinden oder paraphrasieren (nicht nur als Link/PDF).
+3.  **PDF-Inhalte vermeiden**: Inhalte aus PDFs direkt auf der Seite einbinden, da der Chatbot keine PDFs lesen kann.
+
+Bei Fragen, Anmerkungen oder Verbesserungsvorschlägen kann das Bewertungstool am Ende jeder Antwort von Muckl genutzt werden ("Daumen nach oben" für positives Feedback, "Daumen nach unten" für Verbesserungswünsche).
+So kann das Team hinter Muckl die Antworten kontinuierlich verbessern.
 
 ## Rechtliche Hinweise
 
