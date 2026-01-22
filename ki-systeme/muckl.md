@@ -97,11 +97,11 @@ Die Stadtkämmerei in München hat eine zentrale Rolle in der Finanzverwaltung d
 • Ausgaben: Sie verwaltet die Ausgaben für die laufende Verwaltung sowie Investitionen in die Infrastruktur, wie Schulen und Verkehrswege.
 • Stadtkasse: Alle finanziellen Vorgänge, wie Steuerbescheide und Rechnungen, laufen über die Stadtkasse, die auch für die Liquidität der Stadt sorgt.
 • Steuern: Die Abteilung kümmert sich um die Erhebung und Verwaltung von verschiedenen Steuerarten, darunter Grundsteuer und Hundesteuer.
-• Beratung und Unterstützung: Die Stadtkämmerei unterstützt den Stadtrat bei der Mittel
+• Beratung und Unterstützung: Die Stadtkämmerei unterstützt den Stadtrat bei der Mittelverteilung und berät andere städtische Abteilungen in Finanzfragen.
 
 ## Funktionsweise
 
-Der Bürger\*innen Chatbot Muckl nutzt ein Embedding-Modell und ein großes Sprachmodell, um relevante Dokumente zu finden und präzise Antworten auf Nutzerfragen zu generieren.
+Der Bürger\*innen-Chatbot Muckl nutzt ein Embedding-Modell und ein großes Sprachmodell, um relevante Dokumente zu finden und präzise Antworten auf Nutzerfragen zu generieren.
 Technische Basis ist das [Ubitec Bot Framework](https://ubitec.at/de/produkte/ubitec-bot-framework/).
 
 Der Chatbot sucht nicht nur auf einer bestimmten Seite, sondern auch auf allen anderen Seiten von stadt.muenchen.de nach Antworten. Dadurch kann es vorkommen, dass die Informationen nicht immer direkt zur jeweiligen Fragestellung passen (z.B. durch veraltete Informationen auf älteren Webseiten).
