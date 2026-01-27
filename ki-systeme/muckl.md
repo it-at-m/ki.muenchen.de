@@ -1,6 +1,6 @@
 ---
 system_type: KI-System
-title: Bürger\*innen-Chatbot Muckl
+title: Bürger*innen-Chatbot Muckl
 linkapplication: https://stadt.muenchen.de/
 logo: /img/logo/muckl_logo.png
 tags:
@@ -8,7 +8,7 @@ tags:
   - Embeddings
   - Bürgerservice
   - öffentlich
-description: Der Bürger\*innen-Chatbot Muckl beantwortet Fragen zu städtischen Dienstleistungen direkt und verständlich im Dialog.
+description: Der Bürger*innen-Chatbot Muckl beantwortet Fragen zu städtischen Dienstleistungen direkt und verständlich im Dialog.
 ---
 
 [<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/ki-systeme/index.md)
