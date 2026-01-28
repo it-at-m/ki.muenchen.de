@@ -27,7 +27,7 @@ Der Datensatz "Münchner Verwaltungs-Dienstleistungen" enthält etwa 1.400 Artik
 Neben dem Inhalt der Artikel enthält der Datensatz auch Metadaten wie die Sprache des Artikels, das Datum der letzten Änderung und die mit dem Artikel verbundenen Schlüsselwörter.
 Der Datensatz enthält auch Einbettungsvektoren, die aus jedem Artikel berechnet wurden und für Retrieval oder andere Methoden im Bereich der Textverarbeitung verwendet werden können.
 
-- **Kuratiert von:** Landeshauptstadt München, it@M, KI Competence Center
+- **Kuratiert von:** Landeshauptstadt München, it@M, KI-Entwicklung & -Services (KIES)
 - **Sprachen:** Deutsch, Englisch
 - **Lizenz:** MIT
 
@@ -148,7 +148,7 @@ Ein weiterer Ansatz besteht darin, den Datensatz mit einem benutzerdefinierten E
 
 ## Autor\*innen der Dataset Card
 
-Fabian Reinold - Landeshauptstadt München, it@M, KI Competence Center
+Fabian Reinold - Landeshauptstadt München, it@M, KI-Entwicklung & -Services (KIES)
 
 ## Kontakt für die Dataset Card
 

@@ -1,20 +1,25 @@
-# KI Competence Center
+# KI-Team
 
-Das KI Competence Center (KICC) ist ein im Jahr 2024 geschaffenes Team, das der [Abteilung Data & Innovation](https://stadt.muenchen.de/infos/data-und-innovation.html) des [IT-Referats der Landeshauptstadt München](https://stadt.muenchen.de/infos/portrait-it-referat.html) zugeordnet ist.
+Im Jahr 2024 wurde das KI Competence Center (KICC) im [IT-Referat der Landeshauptstadt München](https://stadt.muenchen.de/infos/portrait-it-referat.html) geschaffen, um eine zentrale Anlaufstelle für Künstliche Intelligenz (KI) in der Stadtverwaltung zu etablieren.
+
+Nach einer organisatorischen Neuausrichtung firmiert das KI-Team seit Anfang 2026 unter dem Namen **KI-Entwicklung & -Services (KIES)** und ist dem **Data & AI Center of Excellence (DAICE)** zugeordnet.
 
 ::: info Hintergrund
 Das IT-Referat hatte Künstliche Intelligenz bereits im Jahr 2021 als eine der Schlüsseltechnologien im Bereich Technischer Innovationen identifiziert.
 
 Aufbauend darauf wurden zunächst erste Prototypen im Bereich Maschinellen Lernens entwickelt und Datenanalysen für die Stadtverwaltung durchgeführt.
 
-Mit der zunehmenden Professionalisierung und dem wachsenden Bedarf an KI-Anwendungen in der Stadtverwaltung wurde als folgerichtige Maßnahme das KI Competence Center als separate Organisationseinheit geschaffen.
+Mit der zunehmenden Professionalisierung und dem wachsenden Bedarf an KI-Anwendungen in der Stadtverwaltung wurde als folgerichtige Maßnahme das KICC als separate Organisationseinheit geschaffen.
 
-Das KI Competence Center ist außerdem als Maßnahme der Digitalisierungsstrategie der Stadt München im Handlungsfeld "Digital Government" verankert und kann im [Digitalisierungsradar](https://muenchen.digital/digitalisierungsradar/digital-government.html#ac99b7bc-2b42-46a0-9ab5-813628cb3c89) eingesehen werden.
+Das KICC war außerdem als Maßnahme der Digitalisierungsstrategie der Stadt München im Handlungsfeld "Digital Government" verankert und kann im [Digitalisierungsradar](https://muenchen.digital/digitalisierungsradar/digital-government.html#ac99b7bc-2b42-46a0-9ab5-813628cb3c89) eingesehen werden.
+
+Seit Anfang 2026 firmiert das Team unter dem Namen **KI-Entwicklung & -Services (KIES)**.
+Im Zuge einer organisatorischen Neuausrichtung wechselte das Team von der Abteilung Data & Innovation in das neu geschaffene **Data & AI Center of Excellence (DAICE)**, um die Aktivitäten der Landeshauptstadt München rund um KI & Daten noch stärker zu bündeln und zu skalieren.
 :::
 
 ## Aufgaben
 
-Das KI Competence Center bündelt das Wissen der Stadtverwaltung im Bereich Künstliche Intelligenz und bietet dabei
+Unser KI-Team bündelt das Wissen der Stadtverwaltung im Bereich Künstliche Intelligenz und bietet dabei
 
 - die Beratung der Fachbereiche,
 - die Entwicklung von KI-basierten Anwendungen und Services,
@@ -31,19 +36,9 @@ import { VPTeamMembers } from "vitepress/theme"
 
 const members = [
   {
-    avatar: "/img/people/ll.jpg",
-    name: "Leon Lukas",
-    title: "Team Lead",
-    links: [
-      { icon: "github", link: "https://github.com/l0renor" },
-      { icon: "linkedin", link: "https://www.linkedin.com/in/leonlukasmuc/" },
-      { icon: "maildotru", link: "mailto:leon.lukas@muenchen.de"},
-    ],
-  },
-  {
     avatar: "/img/people/fr.jpg",
     name: "Fabian Reinold",
-    title: "ML Engineer",
+    title: "Team Lead",
     links: [
       { icon: "github", link: "https://github.com/freinold" },
       { icon: "linkedin", link: "https://www.linkedin.com/in/fabian-reinold/" },
@@ -51,12 +46,13 @@ const members = [
     ],
   },
   {
-    avatar: "/img/people/lb.jpg",
-    name: "Lena Barth",
-    title: "Data Scientist",
+    avatar: "/img/people/ll.jpg",
+    name: "Leon Lukas",
+    title: "IT-Architekt für KI",
     links: [
-      { icon: "linkedin", link: "https://www.linkedin.com/in/lena-barth-56b48a18b/" },
-      { icon: "maildotru", link: "mailto:lena.barth@muenchen.de"},
+      { icon: "github", link: "https://github.com/l0renor" },
+      { icon: "linkedin", link: "https://www.linkedin.com/in/leonlukasmuc/" },
+      { icon: "maildotru", link: "mailto:leon.lukas@muenchen.de"},
     ],
   },
   {
@@ -101,19 +97,29 @@ const members = [
   {
     avatar: "/img/people/sb.jpg",
     name: "Sebastian Berger",
-    title: "Werkstudent",
+    title: "ML Engineer",
     links: [
       { icon: "github", link: "https://github.com/illuminate97" },
       { icon: "linkedin", link: "https://www.linkedin.com/in/sebastian-berger-35625a280/" },
       { icon: "maildotru", link: "mailto:sebastian.berger@muenchen.de"},
     ],
   },
-    {
+  {
     avatar: "/img/logo/kicc_mascot.png",
-    name: "MUCKI",
-    title: "KICC Maskottchen",
+    name: "Nico Harbig",
+    title: "ML Engineer",
     links: [
-      { icon: "github", link: "https://github.com/it-at-m/ki.muenchen.de" },
+      { icon: "github", link: "https://github.com/NiClassic" },
+      { icon: "linkedin", link: "https://www.linkedin.com/in/nico-harbig-896a372b5/" },
+      { icon: "maildotru", link: "mailto:nico.harbig@muenchen.de"},
+    ],
+  },
+  {
+    avatar: "/img/people/reachy.png",
+    name: "Reachy Mini",
+    title: "Marketing-Beauftragter",
+    links: [
+      { icon: "github", link: "https://huggingface.co/spaces/pollen-robotics/Reachy_Mini" },
       { icon: "maildotru", link: "mailto:itm.kicc@muenchen.de"},
     ],
   },
@@ -124,4 +130,4 @@ const members = [
 
 ## Kontakt
 
-Das KI Competence Center ist erreichbar unter: <itm.kicc@muenchen.de>.
+Unser KI-Team ist erreichbar unter: <itm.kicc@muenchen.de>.

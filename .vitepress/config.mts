@@ -28,7 +28,7 @@ const vitepressConfig = defineConfig({
         text: "Datensätze",
         link: "/datensaetze",
       },
-      { text: "KI Competence Center", link: "/kicc" },
+      { text: "KI-Team", link: "/ki-team" },
     ],
     outline: { level: [2, 3], label: "Seiteninhalt" },
     socialLinks: [
@@ -75,7 +75,7 @@ const vitepressConfig = defineConfig({
     logo: {
       dark: `/img/logo/kicc_tuerkis_100px.png`,
       light: `/img/logo/kicc_tuerkis_100px.png`,
-      alt: "KI Competence Center Logo",
+      alt: "KI-Entwicklung & -Services (KIES) Logo",
     },
   },
   markdown: {

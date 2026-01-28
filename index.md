@@ -25,7 +25,7 @@ features:
     details: Wir dokumentieren und veröffentlichen Datensätze, die für die Entwicklung von KI-Systemen verwendet wurden und teilweise nachnutzbar sind.
     link: /datensaetze
   - icon: 🏛️
-    title: KI Competence Center
-    details: Das KI Competence Center (KICC) ist unsere zentrale Anlaufstelle für Künstliche Intelligenz. Es unterstützt die Stadtverwaltung bei der Entwicklung und dem Einsatz von KI-Systemen.
-    link: /kicc
+    title: KI-Team
+    details: Unser KI-Team ist die zentrale Anlaufstelle für Künstliche Intelligenz. Es unterstützt die Stadtverwaltung bei der Entwicklung und dem Einsatz von KI-Systemen.
+    link: /ki-team
 ---

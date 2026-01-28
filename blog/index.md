@@ -9,7 +9,7 @@ aside: false
 # Blog
 
 Unser Blog bietet Ihnen einen Überblick über die aktuellen Artikel zu unseren KI-Aktivitäten, Projekten und Neuigkeiten.
-Hier finden Sie spannende Einblicke in die Arbeit des KI Competence Centers und der Stadt München im Bereich Künstliche Intelligenz.
+Hier finden Sie spannende Einblicke in die Arbeit der Stadt München im Bereich Künstliche Intelligenz.
 
 ## Artikel
 
