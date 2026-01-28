@@ -12,7 +12,7 @@ Anfangs stand dabei oft nur eine Benutzeroberfläche zum einfachen Chatten mit d
 Um diese komplexen Systeme im Enterprise-Umfeld korrekt und nachvollziehbar bereitzustellen, sind zahlreiche Funktionalitäten erforderlich.
 Neben Start-ups mit SaaS-Lösungen und Hyperscalern mit End-to-End-Systemen können diese auch mithilfe von Open-Source-Software-Komponenten (OSS) abgedeckt werden. OSS wahrt dabei die digitale Souveränität und hilft gleichzeitig, Kosten zu sparen.
 
-Welchen Softwarestack das [KI Competence Center](/kicc) (KICC) der Stadt München für die städtischen KI-Systeme bereitstellt, erklären wir in diesem Artikel.
+Welchen Softwarestack das [KI-Team](/ki-team) der Stadt München für die städtischen KI-Systeme bereitstellt, erklären wir in diesem Artikel.
 
 ## Motivation: GenAI wird immer komplexer
 
