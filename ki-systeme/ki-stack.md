@@ -13,4 +13,4 @@ description: Generative KI (GenAI) wird für Unternehmen immer wichtiger. Wir nu
 
 # KI-Stack
 
-Generative KI (GenAI) wird für Unternehmen immer wichtiger. Neben SaaS-Lösungen und Hyperscalern bieten Open Source-Stacks eine attraktive Alternative für digitale Souveränität. Auf welche Komponenten das KI Competence Center der Stadt München setzt, erklären wir euch in diesem Artikel.
+Generative KI (GenAI) wird für Unternehmen immer wichtiger. Neben SaaS-Lösungen und Hyperscalern bieten Open Source-Stacks eine attraktive Alternative für digitale Souveränität. Auf welche Komponenten das KI-Team der Stadt München setzt, erklären wir euch in diesem Artikel.

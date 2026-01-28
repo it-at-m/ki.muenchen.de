@@ -26,7 +26,7 @@ next: false
 
 ## Inhaltliche Verantwortung
 
-    it@M - KI Competence Center
+    it@M - SLP43: KI-Entwicklung & -Services (KIES)
     Agnes Pockels Bogen 27
     80992 München
     E-Mail: itm.kicc@muenchen.de

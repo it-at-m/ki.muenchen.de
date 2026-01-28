@@ -19,7 +19,7 @@ defineProps({
     :class="'infobox ' + (horizontal ? 'horizontal' : '')"
   >
     <img
-      :alt="'Logo ' + (frontmatter.title || 'KICC')"
+      :alt="'Logo ' + (frontmatter.title || 'KI')"
       :src="withBase(frontmatter.logo || '/img/logo/kicc_mascot.png')"
     />
     <div class="infos">
