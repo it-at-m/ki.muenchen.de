@@ -104,16 +104,16 @@ const members = [
       { icon: "maildotru", link: "mailto:sebastian.berger@muenchen.de"},
     ],
   },
-  {
-    avatar: "/img/logo/kicc_mascot.png",
-    name: "Nico Harbig",
-    title: "ML Engineer",
-    links: [
-      { icon: "github", link: "https://github.com/NiClassic" },
-      { icon: "linkedin", link: "https://www.linkedin.com/in/nico-harbig-896a372b5/" },
-      { icon: "maildotru", link: "mailto:nico.harbig@muenchen.de"},
-    ],
-  },
+  // {
+  //   avatar: "/img/logo/kicc_mascot.png",
+  //   name: "Nico Harbig",
+  //   title: "ML Engineer",
+  //   links: [
+  //     { icon: "github", link: "https://github.com/NiClassic" },
+  //     { icon: "linkedin", link: "https://www.linkedin.com/in/nico-harbig-896a372b5/" },
+  //     { icon: "maildotru", link: "mailto:nico.harbig@muenchen.de"},
+  //   ],
+  // },
   {
     avatar: "/img/people/reachy.png",
     name: "Reachy Mini",
