@@ -130,4 +130,4 @@ const members = [
 
 ## Kontakt
 
-Unser KI-Team ist erreichbar unter: <itm.kicc@muenchen.de>.
+Unser KI-Team ist erreichbar unter <itm.kicc@muenchen.de>.

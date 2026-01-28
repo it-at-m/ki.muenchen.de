@@ -148,7 +148,7 @@ Ein weiterer Ansatz besteht darin, den Datensatz mit einem benutzerdefinierten E
 
 ## Autor\*innen der Dataset Card
 
-Fabian Reinold - Landeshauptstadt München, it@M, KI-Entwicklung & -Services (KIES)
+Fabian Reinold – Landeshauptstadt München, it@M, KI-Entwicklung & -Services (KIES)
 
 ## Kontakt für die Dataset Card
 
