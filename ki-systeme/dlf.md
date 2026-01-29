@@ -20,15 +20,13 @@ Die KI-Suche im Dienstleistungsfinder nutzt moderne Sprachmodelle, um Bürger\*i
 
 ---
 
-Diese Dokumentation beschreibt die Funktionsweise, Datengrundlage und Evaluierung der KI-Suche im Dienstleistungsfinder auf muenchen.de.
-Die KI-Suche nutzt ein Embedding-Modell und ein großes Sprachmodell, um relevante Dokumente zu finden und präzise Antworten auf Nutzeranfragen zu generieren.
+Diese Dokumentation gibt einen Überblick über die Datengrundlage, die technische Funktionsweise sowie die Evaluierung der KI-Suche im Dienstleistungsfinder. Sie dient als Grundlage zum Verständnis des Systems und seiner Leistungsfähigkeit im praktischen Einsatz.
 
 ![Screenshot von muenchen.de/ki-suche](/img/dlf/dlf_screenshot_muenchen-de.png)
 
 ## Einführung und Kontext
 
-Die KI-Suche im Dienstleistungsfinder wurde entwickelt, damit Bürger\*innen und Mitarbeitenden der Stadt München effizienter Informationen zu städtischen Dienstleistungen finden können.
-Durch die Integration von KI-Technologien wird die Suchfunktion erheblich verbessert, was zu einer schnelleren und präziseren Beantwortung von Anfragen führt.
+Die KI-Suche im Dienstleistungsfinder wurde entwickelt, um Bürger\*innen sowie Mitarbeitenden der Stadt München einen effizienten und zielgerichteten Zugang zu Informationen über städtische Dienstleistungen zu ermöglichen. Technisch basiert sie auf einem Retrieval-Augmented-Generation-(RAG)-Ansatz, bei dem relevante Dokumente zunächst automatisiert abgerufen und anschließend mithilfe eines großen Sprachmodells kontextualisiert verarbeitet werden. Durch diese Kombination aus Dokumentensuche und generativer KI wird die Qualität der Suchergebnisse deutlich gesteigert und eine präzisere Beantwortung von Suchanfragen ermöglicht.
 
 ## Datengrundlage
 
@@ -50,18 +48,16 @@ Wenn Sie Baustelleneinrichtungen oder Veranstaltungen (Straßenfeste, etc.) plan
 
 ## Funktionsweise
 
-Die KI-Suche benutzt eine Methodik namens _Retrieval-Augmented Generation_ (RAG).
-In dieser werden in einem ersten Schritt zur Frage relevante Dokumente in einer Datenbasis gesucht.
-Anschließend werden zu den relevantesten Artikeln mithilfe eines großen Sprachmodells (LLM) Antworten generiert.
+Die zu Beginn eingeführte Retrieval-Augmented-Generation-(RAG)-Methodik bildet die Grundlage der KI-Suche. Dabei werden in einem ersten Schritt zu einer Nutzeranfrage relevante Dokumente aus der zugrunde liegenden Datenbasis abgerufen. Anschließend werden auf Basis der relevantesten Dokumente mithilfe eines großen Sprachmodells (LLM) kontextbezogene Antworten generiert.
 
 ![Darstellung der Funktionsweise von RAG](/img/dlf/dlf_rag.png){.light-only}
 ![Darstellung der Funktionsweise von RAG](/img/dlf/dlf_rag_dark.png){.dark-only}
 
 ### Repräsentation der semantischen Information mit Embeddings
 
-Die KI-Suche nutzt zum Vergleich der Informationen in den Dokumenten und der Nutzeranfrage _Embeddings_ (dt. Einbettungen).
+Die KI-Suche nutzt zum Vergleich der Informationen in den Dokumenten und der Nutzeranfrage _Embeddings_.
 Embeddings sind hochdimensionale Vektoren, die durch ein spezielles KI-Modell generiert werden.
-Als Eingabe erhält das Embedding-Modell den jeweiligen Text (z.B. die Dienstleistungsbeschreibung) und gibt einen Vektor zurück.
+Als Eingabe erhält das Embedding-Modell einen Text (z.B. die Dienstleistungsbeschreibung) und gibt einen Vektor zurück.
 Diese Vektoren können dann in einer Datenbank gespeichert und einfach verglichen werden, um die Ähnlichkeit zwischen verschiedenen Texten zu bestimmen.
 
 ![Darstellung von Embeddings als Repräsentation von Text](/img/dlf/dlf_embeddings.png){.light-only}
@@ -76,17 +72,24 @@ So können sowohl zu klassischen Suchanfragen, als auch ausformulierte Fragen, d
 ![Darstellung der hybriden Suche](/img/dlf/dlf_hybrid_search.png){.light-only}
 ![Darstellung der hybriden Suche](/img/dlf/dlf_hybrid_search_dark.png){.dark-only}
 
+### Relevanzbasierte Sortierung der Dokumente mittels Re-Ranking und Boosting
+
+Zur Optimierung der Ergebnisreihenfolge werden die gefundenen Dokumente mithilfe eines Re-Ranking-Modells anhand ihrer inhaltlichen Relevanz zur Nutzeranfrage neu sortiert. Dadurch wird sichergestellt, dass inhaltlich präzisere und für die Anfrage relevantere Dokumente bevorzugt platziert werden.
+
+Ergänzend zum Re-Ranking werden die Suchergebnisse auf Basis aktueller Seitenaufrufe gewichtet. Dokumente mit einer hohen Anzahl an Seitenaufrufen werden dabei priorisiert und entsprechend höher in den Suchergebnissen platziert als weniger häufig aufgerufene Inhalte.
+
+![Darstellung des Re-Ranking und Boosting Prozesses](/img/dlf/dlf_reranking_and_boosting.png){.light-only}
+![Darstellung des Re-Ranking und Boosting Prozesses](/img/dlf/dlf_reranking_and_boosting_dark.png){.dark-only}
+
 ### Generierung der Antwort
 
-Für gefundene Dokumente wird separat ein großes Sprachmodell (engl. kurz LLM) aufgerufen.
-Das LLM soll basierend auf der ursprünglichen Frage drei Werte zurücklieferen:
+Für jedes aus der Suche extrahierte Dokument wird ein großes Sprachmodell (engl. Large Language Model, LLM) aufgerufen. Basierend auf der Nutzeranfrage und dem jeweiligen Dokumenteninhalt erzeugt das LLM drei Ausgaben:
 
-1. eine ausformulierte Antwort auf die gestellte Frage
-2. ein passendes wörtliches Zitat aus dem Dokument
-3. die Einschätzung, ob die Frage durch das Dokument beantwortet werden kann
+1. eine ausformulierte Antwort auf die gestellte Frage,
+2. ein inhaltlich passendes wörtliches Zitat aus dem Dokument,
+3. eine Einschätzung, ob das Dokument zur Beantwortung der Frage geeignet ist.
 
-Falls die Frage nicht beantwortet werden kann, wird das Dokument nicht angezeigt.
-Durch diese Methode wird sichergestellt, dass irrelevante Dokumente nicht an die Nutzer\*innen zurückgegeben werden.
+Kann die Frage anhand eines Dokuments nicht beantwortet werden, wird dieses nicht angezeigt. Auf diese Weise wird sichergestellt, dass Suchergebnisse, die trotz Re-Ranking und Boosting nicht ausreichend relevant für eine präzise Beantwortung der Anfrage sind, nicht an die Nutzer\*innen zurückgegeben werden.
 
 ![Darstellung der Antwortgenerierung](/img/dlf/dlf_answer_generation.png){.light-only}
 ![Darstellung der Antwortgenerierung](/img/dlf/dlf_answer_generation_dark.png){.dark-only}
@@ -95,15 +98,13 @@ Durch diese Methode wird sichergestellt, dass irrelevante Dokumente nicht an die
 
 ### Embedding-Modell
 
-Embeddings/Texteinbettungen messen die Verwandtschaft von Textstrings.
-In dieser Anwendung werden sie genutzt, um relevante Dokumente zu einer Suchanfrage zu finden.
-Das System nutzt das Embedding-Modell "text-embeddings-3-large" von OpenAI.
+Semantische Vektoren von Texten (Text-Embeddings) erfassen die inhaltliche Ähnlichkeit zwischen Texten. In dieser Anwendung werden sie genutzt, um zu einer Suchanfrage relevante Dokumente zu identifizieren. Hierfür verwendet das System das Embedding-Modell „text-embeddings-3-large“ von OpenAI.
 [Mehr Informationen zum Modell](https://platform.openai.com/docs/guides/embeddings/embedding-models)
 
 ### Großes Sprachmodell (LLM)
 
-Das große Sprachmodell "gpt-4o-mini" von OpenAI wird zur Generierung der Nutzerantworten genutzt.
-[Mehr Informationen zum Modell](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/)
+Das große Sprachmodell "gpt-4.1-mini" von OpenAI wird zur Generierung der Nutzerantworten genutzt.
+[Mehr Informationen zum Modell](https://openai.com/index/gpt-4-1/)
 
 ## Evaluation
 
