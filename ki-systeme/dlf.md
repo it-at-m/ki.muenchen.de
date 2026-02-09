@@ -114,7 +114,7 @@ Für die Evaluation werden zwei Datensätze herangezogen. Einer dieser Datensät
 
 Im Überblick kommen folgende Datensätze zum Einsatz:
 
-- **LHMDienstleistungenQA**: Händisch erstellter Goldstandard-Datensatz  
+- **LHMDienstleistungenQA**: Händisch erstellter Goldstandard-Datensatz
 - **Query-Doc-Service-de**: Automatisch generierter Datensatz
 
 Aufgrund kontinuierlicher inhaltlicher und struktureller Aktualisierungen der Dienstleistungsartikel enthalten beide Datensätze Beispiele mit nicht mehr aktuellen Dokumenttiteln. In diesen Fällen ergibt die Evaluation formal einen Wert von 0, selbst wenn das inhaltlich korrekte Dokument erfolgreich abgerufen wurde. Um diesen Effekt zu mitigieren, wird bei fehlender direkter Dokumentübereinstimmung zusätzlich die Ähnlichkeit zwischen dem erwarteten und dem abgerufenen Dokumenttitel berücksichtigt.
@@ -137,7 +137,6 @@ Der Datensatz **Query-Doc-Service-de** wurde mithilfe eines LLM generiert. Da di
 Die Evaluation wurde mit der vollständigen produktiven Retrieval-Pipeline durchgeführt, einschließlich Re-ranking und popularitätsbasiertem Dokument-Boosting. Diese Boosting-Strategie priorisiert häufig aufgerufene Artikel, was auf eine höhere wahrgenommene Nützlichkeit für Nutzer hindeuten kann. Uns ist bewusst, dass eine auf aktuellen Zugriffszahlen basierende Gewichtung langfristig einen Bias verursachen kann, da häufig priorisierte Artikel tendenziell mehr Aufrufe generieren. Alternative Boosting-Strategien werden derzeit untersucht.
 
 Unter diesen Rahmenbedingungen weist ein durchschnittlicher MRR von 0.67 auf eine stabile und qualitativ hochwertige Platzierung relevanter Dokumente im Retrieval hin und wird durch einen Recall@10 von konsistent über 80 % bestätigt. Diese Kombination zeigt, dass relevante Dokumente in der Regel hoch gerankt sind und nahezu immer im initialen Kandidatenset enthalten sind, wodurch eine effektive nachgelagerte Relevanzfilterung ermöglicht wird.
-
 
 ### Beispieleinträge aus dem Goldstandard-Datensatz
 
