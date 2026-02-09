@@ -72,7 +72,7 @@ So können sowohl zu klassischen Suchanfragen, als auch ausformulierte Fragen, d
 ![Darstellung der hybriden Suche](/img/dlf/dlf_hybrid_search.png){.light-only}
 ![Darstellung der hybriden Suche](/img/dlf/dlf_hybrid_search_dark.png){.dark-only}
 
-### Relevanzbasierte Sortierung der Dokumente mittels Re-Ranking und Boosting
+### Relevanzbasierte Sortierung der Dokumente mittels Re-ranking und Boosting
 
 Zur Optimierung der Ergebnisreihenfolge werden die gefundenen Dokumente mithilfe eines Re-Ranking-Modells anhand ihrer inhaltlichen Relevanz zur Nutzeranfrage neu sortiert. Dadurch wird sichergestellt, dass inhaltlich präzisere und für die Anfrage relevantere Dokumente bevorzugt platziert werden.
 
@@ -108,16 +108,38 @@ Das große Sprachmodell "gpt-4.1-mini" von OpenAI wird zur Generierung der Nutze
 
 ## Evaluation
 
-Die Retrieval-Komponente (Auffinden der relevanten Dokumente) wurde mithilfe von zwei Datensätzen evaluiert. Dabei wird angegeben, in wie vielen Fällen der relevante Artikel das oberste Ergebnis ist. Der Score wird als Mean Reciprocal Rank (MRR) angegeben.
+### Datensätze für die Evaluation
 
-- **Händisch erstellter Datensatz im Rahmen des Forschungsprojekts x-next**: Score Ø 0.8815
-- **Synthetisch (mit LLM) erstellter deutscher Datensatz**: Score Ø 0.8516
+Für die Evaluation werden zwei Datensätze herangezogen. Einer dieser Datensätze wurde mithilfe eines Large Language Models (LLM) generiert, während ein weiterer Datensatz als manuell erstellter Goldstandard für die Dienstleistungsartikel dient.
 
-Diese Datensätze sind nicht zwingend repräsentativ für die Allgemeinheit.
+Im Überblick kommen folgende Datensätze zum Einsatz:
 
-[Mehr Informationen zu MRR](https://en.wikipedia.org/wiki/Mean_reciprocal_rank)
+- **LHMDienstleistungenQA**: Händisch erstellter Goldstandard-Datensatz  
+- **Query-Doc-Service-de**: Automatisch generierter Datensatz
 
-### Beispiel des Datensatzes
+Aufgrund kontinuierlicher inhaltlicher und struktureller Aktualisierungen der Dienstleistungsartikel enthalten beide Datensätze Beispiele mit nicht mehr aktuellen Dokumenttiteln. In diesen Fällen ergibt die Evaluation formal einen Wert von 0, selbst wenn das inhaltlich korrekte Dokument erfolgreich abgerufen wurde. Um diesen Effekt zu mitigieren, wird bei fehlender direkter Dokumentübereinstimmung zusätzlich die Ähnlichkeit zwischen dem erwarteten und dem abgerufenen Dokumenttitel berücksichtigt.
+
+### Ergebnisse der Evaluation
+
+Zur Bewertung der Retrieval-Leistung werden der Mean Reciprocal Rank (MRR) sowie der Recall@10 herangezogen. Die Ergebnisse sind in Tabelle X zusammengefasst:
+
+|           | LHMDienstleistungenQA | Query-Doc-Service-de |
+| --------- | --------------------- | -------------------- |
+| MRR       | **0.6735**            | 0.6618               |
+| Recall@10 | **86.20 %**           | 83.33 %              |
+
+Der Mean Reciprocal Rank liegt im Bereich zwischen 0 und 1 und misst, wie hoch das relevante Dokument in der Ergebnisliste des Retrievals platziert ist. Ein MRR von 1.0 bedeutet, dass das relevante Dokument an erster Stelle platziert ist, während ein Wert von 0.5 einer Platzierung an zweiter Stelle entspricht. Der Recall@10 gibt an, in wie vielen Fällen sich das relevante Dokument unter den ersten zehn Suchergebnissen befindet.
+
+Die dargestellten Ergebnisse beziehen sich ausschließlich auf die Leistung der Retrieval-Komponente. Im Produktivsystem wird nach dem Retrieval eine zusätzliche Relevanzklassifikationsstufe eingesetzt, die irrelevante Dokumente herausfiltert und das relevanteste Dokument gegebenenfalls an die oberste Position verschiebt. Entsprechend kann sich das den Nutzern präsentierte Ranking vom durch den MRR gemessenen Roh-Retrieval-Ranking unterscheiden.
+
+Der Datensatz **Query-Doc-Service-de** wurde mithilfe eines LLM generiert. Da diese Modelle nicht über explizites Expertenwissen zu den zugrunde liegenden Artikeln verfügen, können einzelne generierte Fragen nur teilweise mit den Dokumentinhalten übereinstimmen, was das Retrieval negativ beeinflussen kann. Gleichzeitig können solche Fragen jedoch die Mehrdeutigkeit und Variabilität realer Nutzeranfragen besser widerspiegeln als Experten-Fragen zu den jeweiligen Dokumenten.
+
+Die Evaluation wurde mit der vollständigen produktiven Retrieval-Pipeline durchgeführt, einschließlich Re-ranking und popularitätsbasiertem Dokument-Boosting. Diese Boosting-Strategie priorisiert häufig aufgerufene Artikel, was auf eine höhere wahrgenommene Nützlichkeit für Nutzer hindeuten kann. Uns ist bewusst, dass eine auf aktuellen Zugriffszahlen basierende Gewichtung langfristig einen Bias verursachen kann, da häufig priorisierte Artikel tendenziell mehr Aufrufe generieren. Alternative Boosting-Strategien werden derzeit untersucht.
+
+Unter diesen Rahmenbedingungen weist ein durchschnittlicher MRR von 0.67 auf eine stabile und qualitativ hochwertige Platzierung relevanter Dokumente im Retrieval hin und wird durch einen Recall@10 von konsistent über 80 % bestätigt. Diese Kombination zeigt, dass relevante Dokumente in der Regel hoch gerankt sind und nahezu immer im initialen Kandidatenset enthalten sind, wodurch eine effektive nachgelagerte Relevanzfilterung ermöglicht wird.
+
+
+### Beispieleinträge aus dem Goldstandard-Datensatz
 
 | Frage                                                                        | Zugehöriges Dokument                                                                                                                                           |
 | ---------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
