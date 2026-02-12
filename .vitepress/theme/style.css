@@ -2,7 +2,7 @@
   --muc-logo-filter: invert(0);
   /*official rit colors*/
   /* --vp-c-brand-1: #1E6CFF; */
-  --vp-home-hero-name-color: #1E6CFF;
+  --vp-home-hero-name-color: #1e6cff;
   --vp-button-brand-hover-bg: var(--vp-c-brand-soft);
   --vp-nav-logo-height: 28px; /*bigger size for the logo*/
 }
