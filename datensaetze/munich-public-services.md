@@ -152,7 +152,7 @@ Fabian Reinold – Landeshauptstadt München, it@M, KI-Entwicklung & -Services (
 
 ## Kontakt für die Dataset Card
 
-Bei Fragen zum Datensatz kontaktieren Sie uns bitte [per Mail](mailto:itm.kicc@muenchen.de).
+Bei Fragen zum Datensatz kontaktieren Sie uns bitte [per Mail](mailto:ki@muenchen.de).
 
 ---
 

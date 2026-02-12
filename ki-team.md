@@ -120,7 +120,7 @@ const members = [
     title: "Marketing-Beauftragter",
     links: [
       { icon: "github", link: "https://huggingface.co/spaces/pollen-robotics/Reachy_Mini" },
-      { icon: "maildotru", link: "mailto:itm.kicc@muenchen.de"},
+      { icon: "maildotru", link: "mailto:ki@muenchen.de"},
     ],
   },
 ]
@@ -130,4 +130,4 @@ const members = [
 
 ## Kontakt
 
-Unser KI-Team ist erreichbar unter <itm.kicc@muenchen.de>.
+Unser KI-Team ist erreichbar unter <ki@muenchen.de>.
