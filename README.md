@@ -39,7 +39,7 @@ before committing.
 
 ## Contact
 
-it@M - <itm.kicc@muenchen.de>
+it@M - <ki@muenchen.de>
 
 <!-- project shields / links -->
 
