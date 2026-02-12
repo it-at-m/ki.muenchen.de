@@ -20,7 +20,7 @@ defineProps({
   >
     <img
       :alt="'Logo ' + (frontmatter.title || 'KI')"
-      :src="withBase(frontmatter.logo || '/img/logo/kicc_mascot.png')"
+      :src="withBase(frontmatter.logo || '/img/logo/mascot.png')"
     />
     <div class="infos">
       <v-btn

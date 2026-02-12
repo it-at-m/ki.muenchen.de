@@ -105,7 +105,7 @@ const members = [
     ],
   },
   // {
-  //   avatar: "/img/logo/kicc_mascot.png",
+  //   avatar: "/img/logo/mascot.png",
   //   name: "Nico Harbig",
   //   title: "ML Engineer",
   //   links: [
