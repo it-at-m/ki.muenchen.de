@@ -72,11 +72,6 @@ const vitepressConfig = defineConfig({
     sidebarMenuLabel: "Menü",
     returnToTopLabel: "Zurück nach oben",
     externalLinkIcon: true,
-    logo: {
-      dark: `/img/logo/kicc_tuerkis_100px.png`,
-      light: `/img/logo/kicc_tuerkis_100px.png`,
-      alt: "KI-Entwicklung & -Services (KIES) Logo",
-    },
   },
   markdown: {
     config: (md) => {

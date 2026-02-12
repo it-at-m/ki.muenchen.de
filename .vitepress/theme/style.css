@@ -1,7 +1,8 @@
 :root {
   --muc-logo-filter: invert(0);
   /*official rit colors*/
-  --vp-c-brand-1: #003ceb;
+  /* --vp-c-brand-1: #1E6CFF; */
+  --vp-home-hero-name-color: #1E6CFF;
   --vp-button-brand-hover-bg: var(--vp-c-brand-soft);
   --vp-nav-logo-height: 28px; /*bigger size for the logo*/
 }
@@ -10,7 +11,7 @@
 .dark {
   --muc-logo-filter: invert(1);
   --vp-button-alt-bg: transparent; /*alt button is transparent on dark mode */
-  --vp-c-brand-1: #69fff5;
+  /* --vp-c-brand-1: #1E6CFF;  */
 }
 
 /* Enables footer on all pages instead of only the home page */
@@ -34,24 +35,20 @@ footer.VPFooter {
 
 /*  Added from vitepress site theme: https://github.com/vuejs/vitepress/blob/main/docs/.vitepress/theme/styles.css */
 
-:root {
-  --vp-home-hero-image-background-image: linear-gradient(
-    90deg,
-    #69fff5 50%,
-    #1e6cff 50%
-  );
-  --vp-home-hero-image-filter: blur(44px);
+.dark {
+  --vp-home-hero-image-background-image: linear-gradient(90deg, #1e6cff);
+  --vp-home-hero-image-filter: blur(66px);
 }
 
 @media (min-width: 640px) {
-  :root {
-    --vp-home-hero-image-filter: blur(56px);
+  .dark {
+    --vp-home-hero-image-filter: blur(78px);
   }
 }
 
 @media (min-width: 960px) {
-  :root {
-    --vp-home-hero-image-filter: blur(68px);
+  .dark {
+    --vp-home-hero-image-filter: blur(90px);
   }
 }
 
