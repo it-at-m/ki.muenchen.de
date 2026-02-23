@@ -72,7 +72,7 @@ So können sowohl zu klassischen Suchanfragen, als auch ausformulierte Fragen, d
 ![Darstellung der hybriden Suche](/img/dlf/dlf_hybrid_search.png){.light-only}
 ![Darstellung der hybriden Suche](/img/dlf/dlf_hybrid_search_dark.png){.dark-only}
 
-### Relevanzbasierte Sortierung der Dokumente mittels Re-ranking und Boosting
+### Relevanzbasierte Sortierung der Dokumente mittels Re-Ranking und Boosting
 
 Zur Optimierung der Ergebnisreihenfolge werden die gefundenen Dokumente mithilfe eines Re-Ranking-Modells anhand ihrer inhaltlichen Relevanz zur Nutzeranfrage neu sortiert. Dadurch wird sichergestellt, dass inhaltlich präzisere und für die Anfrage relevantere Dokumente bevorzugt platziert werden.
 
@@ -98,7 +98,7 @@ Kann die Frage anhand eines Dokuments nicht beantwortet werden, wird dieses nich
 
 ### Embedding-Modell
 
-Semantische Vektoren von Texten (Text-Embeddings) erfassen die inhaltliche Ähnlichkeit zwischen Texten. In dieser Anwendung werden sie genutzt, um zu einer Suchanfrage relevante Dokumente zu identifizieren. Hierfür verwendet das System das Embedding-Modell „text-embeddings-3-large“ von OpenAI.
+Semantische Vektoren von Texten (Text-Embeddings) erfassen die inhaltliche Ähnlichkeit zwischen Texten. In dieser Anwendung werden sie genutzt, um zu einer Suchanfrage relevante Dokumente zu identifizieren. Hierfür verwendet das System das Embedding-Modell „text-embedding-3-large“ von OpenAI.
 [Mehr Informationen zum Modell](https://platform.openai.com/docs/guides/embeddings/embedding-models)
 
 ### Großes Sprachmodell (LLM)
