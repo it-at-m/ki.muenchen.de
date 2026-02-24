@@ -121,7 +121,7 @@ Aufgrund kontinuierlicher inhaltlicher und struktureller Aktualisierungen der Di
 
 ### Ergebnisse der Evaluation
 
-Zur Bewertung der Retrieval-Leistung werden der Mean Reciprocal Rank (MRR) sowie der Recall@10 herangezogen. Die Ergebnisse sind in Folgender Tabelle zusammengefasst:
+Zur Bewertung der Retrieval-Leistung werden der Mean Reciprocal Rank (MRR) sowie der Recall@10 herangezogen. Die Ergebnisse sind in folgender Tabelle zusammengefasst:
 
 |           | LHMDienstleistungenQA | Query-Doc-Service-de |
 | --------- | --------------------- | -------------------- |
@@ -134,7 +134,7 @@ Die dargestellten Ergebnisse beziehen sich ausschließlich auf die Leistung der 
 
 Der Datensatz **Query-Doc-Service-de** wurde mithilfe eines LLM generiert. Da diese Modelle nicht über explizites Expertenwissen zu den zugrunde liegenden Artikeln verfügen, können einzelne generierte Fragen nur teilweise mit den Dokumentinhalten übereinstimmen, was das Retrieval negativ beeinflussen kann. Gleichzeitig können solche Fragen jedoch die Mehrdeutigkeit und Variabilität realer Nutzeranfragen besser widerspiegeln als Experten-Fragen zu den jeweiligen Dokumenten.
 
-Die Evaluation wurde mit der vollständigen produktiven Retrieval-Pipeline durchgeführt, einschließlich Re-ranking und popularitätsbasiertem Dokument-Boosting. Diese Boosting-Strategie priorisiert häufig aufgerufene Artikel, was auf eine höhere Nützlichkeit für Nutzer hindeuten kann. Uns ist bewusst, dass eine auf aktuellen Zugriffszahlen basierende Gewichtung langfristig einen Bias verursachen kann, da häufig priorisierte Artikel tendenziell mehr Aufrufe generieren. Alternative Boosting-Strategien werden derzeit untersucht.
+Die Evaluation wurde mit der vollständigen produktiven Retrieval-Pipeline durchgeführt, einschließlich Re-Ranking und popularitätsbasiertem Dokument-Boosting. Diese Boosting-Strategie priorisiert häufig aufgerufene Artikel, was auf eine höhere Nützlichkeit für Nutzer hindeuten kann. Uns ist bewusst, dass eine auf aktuellen Zugriffszahlen basierende Gewichtung langfristig einen Bias verursachen kann, da häufig priorisierte Artikel tendenziell mehr Aufrufe generieren. Alternative Boosting-Strategien werden derzeit untersucht.
 
 Unter diesen Rahmenbedingungen weist ein durchschnittlicher MRR von 0.67 auf eine stabile und qualitativ hochwertige Platzierung relevanter Dokumente im Retrieval hin und wird durch einen Recall@10 von konsistent über 80 % bestätigt. Diese Kombination zeigt, dass relevante Dokumente in der Regel hoch gerankt sind und nahezu immer im initialen Kandidatenset enthalten sind, wodurch eine effektive nachgelagerte Relevanzfilterung ermöglicht wird.
 
