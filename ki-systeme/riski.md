@@ -14,15 +14,15 @@ description: Durchsuche das Ratsinformationssystem (RIS) mit Hilfe von KI. Verbe
 
 [<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/ki-systeme/index.md)
 
-# RIS-KI (BETA)
+# RIS KI-Suche (BETA)
 
-Die KI-Suche im [Raatsinformationssystem](https://risi.muenchen.de/risi/aktuelles;jsessionid=6F88999DED0AB379E2C780069F7BF440?0) (RIS) hilft dabei, relevante Beschlüsse und Dokumente zu finden. Momentan steht eine Vorabversion, die vor allem dabei hilft inhaltlich passende Informationen zu finden. Auswertungen werden im aktuellen System noch nicht wirklich abgebildet. Mehr dazu im Abschnitt [Risiken und Limitierungen](#risiken-und-limitierungen)
+Die KI-Suche im [Raatsinformationssystem](https://risi.muenchen.de/risi/aktuelles;jsessionid=6F88999DED0AB379E2C780069F7BF440?0) (RIS) hilft dabei, relevante Beschlüsse und Dokumente zu finden. Diese KI-basierte Suche ergänzt die bestehende Schlagwortsuche im RIS, indem sie den Inhalt der Suchanfragen und Dokumente versteht und passende Ergebnisse liefert. Die aktuell verfügbare BETA-Version, hilft vor allem dabei inhaltlich passende Informationen zu finden. Quantiative Auswertungen werden im aktuellen System noch nicht abgebildet. Mehr dazu im Abschnitt [Risiken und Limitierungen](#risiken-und-limitierungen)
 
 ---
 
-Diese Dokumentation beschreibt die Funktionsweise, Datengrundlage und Einschränkungen der KI-Suche im RIS.
+Diese Dokumentation beschreibt die Funktionsweise, Datengrundlage und aktuelle Einschränkungen der KI-Suche im RIS.
 Das System nutzt ein Embedding-Modell und ein großes Sprachmodell, um relevante Dokumente zu finden und präzise Antworten auf Nutzeranfragen zu generieren.
-Außerdem wird ein OCR Modell genutzt, um Informationen aus den Dokumenten zu extrahieren.
+Außerdem wird ein Optical Character Recognition (OCR) Modell genutzt, um Informationen aus den Dokumenten zu extrahieren.
 
 **TODO Screenshot einfügen**
 
@@ -31,7 +31,26 @@ Außerdem wird ein OCR Modell genutzt, um Informationen aus den Dokumenten zu ex
 Die KI-Suche im Raatsinformationssystem wurde entwickelt, damit Bürger\*innen und Mitarbeitenden der Stadt München natürlicher an Informationen zur Arbeit der Verwaltung, des Stadtrates und der Bezirksausschüsse der Landeshauptstadt München gelangen.
 Durch die Integration von KI-Technologien werden inhaltlich passende Informationen gefunden.
 
-## Datengrundlage TODO (ähnlich wie beim DLF, paar Beispieldokumente und Beschlüsse zeigen)
+## Datengrundlage
+
+In der aktuellen BETA-Version stehen folgende Dokumente der KI als Daten aus der **Wahlperiode März 2020 bis März 2026** zur Verfügung:
+
+- Stadtratsanträge
+- Beschlussvorlagen
+- Beschlüsse
+
+Aktuell noch **nicht** enthalten sind Informationen und Dokumente zu:
+
+- Referent\*innen
+- Stadtratssitzungen und Ausschusssitzungen
+- Protokolle
+- Stadtratsmitglieder
+- Fraktionen
+- Informationen über die Legislaturperiode
+- Informationen über die Tagesordnungspunkte
+- Zugehörigkeiten von Stadratsmitglieder zu Fraktionen und Auschüssen
+- Weitere Gremien 
+
 
 **TODO, hier etwas zu den Dokumenten die verwendet werden, Zeitraum etc..**
 
@@ -41,11 +60,13 @@ Durch die Integration von KI-Technologien werden inhaltlich passende Information
 
 Beschreibung Vorgang 1
 
+**ZS: Würde Beispiele für Vorgänge rauslassen**
+
 Weitere Beispiele..
 
 ### TODO Parsing mit Dokumentenpipeline und MIstral AI?
 
-Entweder hier, oder in Funktionsweise
+Entweder hier, oder in Funktionsweise @ZS -> Lieber in der Funktionsweise 
 
 ## Funktionsweise
 
@@ -90,23 +111,41 @@ Das System nutzt das Embedding-Modell "text-embeddings-3-large" von OpenAI.
 
 Das große Sprachmodell "gpt-4.1mini" von OpenAI wird zur Generierung der Nutzerantworten genutzt.
 
-TODO Link austauschen und ist "gpt-4.1"
+**TODO Link austauschen und ist "gpt-4.1"**
 [Mehr Informationen zum Modell](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/)
 
-TODO Mistral Document ai
+**TODO Mistral Document ai**
 
-## Risiken und Limitierungen TODO, das hier deutlich ausbauen mit beispielen
+## Risiken und Limitationen 
 
-Obwohl die KI-Suche viele Vorteile bietet, gibt es auch einige Risiken und Limitierungen:
+Obwohl die KI-Suche viele Vorteile bietet, gibt es auch einige Risiken und Limitierungen. Diese teilen sich im folgenden auf **Allgemeine Risiken und Limtiergen beim Einsatz von KI** und **spezifische Einschränkungen der RIS KI-Suche BETA Version** auf. 
 
-- **Bias in den Daten**: Die KI-Modelle können Vorurteile aus den Trainingsdaten übernehmen.
+### Allgemeine Risiken und Limitationen beim Einsatz von KI 
+- **Bias in den Daten**: KI-Modelle können Vorurteile aus den Trainingsdaten übernehmen.
 - **Sprachliche Beschränkungen**: Die Qualität der Antworten kann je nach Sprache und Formulierung der Anfrage variieren.
 - **Datenschutz**: Es dürfen keine personenbezogenen Daten eingegeben werden.
 
+### Spezifische Limitationen der RIS KI-Suche (BETA) 
+- Quantiative Auswertungen werden in der BETA Version System noch nicht abgebildet
+
+Folgende Arten von Anfragen werden aktuell **keine**, oder **keine guten** Ergbnisse liefern: 
+
+Quantiative Fragen und Auswertungen  
+- Zeitliche Entwicklungen & Verläufe (Wie viele Anträge gab es 2025 zum Thema Digitalisierung?)
+- Deskriptive Statistik & Mengenabfragen (Welche Partei hat die meisten Anträge zu einem Thema gestellt?)
+- Akteurs- & Parteienanalyse (Wie teilen sich die Anträge zur Digitalisierung 2025 auf die Fraktionen auf?)
+- Prozess- & Verfahrensanalyse (Gibt es Unterschiede in der Behandlungsdauer je nach Gremium?)
+- Zurodnungen (Welche Stadtratsmitglieder gehören zu welcher Partei oder Fraktion?)
+- Bewertungen (Welche Fraktion macht die beste Arbeit?)
+
+
 ---
 
-## TODO Ausblick?
+## Weitere Entwicklung
 
-Ausblick mit Kontakt für Wünsche?
+Wir haben die RIS KI-Suche bewusst in einer frühen BETA Version veröffentlicht und arbeiten aktiv an einer Weiterentwicklung des Systems. Insbesondere was die aktuellen Limitationen angeht. Daher sind wir sehr interessiert an Feedback und Rückmeldungen zur aktuellen BETA-Version. Stellt die KI-Suche eine Verbesserung gegenüber der aktuellen Suche im RIS dar? Wofür nutzen Sie die KI-Suche? Welche Erfahrungen haben Sie gemacht?  
+
+Schreiben Sie uns gerne eine Nachricht an **TODO KONTAKTADRESSE FESTLEGEN**
+
 
 [<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/ki-systeme/index.md)
