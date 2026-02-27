@@ -14,25 +14,26 @@ description: Durchsuche das Ratsinformationssystem (RIS) mit Hilfe von KI. Verbe
 
 [<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/ki-systeme/index.md)
 
-# RIS-KI
+# RIS-KI (BETA)
 
-Die KI-Suche im Dienstleistungsfinder nutzt moderne Sprachmodelle, um Bürger\*innen bei der Suche nach städtischen Dienstleistungen auf muenchen.de zu unterstützen.
+Die KI-Suche im Raatsinformationssystem (RIS) hilft dabei, relevante Beschlüsse und Dokumente zu finden. Momentan steht eine Vorabversion, die vor allem dabei hilft inhaltlich passende Informationen zu finden. Auswertungen werden im aktuellen System noch nicht wirklich abgebildet. Mehr dazu im Abschnitt [Risiken und Limitierungen](#risiken-und-limitierungen)
 
 ---
 
-Diese Dokumentation beschreibt die Funktionsweise, Datengrundlage und der KI-Suche im Raatsinformationssystem auf muenchen.de.
-Die KI-Suche nutzt ein Embedding-Modell und ein großes Sprachmodell, um relevante Dokumente zu finden und präzise Antworten auf Nutzeranfragen zu generieren.
+Diese Dokumentation beschreibt die Funktionsweise, Datengrundlage und Einschränkungen der KI-Suche im RIS.
+Das System nutzt ein Embedding-Modell und ein großes Sprachmodell, um relevante Dokumente zu finden und präzise Antworten auf Nutzeranfragen zu generieren.
+ Außerdem wird ein OCR Modell genutzt, um Informationen aus den Dokumenten zu extrahieren.
 
-TODO Screenshot einfügen
+**TODO Screenshot einfügen**
 
 ## Einführung und Kontext
 
 Die KI-Suche im Raatsinformationssystem wurde entwickelt, damit Bürger\*innen und Mitarbeitenden der Stadt München natürlicher an Informationen zur Arbeit der Verwaltung, des Stadtrates und der Bezirksausschüsse der Landeshauptstadt München gelangen.
-Durch die Integration von KI-Technologien wird die Suchfunktion erheblich verbessert, was zu einer schnelleren und präziseren Beantwortung von Anfragen führt.
+Durch die Integration von KI-Technologien werden inhaltlich passende Informationen gefunden.
 
-## Datengrundlage
+## Datengrundlage TODO (siehe auch DLF)
 
-TODO, hier etwas zu den Dokumenten die verwendet werden, Zeitraum etc..
+**TODO, hier etwas zu den Dokumenten die verwendet werden, Zeitraum etc..**
 
 ### Beispiele für Vorgänge im RIS
 
@@ -40,15 +41,15 @@ TODO, hier etwas zu den Dokumenten die verwendet werden, Zeitraum etc..
 
 Beschreibung Vorgang 1
 
-Weitere BEispiele..
+Weitere Beispiele..
+
+### TODO Parsing mit Dokumentenpipeline und MIstral AI?
+
+Entweder hier, oder in Funktionsweise
 
 ## Funktionsweise
 
 TODO das hier ausbauen, benutzen ja eher einen agenten das zeigen
-
-### TODO Parsing mit Dokumentenpipeline und MIstral AI?
-
-kanne eventuell auch zu datengrundlage
 
 ### Antwortgenerierung mit Agent
 
@@ -79,7 +80,7 @@ TODO Link austauschen und ist "gpt-4.1"
 
 TODO Mistral Document ai
 
-## Risiken und Limitierungen
+## Risiken und Limitierungen TODO, das hier deutlich ausbauen mit beispielen
 
 Obwohl die KI-Suche viele Vorteile bietet, gibt es auch einige Risiken und Limitierungen:
 
