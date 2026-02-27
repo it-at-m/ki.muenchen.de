@@ -126,9 +126,8 @@ Obwohl die KI-Suche viele Vorteile bietet, gibt es auch einige Risiken und Limit
 - **Datenschutz**: Es dürfen keine personenbezogenen Daten eingegeben werden.
 
 ### Spezifische Limitationen der RIS KI-Suche (BETA) 
-- Quantiative Auswertungen werden in der BETA Version System noch nicht abgebildet
 
-Folgende Arten von Anfragen werden aktuell **keine**, oder **keine guten** Ergbnisse liefern: 
+Folgende Arten von Anfragen werden aktuell **keine**, oder **keine guten** Ergbnisse liefern. Die Gründe für die Limitationen sind die Datengrundlage, die aktuelle technische Architektur und bewusst gewählte moderative Restriktionen.   
 
 Quantiative Fragen und Auswertungen  
 - Zeitliche Entwicklungen & Verläufe (Wie viele Anträge gab es 2025 zum Thema Digitalisierung?)
