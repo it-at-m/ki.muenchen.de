@@ -28,8 +28,7 @@ Außerdem wird ein Optical Character Recognition (OCR) Modell genutzt, um Inform
 
 ## Einführung und Kontext
 
-Die KI-Suche im Raatsinformationssystem wurde entwickelt, damit Bürger\*innen und Mitarbeitenden der Stadt München natürlicher an Informationen zur Arbeit der Verwaltung, des Stadtrates und der Bezirksausschüsse der Landeshauptstadt München gelangen.
-Durch die Integration von KI-Technologien werden inhaltlich passende Informationen gefunden.
+Die KI-Suche im Raatsinformationssystem wurde entwickelt, damit Bürger\*innen und Mitarbeitenden der Stadt München natürlicher an Informationen zur Arbeit der Verwaltung, des Stadtrates und der Bezirksausschüsse der Landeshauptstadt München gelangen. Der Auftrag zur Umsetzung dieser Funktionalität wurde im Stadtratsbeschluss „[V 14682 KI-Roadmap (S.6, I. 2. 3.)](https://risi.muenchen.de/risi/sitzungsvorlage/detail/8656056)“ festgelegt.
 
 ## Datengrundlage
 
