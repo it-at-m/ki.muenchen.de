@@ -93,17 +93,17 @@ Das Modell "mistral-document-ai" ist eine von Mistral AI entwickelte, multimodal
 
 ## Risiken und Limitierungen
 
-Obwohl die KI-Suche viele Vorteile bietet, gibt es auch einige Risiken und Limitierungen. Diese teilen sich im folgenden auf **Allgemeine Risiken und Limtierungen beim Einsatz von KI** und **spezifische Einschränkungen der RIS KI-Suche Beta Version** auf.
+Obwohl die KI-Suche viele Vorteile bietet, gibt es auch einige Risiken und Limitierungen. Diese teilen sich im Folgenden auf **allgemeine Risiken und Limitierungen beim Einsatz von KI** und **spezifische Einschränkungen der RIS KI-Suche (Beta-Version)** auf.
 
-### Allgemeine Risiken und Limitationen beim Einsatz von KI
+### Allgemeine Risiken und Limitierungen beim Einsatz von KI
 
 - **Bias in den Daten**: KI-Modelle können Vorurteile aus den Trainingsdaten übernehmen.
 - **Sprachliche Beschränkungen**: Die Qualität der Antworten kann je nach Sprache und Formulierung der Anfrage variieren.
 - **Datenschutz**: Es dürfen keine personenbezogenen Daten eingegeben werden.
 
-### Spezifische Limitationen der RIS KI-Suche (Beta)
+### Spezifische Einschränkungen der RIS KI-Suche (Beta-Version)
 
-Folgende Arten von Anfragen werden aktuell **keine**, oder **keine guten** Ergbnisse liefern. Die Gründe für die Limitationen sind die Datengrundlage, die aktuelle technische Architektur und bewusst gewählte moderative Restriktionen.
+Folgende Arten von Anfragen werden aktuell **keine** oder **keine guten** Ergbnisse liefern. Die Gründe für die Limitationen sind die Datengrundlage, die aktuelle technische Architektur und bewusst gewählte moderative Restriktionen.
 
 Dies umfasst folgende Themen (nicht abschließend):
 
