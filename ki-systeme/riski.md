@@ -90,7 +90,7 @@ Das System nutzt dafür das Embedding-Modell "text-embeddings-3-large" von OpenA
 Das große Sprachmodell "gpt-4.1" von OpenAI wird zur Generierung der Nutzerantworten genutzt.
 [Mehr Informationen zum Modell](https://openai.com/index/gpt-4-1/)
 
-**Mistral Document AI**
+### Mistral Document AI
 Das Modell "mistral-document-ai" ist eine von Mistral AI entwickelte, multimodale Plattform und API für die automatisierte Dokumentenverarbeitung, um unstrukturierte Dokumente (PDFs, Bilder, Scans) in strukturierte Daten umzuwandeln.
 [Mehr Informationen zum Modell](https://mistral.ai/solutions/document-ai)
 
