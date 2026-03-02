@@ -14,9 +14,11 @@ description: Durchsuche das Ratsinformationssystem (RIS) mit Hilfe von KI. Verbe
 
 [<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/ki-systeme/index.md)
 
-# RIS KI-Suche (Beta)
+# RIS KI-Suche (Beta-Version)
 
 Die KI-Suche im [Ratsinformationssystem](https://risi.muenchen.de/) (RIS) hilft dabei, relevante Beschlüsse und Dokumente zu finden. Diese KI-basierte Suche ergänzt die bestehende Schlagwortsuche im RIS, indem sie den Inhalt der Suchanfragen und Dokumente versteht und passende Ergebnisse liefert. Die aktuell verfügbare Beta-Version, hilft vor allem dabei inhaltlich passende Informationen zu finden. Quantiative Auswertungen werden im aktuellen System noch nicht abgebildet. Mehr dazu im Abschnitt [Risiken und Limitierungen](#risiken-und-limitierungen)
+
+![Screenshot von riski.muenchen.de](/img/riski/riski_screenshot.png)
 
 ## Einführung und Kontext
 
@@ -91,19 +93,19 @@ Das große Sprachmodell "gpt-4.1" von OpenAI wird zur Generierung der Nutzerantw
 Das Modell "mistral-document-ai" ist eine von Mistral AI entwickelte, multimodale Plattform und API für die automatisierte Dokumentenverarbeitung, um unstrukturierte Dokumente (PDFs, Bilder, Scans) in strukturierte Daten umzuwandeln.
 [Mehr Informationen zum Modell](https://mistral.ai/solutions/document-ai)
 
-## Risiken und Limitationen
+## Risiken und Limitierungen
 
-Obwohl die KI-Suche viele Vorteile bietet, gibt es auch einige Risiken und Limitierungen. Diese teilen sich im folgenden auf **Allgemeine Risiken und Limtierungen beim Einsatz von KI** und **spezifische Einschränkungen der RIS KI-Suche Beta Version** auf.
+Obwohl die KI-Suche viele Vorteile bietet, gibt es auch einige Risiken und Limitierungen. Diese teilen sich im Folgenden auf **allgemeine Risiken und Limitierungen beim Einsatz von KI** und **spezifische Einschränkungen der RIS KI-Suche (Beta-Version)** auf.
 
-### Allgemeine Risiken und Limitationen beim Einsatz von KI
+### Allgemeine Risiken und Limitierungen beim Einsatz von KI
 
 - **Bias in den Daten**: KI-Modelle können Vorurteile aus den Trainingsdaten übernehmen.
 - **Sprachliche Beschränkungen**: Die Qualität der Antworten kann je nach Sprache und Formulierung der Anfrage variieren.
 - **Datenschutz**: Es dürfen keine personenbezogenen Daten eingegeben werden.
 
-### Spezifische Limitationen der RIS KI-Suche (Beta)
+### Spezifische Einschränkungen der RIS KI-Suche (Beta-Version)
 
-Folgende Arten von Anfragen werden aktuell **keine**, oder **keine guten** Ergbnisse liefern. Die Gründe für die Limitationen sind die Datengrundlage, die aktuelle technische Architektur und bewusst gewählte moderative Restriktionen.
+Folgende Arten von Anfragen werden aktuell **keine** oder **keine guten** Ergbnisse liefern. Die Gründe für die Limitationen sind die Datengrundlage, die aktuelle technische Architektur und bewusst gewählte moderative Restriktionen.
 
 Dies umfasst folgende Themen (nicht abschließend):
 
@@ -116,8 +118,8 @@ Dies umfasst folgende Themen (nicht abschließend):
 
 ## Verwendete Softwarestandards
 
-- AG-UI Frontend Kommunikation
-- Datenschema nach OPARL
+- [AG-UI](https://docs.ag-ui.com/introduction) Frontend Kommunikation
+- Datenschema nach [OPARL](https://oparl.org/spezifikation/online-ansicht/#schema)
 
 ## Weitere Entwicklung
 
