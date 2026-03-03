@@ -104,7 +104,7 @@ Semantische Vektoren von Texten (Text-Embeddings) erfassen die inhaltliche Ähnl
 ### Großes Sprachmodell (LLM)
 
 Das große Sprachmodell "gpt-4.1-mini" von OpenAI wird zur Generierung der Nutzerantworten genutzt.
-[Mehr Informationen zum Modell](https://openai.com/index/gpt-4-1/)
+[Mehr Informationen zum Modell](https://platform.openai.com/docs/models/gpt-4.1-mini)
 
 ## Evaluation
 
@@ -121,7 +121,7 @@ Aufgrund kontinuierlicher inhaltlicher und struktureller Aktualisierungen der Di
 
 ### Ergebnisse der Evaluation
 
-Zur Bewertung der Retrieval-Leistung werden der Mean Reciprocal Rank (MRR) sowie der Recall@10 herangezogen. Die Ergebnisse sind in Folgender Tabelle zusammengefasst:
+Zur Bewertung der Retrieval-Leistung werden der Mean Reciprocal Rank (MRR) sowie der Recall@10 herangezogen. Die Ergebnisse sind in folgender Tabelle zusammengefasst:
 
 |           | LHMDienstleistungenQA | Query-Doc-Service-de |
 | --------- | --------------------- | -------------------- |
