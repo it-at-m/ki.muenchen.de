@@ -21,6 +21,10 @@ const vitepressConfig = defineConfig({
   ],
   lang: "de-DE",
   lastUpdated: true,
+  sitemap: {
+    hostname: "https://ki.muenchen.de",
+    lastmodDateOnly: true,
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
