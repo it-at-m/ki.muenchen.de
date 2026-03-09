@@ -38,6 +38,6 @@ Professor Dr. Matthias Klein, Leiter der Notaufnahme des Klinikums Großhadern, 
 
 Nach dem Testbetrieb des KI-Sprachbots im Februar ist der mehrstufige Roll-Out am LMU Klinikum Großhadern im Frühjahr geplant. Ziel ist es, die Lösung schrittweise auf weitere Kliniken in München und danach in ganz Bayern auszuweiten und die Zusammenarbeit langfristig fortzuführen. Die zugrunde liegende KI-Plattform ist so konzipiert, dass sie perspektivisch auch für weitere Anwendungen in Leitstellen, Feuerwehr und Verwaltung genutzt werden kann – als skalierbare Blaupause für verantwortungsvolle KI im öffentlichen Bereich.
 
-> Dieser Beitrag erschien ursprünglich im Pressedienst „Rathaus Umschau" der Landeshauptstadt München vom 25. Februar 2026 (Ausgabe 62/2026) und ist im Original hier zu finden: [zur „Rathaus Umschau"](https://ru.muenchen.de/2026/38/Mehr-Zeit-fuer-Notrufe-KI-Sprachbot-entlastet-Integrierte-Leitstelle-123113).
+> Dieser Beitrag erschien ursprünglich im Pressedienst „Rathaus Umschau" der Landeshauptstadt München vom 25. Februar 2026 (Ausgabe 38/2026) und ist im Original hier zu finden: [zur „Rathaus Umschau"](https://ru.muenchen.de/2026/38/Mehr-Zeit-fuer-Notrufe-KI-Sprachbot-entlastet-Integrierte-Leitstelle-123113).
 
 [<v-icon>mdi-arrow-left</v-icon> Zurück zum Blog](/blog/index.md)
