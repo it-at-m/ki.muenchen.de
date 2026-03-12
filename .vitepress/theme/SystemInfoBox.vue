@@ -63,8 +63,8 @@ defineProps({
           icon="mdi-open-in-app"
         />
 
-        <span v-if="lang === 'en'">Open App</span>
-        <span v-else>App anzeigen</span>
+        <span v-if="lang === 'en'">Go to AI System</span>
+        <span v-else>Zum KI-System</span>
       </v-btn>
 
       <tag-chip-group
