@@ -16,13 +16,13 @@ description: Durchsuche das Ratsinformationssystem (RIS) mit Hilfe von KI. Verbe
 
 # RIS KI-Suche (Beta-Version)
 
-Die KI-Suche im [Ratsinformationssystem](https://risi.muenchen.de/) (RIS) hilft dabei, relevante Beschlüsse und Dokumente zu finden. Diese KI-basierte Suche ergänzt die bestehende Schlagwortsuche im RIS, indem sie den Inhalt der Suchanfragen und Dokumente versteht und passende Ergebnisse liefert. Die aktuell verfügbare Beta-Version, hilft vor allem dabei inhaltlich passende Informationen zu finden. Quantiative Auswertungen werden im aktuellen System noch nicht abgebildet. Mehr dazu im Abschnitt [Risiken und Limitierungen](#risiken-und-limitierungen)
+Die KI-Suche im [Ratsinformationssystem](https://risi.muenchen.de/) (RIS) hilft dabei, relevante Beschlüsse und Dokumente zu finden. Diese KI-basierte Suche ergänzt die bestehende Schlagwortsuche im RIS, indem sie den Inhalt der Suchanfragen und Dokumente versteht und passende Ergebnisse liefert. Die aktuell verfügbare Beta-Version, hilft vor allem dabei inhaltlich passende Informationen zu finden. Quantitative Auswertungen werden im aktuellen System noch nicht abgebildet. Mehr dazu im Abschnitt [Risiken und Limitierungen](#risiken-und-limitierungen)
 
 ![Screenshot von riski.muenchen.de](/img/riski/riski_screenshot.png)
 
 ## Einführung und Kontext
 
-Die KI-Suche im Raatsinformationssystem wurde entwickelt, damit Bürger\*innen und Mitarbeitenden der Stadt München natürlicher an Informationen zur Arbeit der Verwaltung, des Stadtrates und der Bezirksausschüsse der Landeshauptstadt München gelangen. Der Auftrag zur Umsetzung dieser Funktionalität wurde im Stadtratsbeschluss „[V 14682 KI-Roadmap (S.6, I. 2. 3.)](https://risi.muenchen.de/risi/sitzungsvorlage/detail/8656056)“ festgelegt.
+Die KI-Suche im Ratsinformationssystem wurde entwickelt, damit Bürger\*innen und Mitarbeitenden der Stadt München natürlicher an Informationen zur Arbeit der Verwaltung, des Stadtrates und der Bezirksausschüsse der Landeshauptstadt München gelangen. Der Auftrag zur Umsetzung dieser Funktionalität wurde im Stadtratsbeschluss „[V 14682 KI-Roadmap (S.6, I. 2. 3.)](https://risi.muenchen.de/risi/sitzungsvorlage/detail/8656056)“ festgelegt.
 
 ## Datengrundlage
 
@@ -43,7 +43,7 @@ Aktuell noch **nicht** enthalten sind Informationen und Dokumente zu:
 - Fraktionen
 - Informationen über die Legislaturperiode
 - Informationen über die Tagesordnungspunkte
-- Zugehörigkeiten von Stadratsmitglieder zu Fraktionen und Auschüssen
+- Zugehörigkeiten von Stadtratsmitglieder zu Fraktionen und Ausschüssen
 - Weitere Gremien
 
 ## Funktionsweise
@@ -68,7 +68,7 @@ Ein roter Punkt kennzeichnet dabei Aktionen, die mithilfe von KI-Modellen durchg
 
 4. **Überprüfung der Information**: Die gefundenen Dokumente werden nochmal einzeln mithilfe des LLMs auf Relevanz überprüft. Dafür wird jeweils eine kurze Begründung erzeugt. Falls keine relevanten Dokumente übrig bleiben, wird mit Schritt 6 fortgefahren.
 
-5. **Antwortgenerierung**: Die ursprüngliche Frage wird auf Basís der nun als relevant ermittelten Dokumente vom Sprachmodell beantwortet. Die gefundenen Dokumente und Anträge werden seperat angezeigt.
+5. **Antwortgenerierung**: Die ursprüngliche Frage wird auf Basis der nun als relevant ermittelten Dokumente vom Sprachmodell beantwortet. Die gefundenen Dokumente und Anträge werden separat angezeigt.
 
 6. Mithilfe des LLMs werden **alternative Suchvorschläge** generiert, unter Berücksichtigung der Datengrundlage und Limitierungen des Systems.
 
@@ -105,7 +105,7 @@ Obwohl die KI-Suche viele Vorteile bietet, gibt es auch einige Risiken und Limit
 
 ### Spezifische Einschränkungen der RIS KI-Suche (Beta-Version)
 
-Folgende Arten von Anfragen werden aktuell **keine** oder **keine guten** Ergbnisse liefern. Die Gründe für die Limitationen sind die Datengrundlage, die aktuelle technische Architektur und bewusst gewählte moderative Restriktionen.
+Folgende Arten von Anfragen werden aktuell **keine** oder **keine guten** Ergebnisse liefern. Die Gründe für die Limitationen sind die Datengrundlage, die aktuelle technische Architektur und bewusst gewählte moderative Restriktionen.
 
 Dies umfasst folgende Themen (nicht abschließend):
 
@@ -113,7 +113,7 @@ Dies umfasst folgende Themen (nicht abschließend):
 - **Deskriptive Statistik & Mengenabfragen** ("Welche Partei hat die meisten Anträge zu einem Thema gestellt?")
 - **Akteurs- & Parteienanalyse** ("Wie teilen sich die Anträge zur Digitalisierung 2025 auf die Fraktionen auf?")
 - **Prozess- & Verfahrensanalyse** ("Gibt es Unterschiede in der Behandlungsdauer je nach Gremium?")
-- **Zurodnungen** ("Welche Stadtratsmitglieder gehören zu welcher Partei oder Fraktion?")
+- **Zuordnungen** ("Welche Stadtratsmitglieder gehören zu welcher Partei oder Fraktion?")
 - **Bewertungen** ("Welche Fraktion macht die beste Arbeit?")
 
 ## Verwendete Softwarestandards
