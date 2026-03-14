@@ -14,6 +14,14 @@ Hier finden Sie spannende Einblicke in die Arbeit der Stadt München im Bereich 
 ## Artikel
 
 <BlogpostCard
+  title="Pressemeldung: Mehr Zeit für Notrufe: KI-Sprachbot entlastet Integrierte Leitstelle"
+  link="/blog/2026-02-25-ru-sprachbot-bd"
+  teaser="Die Branddirektion München hat gemeinsam mit Microsoft Deutschland einen KI-Sprachbot für die Aufnahme von Krankentransporten entwickelt. Der KI-gestützte Sprachbot unterstützt die Integrierte Leitstelle bei der Erfassung von Krankentransporten und entlastet damit die Mitarbeiterinnen und Mitarbeiter, die zeitkritische Notrufe annehmen."
+  date="2026-02-25"
+  img="/img/blog/bd_ms_tour_nadella.jpg"
+/>
+
+<BlogpostCard
   title="KI-Hackathon 2025: 11 Challenges in vier Tagen"
   link="https://muenchen.digital/meldungen/2025/ki-hackathon-2025.html"
   teaser="Der KI-Hackathon vom 21. bis 24 Juli für Entwickler*innen und Expert*innen stand heuer unter den Schwerpunkten MUCGPT, GenAI, BI & Datenanalyse sowie klassisches ML."
