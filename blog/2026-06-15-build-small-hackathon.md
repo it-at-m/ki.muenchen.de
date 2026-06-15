@@ -36,7 +36,7 @@ Dabei gab es zwei Tracks:
 
 Als Basis wollten wir ein Modell fine-tunen, das natürliche Sprache direkt in [OpenUI-Lang](https://www.openui.com/docs/openui-lang/specification-v05) übersetzt.
 
-_OpenUI_ ist ein generatives UI-Framework, das Frontendkomponenten dynamisch mit einem LLM generiert. Die zugrunde liegende Abstraktionssprache _OpenUI-Lang_ ist dabei deutlich token-effizienter als ein direktes HTML-Rendering.
+_OpenUI_ ist ein generatives UI-Framework, das Frontendkomponenten dynamisch mit einem LLM generiert. Die zugrunde liegende Abstraktionssprache _OpenUI-Lang_ ist dabei deutlich token-effizienter als beispielsweise direktes HTML-Rendering.
 
 Ein kurzes Beispiel zeigt das Prinzip:
 
@@ -89,7 +89,8 @@ Ein zentrales Deliverable im Hackathon war ein eigener Gradio Space zum Austeste
 ![Zielarchitektur](/img/blog/build-small-architecture.png){.light-only}
 ![Zielarchitektur](/img/blog/build-small-architecture_dark.png){.dark-only}
 
-Wir haben uns bewusst dafür entschieden, ausschließlich mit [MiniCPM-1B](https://huggingface.co/openbmb/MiniCPM5-1B) beziehungsweise fein-getunten LoRA-Adaptern zu arbeiten. Einerseits, weil der Anbieter des Modells den Hackathon unterstützt hat, andererseits, weil wir ausprobieren wollten, wie weit wir mit einem 1B-Modell kommen.
+Wir haben uns bewusst für den Einsatz von [MiniCPM-1B](https://huggingface.co/openbmb/MiniCPM5-1B) sowie feinabgestimmten LoRA-Adaptern entschieden. Dies hat zwei Gründe: Zum einen hat der Anbieter des Modells den Hackathon unterstützt, zum anderen wollten wir testen, wie leistungsfähig ein 1B-Modell in der Praxis sein kann. Durch die Nutzung von LoRA-Adaptern konnten wir dabei besonders effizient arbeiten und erhebliche Ressourcen während der Laufzeit sparen.
+Zusätzlich haben wir ein kleines Multilayer-Perceptron trainiert, das erkennt, welcher Adapter gerade verwendet wird.
 
 ### Datensätze
 
