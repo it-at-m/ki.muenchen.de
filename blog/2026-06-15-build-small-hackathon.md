@@ -21,10 +21,6 @@ Dabei gab es zwei Tracks:
 - _Backyard AI_: Ein echtes Problem lösen
 - _An Adventure in Thousand Token World_: Etwas Wunderschönes erschaffen
 
-Der Hackathon wurde von vielen renommierten KI-Labs unterstützt, mit denen man auch direkt in Discord interagieren konnte:
-
-- OpenAI, Nvidia, Black Forest Labs, Cohere, OpenBMB, JetBrains
-
 Hier noch einige Informationen zum Event:
 
 - 5.–15. Juni (Wir haben insgesamt 3 Tage mitgemacht)
@@ -32,7 +28,48 @@ Hier noch einige Informationen zum Event:
 - Mehr als 2.000 Teilnehmer
 - 6 Bonus Quests (z. B. Fine-Tune eines eigenen Modells verwenden)
 
-## Unsere Idee
+## Unsere Idee: Smolnalysis
+
+### Übersetzung in OpenUI-Lang
+
+Als Basis wollten wir ein Modell fine-tunen, das Text in [OpenUI-Lang](https://www.openui.com/docs/openui-lang/specification-v05) übersetzt.
+
+_OpenUI_ ist ein generatives UI-Framework, das Frontendkomponenten dynamisch mit einem LLM generiert. Dabei wird die Abstraktionssprache _OpenUI-Lang_ verwendet, die deutlich token-effizienter ist als beispielsweise direktes HTML-Generieren.
+
+Hier ein Beispiel zur besseren Veranschaulichung:
+
+::: details Beispiel: Wetterabfrage in OpenUI-Lang
+Nutzer fragt:
+
+> Wie ist das Wetter in München
+
+Generierte Antwort vom LLM in OpenUI-Lang mithilfe einer Wetterschnittstelle:
+
+```OpenUI-Lang
+root = Stack([header, callout, cards, footer])
+header = CardHeader("Wetter in München", "Aktuelle Vorhersage — heute")
+callout = Callout("info", "Hinweis", "Dies sind typische Wetterwerte für München. Für Echtzeit-Daten bitte einen Wetterdienst besuchen.")
+cards = Stack([tempCard, windCard, humCard, uvCard], "row", "m", "stretch", "start", true)
+tempCard = Card([CardHeader("🌤️ Temperatur", "Teilweise bewölkt"), TextContent("14 °C", "large-heavy"), TextContent("Gefühlt: 12 °C", "small")], "card")
+windCard = Card([CardHeader("💨 Wind", "Aus Nordwest"), TextContent("18 km/h", "large-heavy"), TextContent("Böen bis 30 km/h", "small")], "card")
+humCard = Card([CardHeader("💧 Luftfeuchtigkeit", "Mäßig"), TextContent("62 %", "large-heavy"), TextContent("Taupunkt: 7 °C", "small")], "card")
+uvCard = Card([CardHeader("☀️ UV-Index", "Niedrig"), TextContent("2", "large-heavy"), TextContent("Kein Sonnenschutz nötig", "small")], "card")
+footer = Card([CardHeader("5-Tage-Vorschau", ""), forecastChart], "sunk")
+forecastChart = BarChart(["Mo", "Di", "Mi", "Do", "Fr"], [highSeries, lowSeries], "grouped", "Wochentag", "Temperatur (°C)")
+highSeries = Series("Hoch (°C)", [14, 16, 13, 11, 12])
+lowSeries = Series("Tief (°C)", [7, 9, 8, 5, 6])
+```
+
+Gerendertes Ergebnis im Frontend:
+![OpenUI-Lang Rendered](/img/blog/openui-lang-example.png)
+
+:::
+
+Statt ein großes LLM mit einem ausführlichen Systemprompt einzusetzen, der die Funktionsweise von OpenUI-Lang erklärt, wollten wir ein SLM trainieren, das „Nutzerfrage + relevanter Kontext“ direkt in OpenUI-Lang übersetzt.
+
+### Kombination mit dem OpenData-Katalog der LHM
+
+### Ein Zoo von Modellen zum Routing
 
 ## Umsetzung
 
