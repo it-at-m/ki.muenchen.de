@@ -190,11 +190,15 @@ Gerade in einer Zeit, in der die Nutzung großer Foundation-Modelle über API-Zu
 
 ### Limitierungen
 
+Die entwickelten Adapter sind in ihrer aktuellen Form eher Prototypen als produktionsreife Modelle. Der Hauptgrund liegt in der Qualität der Trainingsdaten: Unsere synthetisch generierten Beispiele sind zu weit entfernt von realen Nutzungsszenarien, sodass die Generalisierungsfähigkeit der Modelle noch zu schwach ist.
+
+Darüber hinaus fehlt eine systematische Evaluierung. Wir haben beispielsweise nicht verglichen, wie unterschiedliche Basismodelle mit denselben Trainingsdaten funktionieren würden. Auch verschiedene Modellgrößen oder Modelle mit anderem Hintergrundwissen haben wir nicht untersucht. Ein interessanter Punkt wäre gewesen zu testen, wie gut MiniCPM5 sich für deutsche Eingaben eignet, da das Modell primär auf englischen und chinesischen Daten trainiert wurde.
+
 ### Ausblick
 
 Für uns war der Hackathon deshalb weniger ein abgeschlossener Prototyp als vielmehr ein Lernprojekt mit klaren nächsten Schritten. Besonders spannend wäre es, die Datensatzerstellung systematischer anzugehen, reale Nutzungsdaten aus einer ersten Anwendungsversion zu sammeln und darauf aufbauend gezielter zu trainieren.
 
-Darüber hinaus wollen wir weiter beobachten, für welche kommunalen oder verwaltungsnahen Anwendungsfälle kleine Modelle tatsächlich eine belastbare Alternative zu großen API-Modellen sein können.
+Darüber hinaus wollen wir weiter beobachten, für welche kommunalen oder verwaltungsnahen Anwendungsfälle kleine Modelle tatsächlich eine belastbare Alternative zu großen, über Cloud APIs bereitgestellten Modellen sein können.
 
 ## Links
 
