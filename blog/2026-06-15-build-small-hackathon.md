@@ -97,10 +97,6 @@ In der folgenden Grafik ist der Informationsfluss dargestellt: Das MLP entscheid
 ![Agent mit unterschiedlichen Expertenmodellen](/img/blog/build-small-model-flow.png){.light-only}
 ![Agent mit unterschiedlichen Expertenmodellen](/img/blog/build-small-model-flow_dark.png){.dark-only}
 
-### Datensätze
-
-TODO Input Sebastian
-
 ### Training
 
 Wir haben zwei verschiedene Varianten zum Training ausprobiert. Zum einen auf lokaler Hardware. Auf der anderen Seite hatten wir auch im Zuge des Hackathons Modal Credits zur Verfüung gestellt bekommen.
@@ -147,10 +143,6 @@ Den vollständigen Code findet ihr [hier](https://github.com/Meteord/smolnalysis
 Kosten fallen nur während der tatsächlichen Ausführung an. Die Möglichkeit, den Serverstandort z. B. im europäischen Datenraum festzulegen, befindet sich derzeit noch in der [Beta](https://modal.com/docs/guide/region-selection#container-region-options). Für das Training mit öffentlichen oder synthetischen Daten könnte Modal in Zukunft eine attraktive und kostengünstige Option sein.
 :::
 
-::: details Training auf Nvidia RTX 3090
-TODO Input Sebastian
-:::
-
 ## Erkenntnisse
 
 ::: details Gute Datensätze zu erstellen ist aufwändig
@@ -166,8 +158,6 @@ Ein vielversprechenderer Ansatz wäre es gewesen, die Anwendung zunächst vollst
 Das Erstellen von Datensätzen mit LLMs ist überraschend günstig. Für die CKAN-Schnittstelle haben wir z. B. über mehrere Iterationen rund 3.000 Trainingsbeispiele mit `mistral-medium` generiert ([Mehr dazu](https://github.com/Meteord/smolnalysis/blob/main/train/ckan/DATASET_GENERATION.md)) — Gesamtkosten: ca. 5 €.
 
 Das anschließende Training und die Evaluierung des CKAN-Fine-Tunes über [Modal](https://modal.com/) haben ebenfalls nur rund 5 $ gekostet.
-
-TODO Input on Device Kosten von Sebastian
 :::
 
 ::: details Weniger ist mehr
@@ -202,10 +192,13 @@ Negativ aufgefallen ist:
 
 ## Links
 
-- Fine-Tunes:
-  - [MiniCPM5-Finetune für CKAN Retrieval](https://huggingface.co/build-small-hackathon/smolnalysis-ckan-retrieval-minicpm5-lora)
-- [GitHub-Repo mit dem ganzen Projekt](https://github.com/Meteord/smolnalysis)
-- [Huggingface Space zum ausprobieren](https://huggingface.co/spaces/build-small-hackathon/smolnalysis)
+- Basismodell [MiniCPM5-1B](https://huggingface.co/openbmb/MiniCPM5-1B)
+- LoRA Adapter:
+  - [MiniCPM5-1B Adapter für CKAN Retrieval](https://huggingface.co/build-small-hackathon/smolnalysis-translation-minicpm5-lora)
+  - [MiniCPM5-1B Adapter für OpenUI-Lang Generation](https://huggingface.co/build-small-hackathon/smolnalysis-generation-minicpm5-lora)
+  - [MiniCPM5-1B Adapter für CKAN Retrieval (mehrere Tools, nicht in der finalen Version)](https://huggingface.co/build-small-hackathon/smolnalysis-ckan-retrieval-minicpm5-lora)
+- [GitHub-Repo mit dem gesamten Projekt (inklusive experimenteller Artefakte für ganz Mutige)](https://github.com/Meteord/smolnalysis)
+- [Hugging Face Space zum Ausprobieren](https://huggingface.co/spaces/build-small-hackathon/smolnalysis)
 
 ---
 
