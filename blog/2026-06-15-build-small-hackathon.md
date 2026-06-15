@@ -107,7 +107,6 @@ Das Erstellen von Datensätzen mit LLMs ist überraschend günstig. Für die CKA
 
 Das anschließende Training und die Evaluierung des CKAN-Fine-Tunes über [Modal](https://modal.com/) haben ebenfalls nur rund 5 $ gekostet.
 
-
 TODO Input on Device Kosten von Sebastian
 :::
 
@@ -120,19 +119,18 @@ Wir haben uns zu viel vorgenommen. Das Erstellen eines hochwertigen Datensatzes 
 Im Zuge des Hackathons wurden uns [Codex](https://openai.com/de-DE/codex/) Credits zur Verfügung gestellt.
 
 Positiv aufgefallen ist:
+
 - Codex war sehr gut darin, auch bei langlaufenden Entwicklungssessions den Gesamtkontext im Blick zu behalten.
 - Trainingsskripte konnten weitgehend automatisch mithilfe der mitgelieferten Skills ([MiniCPM-Fine-Tuning](https://github.com/OpenBMB/MiniCPM/blob/main/skills/minicpm5-finetune-trl/SKILL.md)) erstellt werden.
 
 Negativ aufgefallen ist:
+
 - Es ist schwierig, bei der Masse an KI-Änderungen den Überblick über den Code zu behalten und später von Hand nachzujustieren.
 - Man verliert etwas die Intuition dafür, was gut funktioniert. Insbesondere beim Erstellen der Datensätze für das Training der Modelle ist weiterhin viel menschliche Kontrolle notwendig.
 
 :::
 
-
-
 ## Fazit & Ausblick
-
 
 ## Links
 
