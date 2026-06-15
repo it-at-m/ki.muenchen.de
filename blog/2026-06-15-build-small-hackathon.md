@@ -32,18 +32,18 @@ Hier noch einige Informationen zum Event:
 
 ### Übersetzung in OpenUI-Lang
 
-Als Basis wollten wir ein Modell fine-tunen, das Text in [OpenUI-Lang](https://www.openui.com/docs/openui-lang/specification-v05) übersetzt.
+Als Basis wollten wir ein Modell fine-tunen, das natürliche Sprache direkt in [OpenUI-Lang](https://www.openui.com/docs/openui-lang/specification-v05) übersetzt.
 
-_OpenUI_ ist ein generatives UI-Framework, das Frontendkomponenten dynamisch mit einem LLM generiert. Dabei wird die Abstraktionssprache _OpenUI-Lang_ verwendet, die deutlich token-effizienter ist als beispielsweise direktes HTML-Generieren.
+_OpenUI_ ist ein generatives UI-Framework, das Frontendkomponenten dynamisch mit einem LLM generiert. Die zugrunde liegende Abstraktionssprache _OpenUI-Lang_ ist dabei deutlich token-effizienter als ein direktes HTML-Rendering.
 
-Hier ein Beispiel zur besseren Veranschaulichung:
+Ein kurzes Beispiel zeigt das Prinzip:
 
 ::: details Beispiel: Wetterabfrage in OpenUI-Lang
-Nutzer fragt:
+Die Nutzerfrage lautet:
 
 > Wie ist das Wetter in München
 
-Generierte Antwort vom LLM in OpenUI-Lang mithilfe einer Wetterschnittstelle:
+Das Modell erzeugt daraufhin eine OpenUI-Lang-Repräsentation, die eine Wetterschnittstelle referenziert:
 
 ```OpenUI-Lang
 root = Stack([header, callout, cards, footer])
@@ -60,20 +60,35 @@ highSeries = Series("Hoch (°C)", [14, 16, 13, 11, 12])
 lowSeries = Series("Tief (°C)", [7, 9, 8, 5, 6])
 ```
 
-Gerendertes Ergebnis im Frontend:
+Im Frontend gerendertes Ergebnis:
 ![OpenUI-Lang Rendered](/img/blog/openui-lang-example.png)
 
 :::
 
-Statt ein großes LLM mit einem ausführlichen Systemprompt einzusetzen, der die Funktionsweise von OpenUI-Lang erklärt, wollten wir ein SLM trainieren, das „Nutzerfrage + relevanter Kontext“ direkt in OpenUI-Lang übersetzt.
+Statt ein großes LLM mit einem ausführlichen Systemprompt einzusetzen, der die Funktionsweise von OpenUI-Lang erklärt, wollten wir ein SLM trainieren, das die Kombination aus Nutzerfrage und relevantem Kontext direkt in OpenUI-Lang übersetzt.
 
 ### Kombination mit dem OpenData-Katalog der LHM
 
-### Ein Zoo von Modellen zum Routing
+Damit wir einen sinnvollen Use Case für den _Backyard AI_ Track hatten, wollten wir einen Agenten bauen, der bei Fragen zu Datensätzen in einem Open-Data-Portal hilft. Konkret sollte er mit https://opendata.muenchen.de/ interagieren, das auf [CKAN](https://ckan.org/) basiert.
+
+Die Daten sind dort nach Gruppen und Tags organisiert, zum Beispiel über die Gruppe Verkehr: https://opendata.muenchen.de/group/tran oder über Tags wie https://opendata.muenchen.de/dataset/?tags=Fahrrad. Über einen Query-Endpunkt lassen sich passende Datensätze suchen und anschließend herunterladen.
 
 ## Umsetzung
 
-## Was haben wir gelernt
+### Architektur
+
+### Datasets
+
+### Training
+
+- Modal
+- 3090
+
+## Learnings
+
+## Fazit & Ausblick
+
+Ein Zoo von Modellen anstatt ein großes LLM
 
 ## Links
 
@@ -81,8 +96,6 @@ Statt ein großes LLM mit einem ausführlichen Systemprompt einzusetzen, der die
   - [Minicpm5 Finetune für CKAN Retreival](https://huggingface.co/build-small-hackathon/smolnalysis-ckan-retrieval-minicpm5-lora)
 - [Github Repo mit dem ganzen Projekt](https://github.com/Meteord/smolnalysis)
 - [Huggingface Space zum ausprobieren](https://huggingface.co/spaces/build-small-hackathon/smolnalysis)
-
-## Fazit
 
 ---
 
