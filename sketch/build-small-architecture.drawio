@@ -1,0 +1,37 @@
+<mxfile host="Electron">
+  <diagram name="Seite-1" id="Z_07zFW2PthRbsxnoF9q">
+    <mxGraphModel dx="975" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dNtx9LtnxsNZWUKO8sMo-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;verticalAlign=bottom;" value="HF-Space" vertex="1">
+          <mxGeometry height="310" width="500" x="210" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="dNtx9LtnxsNZWUKO8sMo-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=bottom;fillColor=#d5e8d4;strokeColor=#82b366;" value="gr.Server" vertex="1">
+          <mxGeometry height="240" width="160" x="260" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="dNtx9LtnxsNZWUKO8sMo-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=bottom;" value="ZeroGPU" vertex="1">
+          <mxGeometry height="240" width="160" x="510" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="dNtx9LtnxsNZWUKO8sMo-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Static OpenUI-&lt;div&gt;Lang Frontend&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="dNtx9LtnxsNZWUKO8sMo-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;strong&gt;MiniCPM5-1B&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="530" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dNtx9LtnxsNZWUKO8sMo-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;strong&gt;MiniCPM5-1B&lt;/strong&gt;&lt;div&gt;&lt;strong&gt;Router&lt;/strong&gt;&lt;/div&gt;&lt;div&gt;&lt;strong&gt;Adapter&lt;/strong&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="530" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="dNtx9LtnxsNZWUKO8sMo-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;strong&gt;MiniCPM5-1B&lt;/strong&gt;&lt;div&gt;&lt;strong&gt;OpenUI&amp;nbsp;&lt;/strong&gt;&lt;/div&gt;&lt;div&gt;&lt;strong&gt;Adapter&lt;/strong&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="530" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="dNtx9LtnxsNZWUKO8sMo-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Basic Data Agent" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="dNtx9LtnxsNZWUKO8sMo-9" edge="1" parent="1" source="dNtx9LtnxsNZWUKO8sMo-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.005;entryY=0.454;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" target="dNtx9LtnxsNZWUKO8sMo-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

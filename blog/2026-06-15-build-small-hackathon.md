@@ -84,6 +84,13 @@ Die Daten sind dort nach Gruppen und Tags organisiert, zum Beispiel über die Gr
 
 ### Architektur
 
+Ein zentrales Deliverable im Hackathon war ein eigener Gradio Space zum Austesten. Da wir zusätzlich ein eigenes, angepasstes Frontend für das Rendering von OpenUI-Lang mitliefern wollten, haben wir uns für [gr.Server](https://huggingface.co/blog/introducing-gradio-server) entschieden. Der eigentliche Agent läuft auf dem gr.Server und verbindet sich mit den relevanten Sprachmodellen, die auf [ZeroGPU-Instanzen](https://huggingface.co/docs/hub/spaces-zerogpu) laufen.
+
+![Zielarchitektur](/img/blog/build-small-architecture.png){.light-only}
+![Zielarchitektur](/img/blog/build-small-architecture_dark.png){.dark-only}
+
+Wir haben uns bewusst dafür entschieden, ausschließlich mit [MiniCPM-1B](https://huggingface.co/openbmb/MiniCPM5-1B) beziehungsweise fein-getunten LoRA-Adaptern zu arbeiten. Einerseits, weil der Anbieter des Modells den Hackathon unterstützt hat, andererseits, weil wir ausprobieren wollten, wie weit wir mit einem 1B-Modell kommen.
+
 ### Datensätze
 
 ### Training
