@@ -14,6 +14,14 @@ Hier finden Sie spannende Einblicke in die Arbeit der Stadt München im Bereich 
 ## Artikel
 
 <BlogpostCard
+  title="Kleine Modelle für große Aufgaben"
+  link="/blog/2026-06-15-build-small-hackathon"
+  teaser="Fortbildung mal anders. Was wir bei der Teilnahme am Build Small Hackathon gelernt haben."
+  date="2026-06-15"
+  img="/img/blog/build-small-hackathon-logo.png"
+/>
+
+<BlogpostCard
   title="Pressemeldung: Mehr Zeit für Notrufe: KI-Sprachbot entlastet Integrierte Leitstelle"
   link="/blog/2026-02-25-ru-sprachbot-bd"
   teaser="Die Branddirektion München hat gemeinsam mit Microsoft Deutschland einen KI-Sprachbot für die Aufnahme von Krankentransporten entwickelt. Der KI-gestützte Sprachbot unterstützt die Integrierte Leitstelle bei der Erfassung von Krankentransporten und entlastet damit die Mitarbeiterinnen und Mitarbeiter, die zeitkritische Notrufe annehmen."
