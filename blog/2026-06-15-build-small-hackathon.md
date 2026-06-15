@@ -92,16 +92,16 @@ Ein zentrales Deliverable im Hackathon war ein eigener Gradio Space zum Austeste
 Wir haben uns bewusst dafür entschieden, ausschließlich mit [MiniCPM-1B](https://huggingface.co/openbmb/MiniCPM5-1B) beziehungsweise fein-getunten LoRA-Adaptern zu arbeiten. Einerseits, weil der Anbieter des Modells den Hackathon unterstützt hat, andererseits, weil wir ausprobieren wollten, wie weit wir mit einem 1B-Modell kommen.
 
 ### Datensätze
+
 TODO Input Sebastian
 
 ### Training
-Wir haben zwei verschiedene Varianten zum Training ausprobiert. Zum einen auf lokaler Hardware. Auf der anderen Seite hatten wir auch im Zuge des Hackathons Modal Credits zur Verfüung gestellt bekommen.
 
+Wir haben zwei verschiedene Varianten zum Training ausprobiert. Zum einen auf lokaler Hardware. Auf der anderen Seite hatten wir auch im Zuge des Hackathons Modal Credits zur Verfüung gestellt bekommen.
 
 ::: details Training auf Modal
 
 :::
-
 
 ::: details Training auf Nvidia RTX 3090
 TODO Input Sebastian
