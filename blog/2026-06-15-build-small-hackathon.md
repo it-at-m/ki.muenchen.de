@@ -149,7 +149,7 @@ Kosten fallen nur während der tatsächlichen Ausführung an. Die Möglichkeit, 
 
 Das Erstellen hochwertiger Datensätze ist zeitaufwändiger als erwartet. Im Rahmen des Hackathons hatten wir schlicht nicht genug Zeit, um dies wirklich sorgfältig zu tun — unsere synthetisch generierten Datensätze waren in der Folge zu wenig realitätsnah, um die Modelle hinreichend gut zu trainieren.
 
-Ein vielversprechenderer Ansatz wäre es gewesen, die Anwendung zunächst vollständig mit einem generischen LLM aufzubauen, echte Nutzungsinteraktionen zu sammeln und diese anschließend als Trainingsdaten für das Fine-Tuning kleiner Modelle zu verwenden. Genau dieses Vorgehen beschreibt der Ansatz aus [Small Language Models are the Future of Agentic AI](https://arxiv.org/abs/2506.02153): Erst Daten in der Praxis sammeln, dann destillieren.
+Ein vielversprechenderer Ansatz wäre es gewesen, die Anwendung zunächst vollständig mit einem generischen LLM aufzubauen, echte Nutzungsinteraktionen zu sammeln und diese anschließend als Trainingsdaten für das Fine-Tuning kleiner Modelle zu verwenden. Genau dieses Vorgehen beschreibt der Ansatz aus [LLM-to-SLM Distillation via Real-World Usage](https://arxiv.org/abs/2506.02153): Erst Daten in der Praxis sammeln, dann destillieren.
 
 :::
 
