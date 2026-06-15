@@ -190,9 +190,9 @@ Gerade in einer Zeit, in der die Nutzung großer Foundation-Modelle über API-Zu
 
 ### Limitierungen
 
-Die entwickelten Adapter sind in ihrer aktuellen Form eher Prototypen als produktionsreife Modelle. Der Hauptgrund liegt in der Qualität der Trainingsdaten: Unsere synthetisch generierten Beispiele sind zu weit entfernt von realen Nutzungsszenarien, sodass die Generalisierungsfähigkeit der Modelle noch zu schwach ist.
+Die entwickelten Adapter sind in ihrer aktuellen Form Prototypen und sollten nicht produktiv eingesetzt werden. Der Grund liegt in der Qualität der Trainingsdaten: Unsere synthetisch generierten Beispiele sind zu weit entfernt von realen Nutzungsszenarien, sodass die Generalisierungsfähigkeit der Modelle noch zu schwach ist.
 
-Darüber hinaus fehlt eine systematische Evaluierung. Wir haben beispielsweise nicht verglichen, wie unterschiedliche Basismodelle mit denselben Trainingsdaten funktionieren würden. Auch verschiedene Modellgrößen oder Modelle mit anderem Hintergrundwissen haben wir nicht untersucht. Ein interessanter Punkt wäre gewesen zu testen, wie gut MiniCPM5 sich für deutsche Eingaben eignet, da das Modell primär auf englischen und chinesischen Daten trainiert wurde.
+Darüber hinaus fehlt eine systematische Evaluierung. Wir haben beispielsweise nicht verglichen, wie unterschiedliche Basismodelle mit denselben Trainingsdaten funktionieren würden. Auch verschiedene Modellgrößen oder Modelle mit anderem Hintergrundwissen haben wir nicht untersucht. Auch der Vergleich zu großen, kommerziellen Sprachmodellen fehlt.
 
 ### Ausblick
 
