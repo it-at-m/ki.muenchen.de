@@ -100,8 +100,46 @@ TODO Input Sebastian
 
 Wir haben zwei verschiedene Varianten zum Training ausprobiert. Zum einen auf lokaler Hardware. Auf der anderen Seite hatten wir auch im Zuge des Hackathons Modal Credits zur Verfüung gestellt bekommen.
 
+Beim Training haben wir uns an das [Rezept](https://github.com/OpenBMB/MiniCPM/blob/main/docs/finetune/trl.md) vom MiniCPM Team gehalten, welches auf [TRL](https://github.com/huggingface/trl) + [PEFT](https://github.com/huggingface/peft) basiert.
 ::: details Training auf Modal
+[Modal](https://modal.com/docs) ist eine serverlose Cloud-Plattform für Entwicklerinnen und Forscher, die rechenintensive Anwendungen ohne Infrastrukturaufwand betreiben möchten.
 
+Das Deployment von lokal lauffähigem Python-Code ist dabei tatsächlich recht unkompliziert — und hat bei uns überraschenderweise im ersten Versuch funktioniert. Mit CUDA, PyTorch und Konsorten auf diversen Clustern haben wir in der Vergangenheit schon deutlich schlimmere Erfahrungen gemacht. Im Folgenden ein paar Ausschnitte aus unserem Trainingsskript:
+
+**App und Volume anlegen**
+
+```python
+app = modal.App("smolnalysis-ckan-minicpm5-lora")
+volume = modal.Volume.from_name("smolnalysis-ckan-training", create_if_missing=True)
+```
+
+**Abhängigkeiten definieren**
+
+```python
+image = (
+    modal.Image.debian_slim(python_version="3.12")
+    .pip_install_from_requirements("train/ckan/requirements-train.txt")
+    .add_local_file("train/ckan/train_minicpm_lora.py", remote_path="/root/train_minicpm_lora.py")
+    ...
+)
+```
+
+**Funktion mit GPU-Ressourcen dekorieren**
+
+```python
+@app.function(
+    image=image,
+    gpu="A100",
+    timeout=60 * 60 * 4,
+    volumes={"/outputs": volume},
+)
+def train_ckan_lora(smoke: bool = True, challenge: bool = False) -> None:
+    ...
+```
+
+Den vollständigen Code findet ihr [hier](https://github.com/Meteord/smolnalysis/blob/main/train/ckan/modal_train_ckan.py).
+
+Kosten fallen nur während der tatsächlichen Ausführung an. Die Möglichkeit, den Serverstandort z. B. im europäischen Datenraum festzulegen, befindet sich derzeit noch in der [Beta](https://modal.com/docs/guide/region-selection#container-region-options). Für das Training mit öffentlichen oder synthetischen Daten könnte Modal in Zukunft eine attraktive und kostengünstige Option sein.
 :::
 
 ::: details Training auf Nvidia RTX 3090
