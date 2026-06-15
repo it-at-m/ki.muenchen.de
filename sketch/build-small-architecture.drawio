@@ -19,7 +19,7 @@
         <mxCell id="dNtx9LtnxsNZWUKO8sMo-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;strong&gt;MiniCPM5-1B&lt;/strong&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="530" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="dNtx9LtnxsNZWUKO8sMo-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;strong&gt;MiniCPM5-1B&lt;/strong&gt;&lt;div&gt;&lt;strong&gt;Router&lt;/strong&gt;&lt;/div&gt;&lt;div&gt;&lt;strong&gt;Adapter&lt;/strong&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="dNtx9LtnxsNZWUKO8sMo-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;MLP (2 Layers)&lt;br&gt;Router&lt;/b&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="530" y="200" as="geometry" />
         </mxCell>
         <mxCell id="dNtx9LtnxsNZWUKO8sMo-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;strong&gt;MiniCPM5-1B&lt;/strong&gt;&lt;div&gt;&lt;strong&gt;OpenUI&amp;nbsp;&lt;/strong&gt;&lt;/div&gt;&lt;div&gt;&lt;strong&gt;Adapter&lt;/strong&gt;&lt;/div&gt;" vertex="1">
