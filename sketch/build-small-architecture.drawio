@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="dNtx9LtnxsNZWUKO8sMo-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;verticalAlign=bottom;" value="HF-Space" vertex="1">
-          <mxGeometry height="310" width="500" x="210" y="90" as="geometry" />
+          <mxGeometry height="320" width="500" x="210" y="80" as="geometry" />
         </mxCell>
         <mxCell id="dNtx9LtnxsNZWUKO8sMo-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=bottom;fillColor=#d5e8d4;strokeColor=#82b366;" value="gr.Server" vertex="1">
           <mxGeometry height="240" width="160" x="260" y="120" as="geometry" />
@@ -16,14 +16,11 @@
         <mxCell id="dNtx9LtnxsNZWUKO8sMo-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Static OpenUI-&lt;div&gt;Lang Frontend&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="280" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="dNtx9LtnxsNZWUKO8sMo-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;strong&gt;MiniCPM5-1B&lt;/strong&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="530" y="200" as="geometry" />
+        <mxCell id="dNtx9LtnxsNZWUKO8sMo-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;strong&gt;MiniCPM5-1B Base&lt;/strong&gt;&lt;div&gt;&lt;strong&gt;+ Lora Adapter&lt;/strong&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="530" y="250" as="geometry" />
         </mxCell>
         <mxCell id="dNtx9LtnxsNZWUKO8sMo-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;MLP (2 Layers)&lt;br&gt;Router&lt;/b&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="530" y="130" as="geometry" />
-        </mxCell>
-        <mxCell id="dNtx9LtnxsNZWUKO8sMo-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;strong&gt;MiniCPM5-1B&lt;/strong&gt;&lt;div&gt;&lt;strong&gt;OpenUI&amp;nbsp;&lt;/strong&gt;&lt;/div&gt;&lt;div&gt;&lt;strong&gt;Adapter&lt;/strong&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="530" y="270" as="geometry" />
+          <mxGeometry height="60" width="120" x="530" y="150" as="geometry" />
         </mxCell>
         <mxCell id="dNtx9LtnxsNZWUKO8sMo-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Basic Data Agent" vertex="1">
           <mxGeometry height="60" width="120" x="280" y="250" as="geometry" />

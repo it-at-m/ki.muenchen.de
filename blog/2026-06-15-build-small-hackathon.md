@@ -92,6 +92,11 @@ Ein zentrales Deliverable im Hackathon war ein eigener Gradio Space zum Austeste
 Wir haben uns bewusst für den Einsatz von [MiniCPM-1B](https://huggingface.co/openbmb/MiniCPM5-1B) sowie feinabgestimmten LoRA-Adaptern entschieden. Dies hat zwei Gründe: Zum einen hat der Anbieter des Modells den Hackathon unterstützt, zum anderen wollten wir testen, wie leistungsfähig ein 1B-Modell in der Praxis sein kann. Durch die Nutzung von LoRA-Adaptern konnten wir dabei besonders effizient arbeiten und erhebliche Ressourcen während der Laufzeit sparen.
 Zusätzlich haben wir ein kleines Multilayer-Perceptron trainiert, das erkennt, welcher Adapter gerade verwendet wird.
 
+In der folgenden Grafik ist der Informationsfluss dargestellt: Das MLP entscheidet, welcher Experte jeweils zum Einsatz kommt. Dabei gibt es spezifische LoRA-Adapter – einen für den Aufruf der CKAN-Schnittstelle und einen für die Generierung von OpenUI-Lang.
+
+![Agent mit unterschiedlichen Expertenmodellen](/img/blog/build-small-model-flow.png){.light-only}
+![Agent mit unterschiedlichen Expertenmodellen](/img/blog/build-small-model-flow_dark.png){.dark-only}
+
 ### Datensätze
 
 TODO Input Sebastian
@@ -148,7 +153,7 @@ TODO Input Sebastian
 
 ## Erkenntnisse
 
-::: details Gute Datensätze zu erstellen ist schwer
+::: details Gute Datensätze zu erstellen ist aufwändig
 
 Das Erstellen hochwertiger Datensätze ist zeitaufwändiger als erwartet. Im Rahmen des Hackathons hatten wir schlicht nicht genug Zeit, um dies wirklich sorgfältig zu tun — unsere synthetisch generierten Datensätze waren in der Folge zu wenig realitätsnah, um die Modelle hinreichend gut zu trainieren.
 
