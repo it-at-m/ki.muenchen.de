@@ -182,13 +182,19 @@ Negativ aufgefallen ist:
 
 ## Fazit & Ausblick
 
-::: details Limitierungen
+Der Hackathon war für uns eine gute Gelegenheit, wieder ein paar Tage gutes, ehrliches Modelltraining zu betreiben. Wie in den alten Zeiten, als noch mehr von Machine Learning als von GenAI die Rede war, gilt dabei weiterhin: Modelle sind nur so gut wie die Daten. Für die Erstellung wirklich hochwertiger Datensätze hätten wir uns rückblickend deutlich mehr Zeit nehmen müssen.
 
-:::
+Gleichzeitig war für uns eine wichtige Erkenntnis, dass das Training kleiner Modelle nicht teuer sein muss. Für klar abgegrenzte Aufgaben lassen sich SLMs heute mit überschaubarem Aufwand trainieren. Spezialisierte Anbieter wie Modal nehmen einem dabei einen großen Teil der Hardware-Abstraktion ab, sodass man sich deutlich weniger mit CUDA-Versionen und ähnlichen Infrastrukturfragen herumschlagen muss.
 
-::: details Ausblick
+Gerade in einer Zeit, in der die Nutzung großer Foundation-Modelle über API-Zugriffe tendenziell eher teurer als günstiger wird, könnte sich der Blick dadurch wieder stärker auf kleine, fein abgestimmte Modelle richten. Sie benötigen deutlich weniger Ressourcen und lassen sich auch ohne riesige GPU-Cluster produktiv einsetzen. Der Preis dafür ist allerdings eigenes Know-how sowie Zeit für sorgfältige Datenarbeit, Training, Evaluation und Wartung.
 
-:::
+### Limitierungen
+
+### Ausblick
+
+Für uns war der Hackathon deshalb weniger ein abgeschlossener Prototyp als vielmehr ein Lernprojekt mit klaren nächsten Schritten. Besonders spannend wäre es, die Datensatzerstellung systematischer anzugehen, reale Nutzungsdaten aus einer ersten Anwendungsversion zu sammeln und darauf aufbauend gezielter zu trainieren.
+
+Darüber hinaus wollen wir weiter beobachten, für welche kommunalen oder verwaltungsnahen Anwendungsfälle kleine Modelle tatsächlich eine belastbare Alternative zu großen API-Modellen sein können.
 
 ## Links
 
@@ -196,7 +202,7 @@ Negativ aufgefallen ist:
 - LoRA Adapter:
   - [MiniCPM5-1B Adapter für CKAN Retrieval](https://huggingface.co/build-small-hackathon/smolnalysis-translation-minicpm5-lora)
   - [MiniCPM5-1B Adapter für OpenUI-Lang Generation](https://huggingface.co/build-small-hackathon/smolnalysis-generation-minicpm5-lora)
-  - [MiniCPM5-1B Adapter für CKAN Retrieval (mehrere Tools, nicht in der finalen Version)](https://huggingface.co/build-small-hackathon/smolnalysis-ckan-retrieval-minicpm5-lora)
+  - [MiniCPM5-1B Adapter für CKAN Retrieval (mit mehrere Toolsn, NICHT in der finalen Version)](https://huggingface.co/build-small-hackathon/smolnalysis-ckan-retrieval-minicpm5-lora)
 - [GitHub-Repo mit dem gesamten Projekt (inklusive experimenteller Artefakte für ganz Mutige)](https://github.com/Meteord/smolnalysis)
 - [Hugging Face Space zum Ausprobieren](https://huggingface.co/spaces/build-small-hackathon/smolnalysis)
 
