@@ -206,7 +206,7 @@ Darüber hinaus wollen wir weiter beobachten, für welche kommunalen oder verwal
 - LoRA Adapter:
   - [MiniCPM5-1B Adapter für CKAN Retrieval](https://huggingface.co/build-small-hackathon/smolnalysis-translation-minicpm5-lora)
   - [MiniCPM5-1B Adapter für OpenUI-Lang Generation](https://huggingface.co/build-small-hackathon/smolnalysis-generation-minicpm5-lora)
-  - [MiniCPM5-1B Adapter für CKAN Retrieval (mit mehrere Toolsn, NICHT in der finalen Version)](https://huggingface.co/build-small-hackathon/smolnalysis-ckan-retrieval-minicpm5-lora)
+  - [MiniCPM5-1B Adapter für CKAN Retrieval mit mehreren Tools (NICHT in der finalen Version)](https://huggingface.co/build-small-hackathon/smolnalysis-ckan-retrieval-minicpm5-lora)
 - [GitHub-Repo mit dem gesamten Projekt (inklusive experimenteller Artefakte für ganz Mutige)](https://github.com/Meteord/smolnalysis)
 - [Hugging Face Space zum Ausprobieren](https://huggingface.co/spaces/build-small-hackathon/smolnalysis)
 
