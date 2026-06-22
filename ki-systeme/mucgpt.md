@@ -36,6 +36,7 @@ MUCGPT unterstützt eine Vielzahl von Anwendungsfällen rund um Textbearbeitung,
 
 ![Chatansicht mit Unterhaltung und Einstellmöglichkeiten](/img/mucgpt/chatscreen.png)
 Der Chat bietet einen klaren Arbeitsbereich zur Interaktion mit dem Sprachmodell.
+
 - System‑Anweisung und Temperatur lassen sich konfigurieren, um Tonalität und Kreativität zu steuern.
 - Mehrstufige Konversationen werden unterstützt; der Verlauf bleibt lokal im Browser.
 
@@ -53,6 +54,7 @@ Assistenten können mit ausgewählten Teams oder breiter veröffentlicht werden.
 
 ![Übersicht verfügbarer Tools](/img/mucgpt/tools.png)
 Assistenten können eingebaute und erweiterbare Tools nutzen, zum Beispiel:
+
 - Zusammenfassen: Lange Texte kondensieren.
 - Brainstorming: Mindmaps generieren und exportieren.
 - Leichte Sprache: Komplexe Texte vereinfachen.
@@ -82,6 +84,7 @@ Barrierearme Oberfläche mit Dark Mode und Unterstützung für mehrere Sprachen.
 ### Allgemeine Ausgabeformate
 
 Generierte Inhalte werden korrekt dargestellt, unter anderem:
+
 - Markdown
 - PLAIN HTML
 - Mermaid‑Diagramme in Markdown‑Codeblöcken
@@ -95,8 +98,6 @@ Aktuelle Modelle umfassen u.a.:
 
 - die GPT-4.1 Modellfamilie von OpenAI
 - Mistral-Large-3 von Mistral AI
-
-
 
 ## Risiken und Limitierungen
 
