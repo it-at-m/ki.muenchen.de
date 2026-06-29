@@ -6,21 +6,21 @@ code: https://github.com/it-at-m/mucgpt
 linkapplication: https://it-at-m.github.io/mucgpt/
 license: MIT
 tags:
-  - LLM
+  - Generative KI
   - Open Source
   - intern
-description: MUCGPT ist ein interner KI-Assistent für die Stadtverwaltung München, der Mitarbeiter*innen sicher und datenschutzkonform den Zugang zu großen Sprachmodellen ermöglicht.
+description: MUCGPT ist das KI-Werkzeug für die Stadtverwaltung München, das Mitarbeiter*innen sicher und konform die Arbeit mit generativen KI-Modellen ermöglicht.
 ---
 
 [<v-icon>mdi-arrow-left</v-icon> Zurück zur Übersicht](/ki-systeme/index.md)
 
 # MUCGPT
 
-MUCGPT ist ein interner KI-Assistent für die Stadtverwaltung München, der Mitarbeiter\*innen sicher und datenschutzkonform den Zugang zu großen Sprachmodellen ermöglicht.
+MUCGPT ist das KI-Werkzeug für die Stadtverwaltung München, das Mitarbeiter\*innen sicher und konform die Arbeit mit generativen KI-Modellen ermöglicht.
 
 ---
 
-Diese Dokumentation fasst die wichtigsten Funktionen und Limitierungen von MUCGPT zusammen. MUCGPT ist Open Source, kann als Container betrieben werden und lässt sich an beliebige OpenAI‑kompatible Sprachmodelle anbinden.
+Diese Dokumentation fasst die wichtigsten Funktionen und Limitierungen von MUCGPT zusammen. MUCGPT ist Open Source, kann als Container betrieben werden und lässt sich an beliebige OpenAI‑kompatible KI-Modellanbieter anbinden.
 
 ![Startseite von MUCGPT mit Schnellzugriff auf Assistenten, zuletzt genutzte Chats und Tutorials](/img/mucgpt/startpage.png)
 
@@ -35,6 +35,7 @@ MUCGPT unterstützt eine Vielzahl von Anwendungsfällen rund um Textbearbeitung,
 ### Chat
 
 ![Chatansicht mit Unterhaltung und Einstellmöglichkeiten](/img/mucgpt/chatscreen.png)
+
 Der Chat bietet einen klaren Arbeitsbereich zur Interaktion mit dem Sprachmodell.
 
 - System‑Anweisung und Temperatur lassen sich konfigurieren, um Tonalität und Kreativität zu steuern.
@@ -43,16 +44,19 @@ Der Chat bietet einen klaren Arbeitsbereich zur Interaktion mit dem Sprachmodell
 ### Assistenten erstellen
 
 ![Assistenten‑Erstellung mit Konfiguration von Verhalten, Vorgaben und Startprompts](/img/mucgpt/assistant_creator.png)
+
 Assistenten kodifizieren wiederkehrende Arbeitsweisen: Instruktionen, Ton, Randbedingungen und Modelleinstellungen. Optional können Startprompts, Folgeaktionen und Tools hinterlegt werden. Private Assistenten bleiben privat; Sie entscheiden, wann Sie teilen.
 
 ### Assistenten teilen
 
 ![Dialog zum Teilen von Assistenten mit Teams oder Bereichen](/img/mucgpt/share_assistants.png)
+
 Assistenten können mit ausgewählten Teams oder breiter veröffentlicht werden. Eigentümerschaft, Gültigkeitsbereich und Konfiguration sind transparent, damit Kolleg\*innen verstehen, was ein Assistent leistet.
 
 ### Erweiterbare Tools
 
 ![Übersicht verfügbarer Tools](/img/mucgpt/tools.png)
+
 Assistenten können eingebaute und erweiterbare Tools nutzen, zum Beispiel:
 
 - Zusammenfassen: Lange Texte kondensieren.
@@ -63,22 +67,26 @@ Die Plattform ist so ausgelegt, dass weitere Tools je nach Bedarf ergänzt werde
 
 ### Startseite
 
-![Startseite mit Assistenten, zuletzt genutzten Chats und Tutorials](/img/mucgpt/startpage.png)
-Der Einstieg bündelt Assistenten, letzte Arbeiten und Hilfen an einem Ort.
+![Startseite mit Assistenten im Fokus](/img/mucgpt/startpage.png)
+
+Die neue Startseite fokussiert sich auf Assistenten und bietet einen schnellen Einstieg in den Chat.
 
 ### Modellauswahl
 
 ![Auswahl verfügbarer Modelle und Kreativitätsstufen](/img/mucgpt/models.png)
+
 Verfügbare Modelle können ausgewählt und die Kreativität passend zur Aufgabe eingestellt werden. Die Auswahl ist für Nutzer\*innen transparent.
 
 ### Tutorials
 
 ![Angeleitete Beispiele und Tipps](/img/mucgpt/tutorials.png)
+
 Geführte Beispiele und Tipps helfen beim schnellen Einstieg und fördern gute Nutzungsmuster.
 
 ### Dark Mode und Internationalisierung
 
 ![Dark Mode und i18n in der Oberfläche](/img/mucgpt/darkmode_i18n.png)
+
 Barrierearme Oberfläche mit Dark Mode und Unterstützung für mehrere Sprachen.
 
 ### Allgemeine Ausgabeformate
