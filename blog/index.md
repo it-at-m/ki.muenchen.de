@@ -14,6 +14,14 @@ Hier finden Sie spannende Einblicke in die Arbeit der Stadt München im Bereich 
 ## Artikel
 
 <BlogpostCard
+  title="MUCGPT 2.0"
+  link="/blog/2026-06-29-mucgpt-2.0"
+  teaser="Münchens KI-Werkzeug erhält neue Oberfläche und teilbare Assistenten"
+  date="2026-06-29"
+  img="/img/blog/mucgpt-2.0-release.jpg"
+/>
+
+<BlogpostCard
   title="Kleine Modelle für große Aufgaben"
   link="/blog/2026-06-15-build-small-hackathon"
   teaser="Fortbildung mal anders. Was wir bei der Teilnahme am Build Small Hackathon gelernt haben."
