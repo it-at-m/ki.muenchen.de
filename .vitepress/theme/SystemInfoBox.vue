@@ -38,6 +38,21 @@ defineProps({
       </v-btn>
 
       <v-btn
+        v-if="frontmatter.docs"
+        :href="frontmatter.docs"
+        rel="noreferrer noopener"
+        target="_blank"
+        variant="outlined"
+      >
+        <v-icon
+          start
+          icon="mdi-information-outline"
+        />
+        <span v-if="lang === 'en'">Documentation</span>
+        <span v-else>Dokumentation</span>
+      </v-btn>
+
+      <v-btn
         v-if="frontmatter.developerlink"
         :href="frontmatter.developerlink"
         rel="noreferrer noopener"
