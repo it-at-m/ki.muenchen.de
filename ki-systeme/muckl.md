@@ -3,6 +3,7 @@ system_type: KI-System
 title: Bürger*innen-Chatbot Muckl
 linkapplication: https://stadt.muenchen.de/
 logo: /img/logo/muckl_logo.png
+display_rank: 30
 tags:
   - LLM
   - Embeddings

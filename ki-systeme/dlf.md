@@ -3,6 +3,7 @@ system_type: KI-System
 title: Dienstleistungsfinder
 logo: /img/logo/dlf_logo.png
 linkapplication: https://muenchen.de/ki-suche
+display_rank: 20
 tags:
   - RAG
   - LLM

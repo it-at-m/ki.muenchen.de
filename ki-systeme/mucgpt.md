@@ -5,6 +5,8 @@ logo: /img/logo/mucgpt.png
 code: https://github.com/it-at-m/mucgpt
 linkapplication: https://it-at-m.github.io/mucgpt/
 license: MIT
+# display_rank: lower numbers appear earlier; missing or invalid values sort last; ties fall back to title
+display_rank: 10
 tags:
   - Generative KI
   - Open Source

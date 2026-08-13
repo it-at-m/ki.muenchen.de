@@ -5,6 +5,7 @@ logo: /img/logo/riski_logo.png
 code: https://github.com/it-at-m/riski
 linkapplication: https://riski.muenchen.de
 license: MIT
+display_rank: 40
 tags:
   - RAG
   - RIS

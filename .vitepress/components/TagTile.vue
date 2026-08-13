@@ -126,15 +126,39 @@ const pagesWithTags = computed(() => {
     }
   }
 
-  // Sort alphabetically by title, but put "in Arbeit" at the bottom
+  // Sort by display_rank first, then WIP last for unranked entries, then title.
+  const resolveDisplayRank = (frontmatter) => {
+    const rawRank = frontmatter?.display_rank;
+
+    if (typeof rawRank === "number") {
+      return Number.isFinite(rawRank) ? rawRank : Infinity;
+    }
+
+    if (typeof rawRank === "string" && rawRank.trim() !== "") {
+      const parsedRank = Number(rawRank);
+      return Number.isFinite(parsedRank) ? parsedRank : Infinity;
+    }
+
+    return Infinity;
+  };
+
   filteredSoftware.sort((a, b) => {
+    const rankA = resolveDisplayRank(a.frontmatter);
+    const rankB = resolveDisplayRank(b.frontmatter);
+
+    if (rankA !== rankB) {
+      return rankA - rankB;
+    }
+
     const tagsA = a.frontmatter.tags || [];
     const tagsB = b.frontmatter.tags || [];
     const isWipA = tagsA.includes("in Arbeit");
     const isWipB = tagsB.includes("in Arbeit");
 
-    if (isWipA && !isWipB) return 1;
-    if (!isWipA && isWipB) return -1;
+    if (rankA === Infinity) {
+      if (isWipA && !isWipB) return 1;
+      if (!isWipA && isWipB) return -1;
+    }
 
     const titleA = a.frontmatter.title || "";
     const titleB = b.frontmatter.title || "";
