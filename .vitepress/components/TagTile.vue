@@ -16,7 +16,7 @@
           <div class="card-title">
             <system-image-avatar :frontmatter="page.frontmatter" />
 
-            <span style="overflow: hidden; text-overflow: ellipsis">
+            <span :title="page.frontmatter.title">
               {{ page.frontmatter.title }}
             </span>
             <v-chip
@@ -208,5 +208,18 @@ function cleanExcerpt(excerpt) {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.card-title > span {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 </style>

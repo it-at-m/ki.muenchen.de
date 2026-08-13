@@ -21,7 +21,12 @@
       >
     </div>
     <div class="blogpost-card-content">
-      <h3 class="blogpost-card-title">{{ title }}</h3>
+      <h3
+        class="blogpost-card-title"
+        :title="title"
+      >
+        {{ title }}
+      </h3>
       <p
         class="blogpost-card-teaser"
         v-if="teaser"
@@ -132,6 +137,14 @@ defineProps({
   color: var(--vp-c-text-1);
   letter-spacing: -0.01em;
   line-height: 1.2;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .blogpost-card-teaser {
