@@ -9,9 +9,22 @@ const vitepressConfig = defineConfig({
   titleTemplate: "ki.muenchen.de",
   description: "Dokumentation zu KI-Systemen der Landeshauptstadt München",
   cleanUrls: true,
-  head: [["link", { rel: "icon", href: `/favicon.ico` }]],
+  head: [
+    ["link", { rel: "icon", href: `/favicon.ico` }],
+    [
+      "meta",
+      {
+        name: "google-site-verification",
+        content: "Hatt8vCL-94Byj1YKIywY9PDfHBlzVFRZo28TdeTguE",
+      },
+    ],
+  ],
   lang: "de-DE",
   lastUpdated: true,
+  sitemap: {
+    hostname: "https://ki.muenchen.de",
+    lastmodDateOnly: true,
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

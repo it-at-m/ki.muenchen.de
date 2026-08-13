@@ -13,7 +13,7 @@ next: false
     Telefon: 115
     Fax: (089) 233-26458
 
-    Herr Oberbürgermeister Dieter Reiter
+    Herr Oberbürgermeister Dominik Krause
     E-Mail: buero.ob@muenchen.de
 
     Körperschaft des öffentlichen Rechts
@@ -39,7 +39,7 @@ Im Folgenden möchten wir Sie aufklären, wie Ihre Daten von uns verarbeitet wer
 
 Verantwortlich im Sinne der DSGVO ist:
 
-    Oberbürgermeister Dieter Reiter
+    Oberbürgermeister Dominik Krause
     80313 München
     E-Mail: <rathaus@muenchen.de>
     Telefon: (089) 233-00

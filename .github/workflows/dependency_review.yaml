@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Dependency Review
-        uses: it-at-m/lhm_actions/action-templates/actions/action-dependency-review@e012d3bda6f9d5511415e2d885f32826049284a4 # v1.0.23
+        uses: it-at-m/lhm_actions/action-templates/actions/action-dependency-review@e9a8422d740d4e9eaef25cfeeb3a5790da97a7aa # v1.2.4
