@@ -1,7 +1,8 @@
 ---
 system_type: KI-System
 title: MUCGPT
-logo: /img/logo/mucgpt.png
+logo: /img/logo/mucgpt.svg
+sidebar_logo: /img/logo/mucgpt_title.png
 code: https://github.com/it-at-m/mucgpt
 linkapplication: https://it-at-m.github.io/mucgpt/
 license: MIT
