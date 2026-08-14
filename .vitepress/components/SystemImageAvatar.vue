@@ -2,7 +2,6 @@
   <v-avatar
     size="64"
     rounded="0"
-    color="#e7e8ec"
     class="thumb mr-2 rounded"
   >
     <v-img
@@ -31,5 +30,6 @@ defineProps({
   height: 64px;
   width: 64px;
   padding: 8px;
+  background-color: #e7e8ec;
 }
 </style>

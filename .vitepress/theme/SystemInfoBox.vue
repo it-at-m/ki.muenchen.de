@@ -1,5 +1,6 @@
 <script setup>
 import { useData, withBase } from "vitepress";
+import { computed } from "vue";
 
 import TagChipGroup from "../components/TagChipGroup.vue";
 
@@ -7,10 +8,14 @@ const siteInfo = useData();
 
 const lang = siteInfo.lang.value;
 
-defineProps({
+const props = defineProps({
   frontmatter: Object,
   horizontal: Boolean,
 });
+
+const sidebarLogo = computed(
+  () => props.frontmatter?.sidebar_logo || props.frontmatter?.logo
+);
 </script>
 
 <template>
@@ -18,10 +23,12 @@ defineProps({
     v-if="frontmatter.system_type"
     :class="'infobox ' + (horizontal ? 'horizontal' : '')"
   >
-    <img
-      :alt="'Logo ' + (frontmatter.title || 'KI')"
-      :src="withBase(frontmatter.logo || '/img/logo/mascot.png')"
-    />
+    <div class="logo-surface">
+      <img
+        :alt="'Logo ' + (frontmatter.title || 'KI')"
+        :src="withBase(sidebarLogo || '/img/logo/mascot.png')"
+      />
+    </div>
     <div class="infos">
       <v-btn
         v-if="frontmatter.code"
@@ -109,6 +116,12 @@ img {
   width: 100%;
 }
 
+.logo-surface {
+  background-color: #e7e8ec;
+  border-radius: 12px;
+  padding: 12px;
+}
+
 .infobox {
   display: flex;
   flex-direction: column;
@@ -126,7 +139,12 @@ img {
   flex-direction: row;
 }
 
-.horizontal > img {
+.horizontal > .logo-surface {
+  display: flex;
+  align-items: center;
+}
+
+.horizontal > .logo-surface img {
   max-height: 156px;
   width: unset;
 }
