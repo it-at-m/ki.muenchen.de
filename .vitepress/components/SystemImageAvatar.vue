@@ -7,7 +7,7 @@
   >
     <v-img
       :alt="(frontmatter.title || 'KI') + ' logo'"
-      :src="withBase(frontmatter.logo || '/img/logo/kicc_mascot.png')"
+      :src="withBase(frontmatter.logo || '/img/logo/mascot.png')"
       :cover="false"
     />
   </v-avatar>

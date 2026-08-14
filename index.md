@@ -8,7 +8,8 @@ hero:
   text: "für München"
   tagline: "Wir setzen auf KI, um die Stadtverwaltung schneller zu digitalisieren und den Bürger*innen bessere Dienstleistungen bereitzustellen."
   image:
-    src: /img/logo/kicc_tuerkis_border.png
+    light: https://assets.muenchen.de/logos/rit/RIT_Basislogo_blau_schwarz-500.png
+    dark: https://assets.muenchen.de/logos/rit/RIT_Basislogo_weiss-500.png
     alt: KI Logo
 
 features:
