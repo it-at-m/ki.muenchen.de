@@ -3,6 +3,7 @@ system_type: KI-System
 title: inspira_BIB
 logo: /img/logo/m_bib.png
 linkapplication: https://ssl.muenchen.de/
+display_rank: 50
 tags:
   - Empfehlungssystem
   - Bibliothek

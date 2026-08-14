@@ -4,6 +4,7 @@ title: Zammad-AI
 logo: /img/logo/zammad.svg
 code: https://github.com/it-at-m/zammad-ai
 docs: https://it-at-m.github.io/zammad-ai
+display_rank: 15
 tags:
   - GenAI
   - Zammad
