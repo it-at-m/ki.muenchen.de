@@ -26,7 +26,7 @@ const sidebarLogo = computed(
     <div class="logo-surface">
       <img
         :alt="'Logo ' + (frontmatter.title || 'KI')"
-        :src="withBase(sidebarLogo || '/img/logo/kicc_mascot.png')"
+        :src="withBase(sidebarLogo || '/img/logo/mascot.png')"
       />
     </div>
     <div class="infos">
