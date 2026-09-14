@@ -106,5 +106,4 @@ Icons für Sozial Media Buttons: Alex Mitov — Social Media Icon Pack. Original
 
 ## Danksagung
 
-- Logo auf der Startseite von Andrea Stockinger
 - Datenschutzerklärung von [opr.vc](https://opr.vc)
