@@ -2,6 +2,7 @@
 system_type: KI-System
 title: Dienstleistungsfinder
 logo: /img/logo/dlf_logo.png
+code: https://github.com/it-at-m/dienstleistungsfinder-ki
 linkapplication: https://muenchen.de/ki-suche
 tags:
   - RAG
