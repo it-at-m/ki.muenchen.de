@@ -125,8 +125,8 @@ Die Sprach- und Embeddingmodelle werden in unserem Fall über [Privatemode AI](h
 Zammad-AI folgt einer modularen Service-Architektur:
 
 - **Workflow-Service**: FastAPI- und FastStream-basierter Dienst für API, Triage, Antwortgenerierung und Kafka-Verarbeitung
-- **Index-Job**: Synchronisiert Wissensinhalte aus Zammad in Qdrant
-- **Guardrails-Service**: Prüft Prompts und Antworten auf Sicherheits- und Inhaltsaspekte
+- **Index-Job**: Synchronisiert Wissensinhalte aus Zammad und Gesetze aus dem Internet in die Qdrant
+- **Guardrails-Service**: Prüft Prompts, Antworten und Queries auf Sicherheits- und Inhaltsaspekte
 - **Qdrant**: Vektordatenbank für Retrieval aus Wissensbeständen
 - **Kafka**: Ereignisgesteuerte Verarbeitung von Ticketflüssen und asynchronen Workflows
 - **Langfuse**: Tracing und Prompt-Management
