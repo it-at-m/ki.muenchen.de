@@ -118,7 +118,7 @@ Zammad-AI ist modellagnostisch aufgebaut und kann grundsätzlich deployment-spez
 - Für **Retrieval** und die Wissensindexierung wird das Embedding-Modell **`qwen3-embedding-4b`** genutzt, dessen Vektordimension zur Qdrant-Konfiguration passen muss.
 - Für **Guardrails** kann ein separates Modell für Sicherheits- und Inhaltsprüfungen angesprochen werden. Derzeit wird hier [`GLiNER2-Guardrails-PII-Multi`](https://huggingface.co/fastino/GLiNER2-Guardrails-PII-Multi) genutzt, das auf die Erkennung von personenbezogenen Daten und sensiblen Inhalten trainiert ist.
 
-Die Sprach- und Embeddingmodelle werden in unserem Fall über [PrivatMode-AI](https://www.privatemode.ai/de) bezogen. PrivatMode-AI bietet eine datenschutzkonforme Bereitstellung von LLMs, die auf Open Source-Modellen basiert, welche uns eine Verarbeitung von sensiblen Daten ermöglicht. Die Modelle können je nach Bedarf ausgetauscht oder angepasst werden, solange sie die erforderlichen Schnittstellen und Leistungsanforderungen erfüllen.
+Die Sprach- und Embeddingmodelle werden in unserem Fall über [Privatemode AI](https://www.privatemode.ai/de) bezogen. Privatemode AI bietet eine datenschutzkonforme Bereitstellung von LLMs, die auf Open Source-Modellen basiert, welche uns eine Verarbeitung von sensiblen Daten ermöglicht. Die Modelle können je nach Bedarf ausgetauscht oder angepasst werden, solange sie die erforderlichen Schnittstellen und Leistungsanforderungen erfüllen.
 
 ## Technische Architektur
 
