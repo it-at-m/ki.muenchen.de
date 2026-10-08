@@ -31,9 +31,9 @@ Zammad-AI ist eine bewusst getrennt betreibbare Middleware für GenAI-Workflows 
 
 Das Projekt ist bewusst nicht Teil des Zammad-Kerns, sondern eine getrennt betreibbare Komponente. Zammad-AI besteht aus drei Python-Diensten:
 
-- `zammad-ai-workflow` als FastAPI- und FastStream-basierter Backend-Dienst für Ticket-Triage, Antwortgenerierung, Kafka-Verarbeitung und ein optional eingebettetes Gradio-Frontend,
-- `zammad-ai-index` für die Synchronisation von Wissensdaten aus der Zammad-Knowledge-Base nach Qdrant,
-- `slm-guardrails` für Sicherheits- und Inhaltsprüfungen von Prompts und Antworten.
+- Die Zammad-AI Workflow-Engine als FastAPI- und FastStream-basierter Backend-Dienst für Ticket-Triage, Antwortgenerierung, Kafka-Verarbeitung und ein optional eingebettetes Gradio-Frontend,
+- Die Index-Pipeline für die Synchronisation von Wissensdaten aus der Zammad-Knowledge-Base nach Qdrant,
+- Der Guardrailservice für Sicherheits- und Inhaltsprüfungen von Prompts und Antworten.
 
 Die Integration erfolgt über klar definierte Schnittstellen, sodass Zammad selbst möglichst unverändert bleibt und Prompts, Retrieval, Automationsregeln und Integrationen unabhängig weiterentwickelt werden können.
 
@@ -42,7 +42,8 @@ Die Integration erfolgt über klar definierte Schnittstellen, sodass Zammad selb
 Zammad-AI verarbeitet mehrere Arten von Daten, die je nach Einsatzkonfiguration zusammenwirken:
 
 - **Tickets und Ticketartikel aus Zammad**: Für Triage und Antwortgenerierung werden Ticketinhalte und zugehörige Artikel aus Zammad abgerufen. Hierbei werden nur die für die Bearbeitung relevanten Inhalte genutzt.
-- **Wissensinhalte aus der Zammad-Knowledge-Base**: Der Dienst `zammad-ai-index` synchronisiert Wissensdaten aus Zammad in eine Qdrant-Vektordatenbank, damit sie für Retrieval und Antwortentwürfe genutzt werden können.
+- **Wissensinhalte aus der Zammad-Knowledge-Base**: Der Indexer synchronisiert Wissensdaten aus Zammad in eine Qdrant-Vektordatenbank, damit sie für Retrieval und Antwortentwürfe genutzt werden können.
+- **Dienstleistungsfinder**: Die Beschreibungen städtischer Dienstleistungen aus dem [Dienstleistungsfinder](/ki-systeme/dlf) können als zusätzliche Wissensquelle für Retrieval und Antwortentwürfe eingebunden werden. Der zugrunde liegende [Datensatz Münchner Verwaltungs-Dienstleistungen](/datensaetze/munich-public-services.md) enthält die aufbereiteten Dienstleistungsartikel und Metadaten.
 - **Konfigurations- und Regeldaten**: Kategorien, Aktionen, Prompt-Quellen, Routing-Regeln und Fallback-Verhalten werden in der Konfiguration definiert.
 - **Optionale zusätzliche Wissensquellen**: Rechts- oder Fachquellen können in denselben Retrieval-Bestand eingebunden werden.
 
@@ -66,6 +67,10 @@ Zammad-AI unterstützt hier:
 
 Ziel ist eine schnellere, konsistentere Bearbeitung von Tickets, nicht die vollständige Automatisierung. Fachliche Bewertung und Freigabe bleiben beim Menschen.
 
+![Zammad-AI Workflow](/public/img/zammad-ai/zammad-ai-workflow.png)
+
+Die Grafik zeigt zwei Abläufe: Im ersten erstellt Zammad-AI aus einer Bürgeranfrage immer einen Antwortvorschlag für die Sachbearbeiter\*innen. Im zweiten erstellt Zammad-AI bei bestimmten Kategorien eine automatisierte Antwort für die Einzelfällen erstellt das System weiterhin Antwortvorschläge oder übergibt die Tickets an die Sachbearbeiter\*innen.
+
 ## Funktionen im Überblick
 
 Zammad-AI bringt insbesondere folgende Fähigkeiten mit:
@@ -75,7 +80,7 @@ Zammad-AI bringt insbesondere folgende Fähigkeiten mit:
 - **Ereignisgesteuerte Verarbeitung**: Ticket-Ereignisse können über Kafka verarbeitet werden, was auch asynchrone oder größere Support-Workflows unterstützt.
 - **Wissensgestützte Antworten**: Wissensinhalte aus Zammad können indexiert und über Qdrant für Retrieval und kontextbezogene Antworten genutzt werden.
 - **Guardrails und Nachvollziehbarkeit**: Sicherheitsprüfungen für Prompts und Antworten sowie Tracing und Prompt-Management über Langfuse sind Teil des Architekturansatzes.
-- **Veröffentlichte API**: Der Workflow-Dienst stellt unter `/api/v1` Endpunkte für Health-Checks, Prompt-Versionen, Triage und Antwortgenerierung bereit.
+- **Veröffentlichte API**: Der Workflow-Dienst stellt Endpunkte für Health-Checks, Prompt-Versionen, Triage und Antwortgenerierung bereit.
 - **Konfigurierbare und code-nahe Erweiterbarkeit**: Projektteams können eigene Prompts, Adapter, Regeln und Verarbeitungspipelines für organisationsspezifische Abläufe umsetzen.
 
 ## Funktionsweise
@@ -87,7 +92,7 @@ Zammad-AI unterstützt sowohl REST-basierte Aufrufe als auch ereignisgesteuerte 
 3. Die Triage klassifiziert den Inhalt, ordnet ihn einer Kategorie zu und bestimmt anhand konfigurierbarer Regeln die nächste Aktion.
 4. Bei niedriger Sicherheit oder keiner passenden Kategorie kann das System den Fall gezielt an menschliche Bearbeitung zurückgeben (Keine Aktion).
 5. Für beantwortbare Anfragen erzeugt der Antwortdienst einen Entwurf. Dabei können Wissensdokumente aus Qdrant, Prompt-Vorlagen und zusätzliche Werkzeuge in die Antworterstellung einfließen.
-6. Vor der Ausgabe können Prompts und Antworten durch `slm-guardrails` auf Sicherheits- und Inhaltsaspekte geprüft werden.
+6. Vor der Ausgabe können Prompts und Antworten durch Guardrails auf Sicherheits- und Inhaltsaspekte geprüft werden.
 7. Das Ergebnis wird entweder als Entwurf in Zammad gespeichert, als Antwort zurückgegeben oder bei geeigneten Kategorien automatisiert weiterverarbeitet.
 
 Die Architektur unterstützt dabei zwei grundsätzliche Betriebsweisen:
@@ -125,7 +130,7 @@ Die Sprach- und Embeddingmodelle werden in unserem Fall über [Privatemode AI](h
 Zammad-AI folgt einer modularen Service-Architektur:
 
 - **Workflow-Service**: FastAPI- und FastStream-basierter Dienst für API, Triage, Antwortgenerierung und Kafka-Verarbeitung
-- **Index-Job**: Synchronisiert Wissensinhalte aus Zammad und Gesetze aus dem Internet in die Qdrant
+- **Index-Job**: Synchronisiert Wissensinhalte aus Zammad, dem Dienstleistungsfinder und Gesetzen aus dem Internet in die Qdrant
 - **Guardrails-Service**: Prüft Prompts, Antworten und Queries auf Sicherheits- und Inhaltsaspekte
 - **Qdrant**: Vektordatenbank für Retrieval aus Wissensbeständen
 - **Kafka**: Ereignisgesteuerte Verarbeitung von Ticketflüssen und asynchronen Workflows
@@ -133,7 +138,9 @@ Zammad-AI folgt einer modularen Service-Architektur:
 - **Prometheus**: Metriken für Betrieb und Monitoring
 - **Optionales Gradio-Frontend**: Für lokale oder eingebettete Arbeitsabläufe
 
-Die öffentliche API des Workflow-Dienstes stellt unter `/api/v1` insbesondere Endpunkte für `health`, `prompt_versions`, `triage` und `answer` bereit. Optional kann die API per Bearer-Token abgesichert werden.
+Die öffentliche API des Workflow-Dienstes stellt insbesondere Endpunkte für `health`, `prompt_versions`, `triage` und `answer` bereit. Optional kann die API per Bearer-Token abgesichert werden.
+
+![Zammad-AI Architekturdiagramm](/public/img/zammad-ai/zammad-ai-architecture.png)
 
 ## Erweiterbarkeit und Projektkontext
 
