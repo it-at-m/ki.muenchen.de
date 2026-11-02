@@ -47,6 +47,8 @@ Dieses Embedding wird dann in Echtzeit mit den Embeddings aller anderen Medien v
 
 Das System nutzt keine Nutzerdaten, sondern basiert ausschließlich auf den Inhalten der Medien.
 
+![Darstellung der Ermittlung von Empfehlungen basierend auf Embeddings](/img/inspirabib/inspirabib_embeddings_recommendation.png)
+
 ## KI-Modelle
 
 ### Embedding-Modell
