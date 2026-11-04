@@ -19,13 +19,52 @@ description: Eine GenAI-Integrationsschicht für Zammad mit Ticket-Triage, Antwo
 
 # Zammad-AI
 
-Eine GenAI-Integrationsschicht für Zammad mit Ticket-Triage, Antwortgenerierung und wissensbasierten Antworten.
+Zammad-AI ist eine KI-Anbindung an das städtische Ticketsystem Zammad. Sie hilft den Helpdesk-Teams der Stadtverwaltung, Anfragen von Bürger\*innen schnell zu verstehen und gut formulierte Antworten zu verschicken. Weiterführende Informationen zur Lösung selbst finden sich in der [Zammad-AI-Dokumentation](https://it-at-m.github.io/zammad-ai).
+
+::: info Diese Seite hat zwei Teile
+**Teil 1** erklärt auf einen Blick, was Zammad-AI macht, woher das Wissen des Systems kommt und wo die Verarbeitung passiert.
+
+**Teil 2** ist die technische Dokumentation für alle, die mehr über Funktionsweise und Architektur erfahren möchten.
+:::
 
 ---
 
-Zammad-AI erweitert das Ticketsystem Zammad um eine eigenständige GenAI-Integrationsschicht. Ziel ist es, Helpdesk-Teams bei der Bearbeitung von Anfragen zu unterstützen: Tickets werden schneller verstanden, sinnvoll vorsortiert und mit passenden Antwortvorschlägen versehen. Dabei bleibt die Verantwortung für Inhalte und Entscheidungen immer bei den Mitarbeitenden. Weiterführende Informationen zur Lösung selbst finden sich in der [Zammad-AI-Dokumentation](https://it-at-m.github.io/zammad-ai).
+## Teil 1: Zammad-AI einfach erklärt
 
-## Einführung und Kontext
+Viele Anfragen von Bürger\*innen an die Stadtverwaltung landen als Tickets im Ticketsystem Zammad, etwa über Kontaktformulare auf stadt.muenchen.de. Zammad-AI liest und versteht diese Anfragen mithilfe von KI, hilft bei der Einordnung und formuliert passende Antwortvorschläge.
+
+### Was macht das System?
+
+- **Anfragen verstehen und einordnen**: Das System liest die Anfrage und ordnet sie einem Thema zu.
+- **Antwortvorschläge**: Die KI formuliert einen Antwortentwurf und sucht die passenden Informationen aus den Wissensquellen der Stadtverwaltung zusammen. Mitarbeiter\*innen prüfen und überarbeiten den Vorschlag, bevor er verschickt wird.
+- **Antworten in einfachen Fällen**: Bei klar abgegrenzten, risikoarmen Themen kann die Antwort auch direkt verschickt werden.
+- **Weitergabe bei Unsicherheit**: Ist die KI-Einordnung nicht sicher genug, übernimmt die Sachbearbeitung die Bearbeitung vollständig.
+
+### Woher kommen die Informationen?
+
+Die KI sucht nicht im freien Internet. Die Antworten beruhen ausschließlich auf offiziellen Quellen der Stadtverwaltung. Daraus wählt die KI passende Informationen aus:
+
+- die Wissensdatenbank der Stadtverwaltung (im Ticketsystem Zammad),
+- die Beschreibungen städtischer Dienstleistungen aus dem [Dienstleistungsfinder](/ki-systeme/dlf),
+- Gesetze und offizielle Vorschriften.
+
+Die konkrete Wissensauswahl hängt vom jeweiligen Einsatz des Systems ab.
+
+### Wo und wie wird verarbeitet?
+
+Zammad-AI wird von der Stadtverwaltung betrieben. Die KI-Modelle dafür werden über einen datenschutzkonformen Dienst auf Basis von Open Source-Modellen bereitgestellt, sodass auch die Bearbeitung sensibler Anfragen möglich ist. Rechtlich oder sachlich wirksame Entscheidungen müssen weiterhin von Menschen getroffen werden.
+
+_Genauere Informationen zu den verwendeten Modellen finden Sie im [zweiten Teil](#teil-2-technische-dokumentation)._
+
+![Zammad-AI für Bürger\*innen - so läuft eine Anfrage durch das System](/img/zammad-ai/zammad-ai-citizen.png)
+
+Die Verantwortung bleibt bei den Menschen: Jede Antwort wird von der Sachbearbeitung geprüft, bevor sie verschickt wird – und rechtlich oder thematisch heikle Fälle bearbeiten nur Mitarbeiter\*innen.
+
+---
+
+## Teil 2: Technische Dokumentation
+
+### Einführung und Kontext
 
 Zammad-AI ist eine bewusst getrennt betreibbare Middleware für GenAI-Workflows rund um Zammad. Im Unterschied zu den in Zammad integrierten KI-Funktionen verfolgt das Projekt nicht primär das Ziel einer generischen Produktfunktion, sondern einer kontrollierbaren, projektbezogenen Orchestrierungsschicht. Dadurch können GenAI-Funktionen unabhängig von Zammad-Releasezyklen entwickelt, betrieben und erweitert werden.
 
@@ -37,7 +76,7 @@ Das Projekt ist bewusst nicht Teil des Zammad-Kerns, sondern eine getrennt betre
 
 Die Integration erfolgt über klar definierte Schnittstellen, sodass Zammad selbst möglichst unverändert bleibt und Prompts, Retrieval, Automationsregeln und Integrationen unabhängig weiterentwickelt werden können.
 
-## Datengrundlage
+### Datengrundlage
 
 Zammad-AI verarbeitet mehrere Arten von Daten, die je nach Einsatzkonfiguration zusammenwirken:
 
@@ -49,31 +88,9 @@ Zammad-AI verarbeitet mehrere Arten von Daten, die je nach Einsatzkonfiguration 
 
 Die konkrete Datengrundlage hängt vom jeweiligen UseCase und Deployment ab.
 
-## Welche Probleme Zammad-AI adressiert
+### Funktionen im Überblick
 
-Im Alltag eines Helpdesks entstehen mehrere wiederkehrende Herausforderungen:
-
-- Viele Anfragen ähneln sich inhaltlich, müssen aber jeweils individuell beantwortet werden.
-- Tickets müssen schnell eingeschätzt, kategorisiert und an die richtigen Zuständigen weitergeleitet werden.
-- Inhalte sind oft komplex formuliert oder unvollständig, was die Bearbeitung verzögert.
-- Relevante Informationen aus Wissensdatenbanken, FAQ oder Dokumentation müssen für jede Antwort neu gesucht werden.
-
-Zammad-AI unterstützt hier:
-
-- hilft bei der **Vorsortierung und Einschätzung** von Tickets,
-- schlägt **Antwortentwürfe** vor, die geprüft und angepasst werden können,
-- nutzt angebundene Wissensquellen für **kontextbezogene Antworten**,
-- vereinfacht oder strukturiert Text, damit Rückmeldungen leichter verständlich sind.
-
-Ziel ist eine schnellere, konsistentere Bearbeitung von Tickets, nicht die vollständige Automatisierung. Fachliche Bewertung und Freigabe bleiben beim Menschen.
-
-![Zammad-AI Workflow](/public/img/zammad-ai/zammad-ai-workflow.png)
-
-Die Grafik zeigt zwei Abläufe: Im ersten erstellt Zammad-AI aus einer Bürgeranfrage immer einen Antwortvorschlag für die Sachbearbeiter\*innen. Im zweiten erstellt Zammad-AI bei bestimmten Kategorien eine automatisierte Antwort für die Einzelfällen erstellt das System weiterhin Antwortvorschläge oder übergibt die Tickets an die Sachbearbeiter\*innen.
-
-## Funktionen im Überblick
-
-Zammad-AI bringt insbesondere folgende Fähigkeiten mit:
+Zammad-AI unterstützt den Helpdesk-Alltag insbesondere durch:
 
 - **KI-gestützte Ticketverarbeitung**: Inhalte von Tickets werden analysiert, Schwerpunkte erkannt und Hinweise für Priorität und Kategorie abgeleitet.
 - **Antwortvorschläge**: Für typische Anfragen können textliche Vorschläge erstellt werden, die das Helpdesk-Team weiterverarbeitet.
@@ -83,7 +100,9 @@ Zammad-AI bringt insbesondere folgende Fähigkeiten mit:
 - **Veröffentlichte API**: Der Workflow-Dienst stellt Endpunkte für Health-Checks, Prompt-Versionen, Triage und Antwortgenerierung bereit.
 - **Konfigurierbare und code-nahe Erweiterbarkeit**: Projektteams können eigene Prompts, Adapter, Regeln und Verarbeitungspipelines für organisationsspezifische Abläufe umsetzen.
 
-## Funktionsweise
+Ziel ist eine schnellere, konsistentere Bearbeitung von Tickets, nicht die vollständige Automatisierung. Fachliche Bewertung und Freigabe bleiben beim Menschen.
+
+### Funktionsweise
 
 Zammad-AI unterstützt sowohl REST-basierte Aufrufe als auch ereignisgesteuerte Verarbeitung über Kafka. Der fachliche Ablauf ist in beiden Fällen ähnlich:
 
@@ -102,7 +121,11 @@ Die Architektur unterstützt dabei zwei grundsätzliche Betriebsweisen:
 
 Wenn die Triage keine ausreichend sichere Einordnung trifft, wird das Ticket an menschliche Bearbeitung übergeben.
 
-## Einbindung in Zammad
+![Zammad-AI Workflow: von der Bürgeranfrage über die KI-Unterstützung durch Zammad-AI bis zur verschickten Antwort](/img/zammad-ai/zammad-ai-workflow.png)
+
+Die Grafik zeigt den Ablauf: Aus der Bürgeranfrage wird ein Ticket in Zammad. Zammad-AI ordnet das Ticket einer Kategorie zu und erzeugt je nach Fall entweder einen Antwortvorschlag für die Sachbearbeiter\*innen – oder bei klar abgegrenzten Kategorien eine automatisierte Antwort. Unklare Einzelfälle übergibt das System direkt an die Sachbearbeiter\*innen.
+
+### Einbindung in Zammad
 
 Zammad-AI ist bewusst als separate Komponente neben Zammad umgesetzt. Das hat mehrere Vorteile:
 
@@ -115,34 +138,7 @@ Technisch unterstützt das Projekt sowohl REST-basierte Anbindungen an Zammad al
 
 Die Integrationsschicht stellt dafür gemeinsame Zammad-Clients bereit, mit denen Tickets gelesen sowie Antworten, interne Notizen oder geteilte Entwürfe zurück nach Zammad geschrieben werden können.
 
-## KI-Modelle und Modellkonfiguration
-
-Zammad-AI ist modellagnostisch aufgebaut und kann grundsätzlich deployment-spezifisch konfiguriert werden. Im derzeitigen Einsatz kommen folgende Modelle zum Einsatz:
-
-- Für **Triage** und **Antwortgenerierung** wird das Sprachmodell **`gpt-oss-120b`** verwendet.
-- Für **Retrieval** und die Wissensindexierung wird das Embedding-Modell **`qwen3-embedding-4b`** genutzt, dessen Vektordimension zur Qdrant-Konfiguration passen muss.
-- Für **Guardrails** kann ein separates Modell für Sicherheits- und Inhaltsprüfungen angesprochen werden. Derzeit wird hier [`GLiNER2-Guardrails-PII-Multi`](https://huggingface.co/fastino/GLiNER2-Guardrails-PII-Multi) genutzt, das auf die Erkennung von personenbezogenen Daten und sensiblen Inhalten trainiert ist.
-
-Die Sprach- und Embeddingmodelle werden in unserem Fall über [Privatemode AI](https://www.privatemode.ai/de) bezogen. Privatemode AI bietet eine datenschutzkonforme Bereitstellung von LLMs, die auf Open Source-Modellen basiert, welche uns eine Verarbeitung von sensiblen Daten ermöglicht. Die Modelle können je nach Bedarf ausgetauscht oder angepasst werden, solange sie die erforderlichen Schnittstellen und Leistungsanforderungen erfüllen.
-
-## Technische Architektur
-
-Zammad-AI folgt einer modularen Service-Architektur:
-
-- **Workflow-Service**: FastAPI- und FastStream-basierter Dienst für API, Triage, Antwortgenerierung und Kafka-Verarbeitung
-- **Index-Job**: Synchronisiert Wissensinhalte aus Zammad, dem Dienstleistungsfinder und Gesetzen aus dem Internet in die Qdrant
-- **Guardrails-Service**: Prüft Prompts, Antworten und Queries auf Sicherheits- und Inhaltsaspekte
-- **Qdrant**: Vektordatenbank für Retrieval aus Wissensbeständen
-- **Kafka**: Ereignisgesteuerte Verarbeitung von Ticketflüssen und asynchronen Workflows
-- **Langfuse**: Tracing und Prompt-Management
-- **Prometheus**: Metriken für Betrieb und Monitoring
-- **Optionales Gradio-Frontend**: Für lokale oder eingebettete Arbeitsabläufe
-
-Die öffentliche API des Workflow-Dienstes stellt insbesondere Endpunkte für `health`, `prompt_versions`, `triage` und `answer` bereit. Optional kann die API per Bearer-Token abgesichert werden.
-
-![Zammad-AI Architekturdiagramm](/public/img/zammad-ai/zammad-ai-architecture.png)
-
-## Erweiterbarkeit und Projektkontext
+### Erweiterbarkeit und Projektkontext
 
 Zammad bietet seit [Version 7 eigene KI-Funktionen](https://zammad.com/de/produkt/kuenstliche-intelligenz), die in der [Zammad-Dokumentation zu AI Features](https://user-docs.zammad.org/en/pre-release/extras/ai-features.html) beschrieben sind.
 Zammad-AI verfolgt dazu einen ergänzenden Ansatz: Es dient als kontrollierbare Integrations- und Orchestrierungsschicht für GenAI-Workflows rund um Zammad.
@@ -159,18 +155,36 @@ Damit können z.B. projekt- oder organisationsspezifische:
 
 umgesetzt werden, ohne Zammad selbst verändern zu müssen. Zammad-AI kann außerdem an weitere Systeme angebunden werden, die rund um das Helpdesk angesiedelt sind.
 
-## Qualitätssicherung und Betrieb
+### KI-Modelle und Modellkonfiguration
 
-Die öffentlich dokumentierte Qualitätssicherung konzentriert sich auf technische und betriebliche Absicherung:
+Zammad-AI ist modellagnostisch aufgebaut und kann grundsätzlich deployment-spezifisch konfiguriert werden. Im derzeitigen Einsatz kommen folgende Modelle zum Einsatz:
 
-- automatisierte Tests für Workflow- und Index-Komponenten,
-- Linting und Formatierung mit Ruff,
-- Typprüfung,
-- Guardrails für Prompt- und Antwortprüfungen,
-- Tracing mit Langfuse,
-- Monitoring über Prometheus und Grafana.
+- Für **Triage** und **Antwortgenerierung** wird das Sprachmodell **`gpt-oss-120b`** verwendet.
+- Für **Retrieval** und die Wissensindexierung wird das Embedding-Modell **`qwen3-embedding-4b`** genutzt, dessen Vektordimension zur Qdrant-Konfiguration passen muss.
+- Für **Guardrails** kann ein separates Modell für Sicherheits- und Inhaltsprüfungen angesprochen werden. Derzeit wird hier [`GLiNER2-Guardrails-PII-Multi`](https://huggingface.co/fastino/GLiNER2-Guardrails-PII-Multi) genutzt, das auf die Erkennung von personenbezogenen Daten und sensiblen Inhalten trainiert ist.
 
-## Evaluierung
+Die Sprach- und Embeddingmodelle werden in unserem Fall über [Privatemode AI](https://www.privatemode.ai/de) bezogen. Privatemode AI bietet eine datenschutzkonforme Bereitstellung von LLMs, die auf Open Source-Modellen basiert, welche uns eine Verarbeitung von sensiblen Daten ermöglicht. Die Modelle können je nach Bedarf ausgetauscht oder angepasst werden, solange sie die erforderlichen Schnittstellen und Leistungsanforderungen erfüllen.
+
+### Technische Architektur
+
+Zammad-AI folgt einer modularen Service-Architektur:
+
+- **Workflow-Service**: FastAPI- und FastStream-basierter Dienst für API, Triage, Antwortgenerierung und Kafka-Verarbeitung
+- **Index-Job**: Synchronisiert Wissensinhalte aus Zammad, dem Dienstleistungsfinder und Gesetzen aus dem Internet in die Qdrant
+- **Guardrails-Service**: Prüft Prompts, Antworten und Queries auf Sicherheits- und Inhaltsaspekte
+- **Qdrant**: Vektordatenbank für Retrieval aus Wissensbeständen
+- **Kafka**: Ereignisgesteuerte Verarbeitung von Ticketflüssen und asynchronen Workflows
+- **Langfuse**: Tracing und Prompt-Management
+- **Prometheus**: Metriken für Betrieb und Monitoring
+- **Optionales Gradio-Frontend**: Für lokale oder eingebettete Arbeitsabläufe
+
+Die öffentliche API des Workflow-Dienstes stellt insbesondere Endpunkte für `health`, `prompt_versions`, `triage` und `answer` bereit. Optional kann die API per Bearer-Token abgesichert werden.
+
+![Technische Architektur von Zammad-AI: Workflow-Service mit Triage und Antwortgenerierung, Wissensquellen, Index-Pipeline und Qdrant, Privatemode AI sowie Observability](/img/zammad-ai/zammad-ai-architecture.png)
+
+Die öffentlich dokumentierte Absicherung umfasst automatisierte Tests der Workflow- und Index-Komponenten, Guardrails für Prompt- und Antwortprüfungen, Tracing mit Langfuse sowie Monitoring über Prometheus und Grafana.
+
+### Evaluierung
 
 Die fachliche Evaluierung erfolgt über einen Goldstandard-Datensatz.
 
@@ -179,7 +193,7 @@ Die fachliche Evaluierung erfolgt über einen Goldstandard-Datensatz.
 
 Damit zeigt die Auswertung, dass ein großer Teil der eingehenden Anfragen automatisiert als bearbeitbar erkannt wird und die erzeugten Bearbeitungsergebnisse überwiegend gut bis sehr gut bewertet werden.
 
-## Risiken und Limitierungen
+### Risiken und Limitierungen
 
 Wie andere KI-Systeme hat auch Zammad-AI Grenzen, die beachtet werden müssen:
 
