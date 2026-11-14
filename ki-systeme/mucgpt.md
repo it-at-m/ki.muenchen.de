@@ -45,9 +45,13 @@ Der Chat bietet einen klaren Arbeitsbereich zur Interaktion mit dem Sprachmodell
 - Mehrstufige Konversationen werden unterstützt; der Verlauf bleibt lokal im Browser.
 - Der Assistent antwortet standardmäßig in der gewählten Oberflächensprache; schreiben Sie in einer anderen Sprache, folgt er Ihnen.
 
+<video src="/img/mucgpt/videos/de-chat-streaming.mp4" controls muted loop width="100%"></video>
+
 ### Canvas
 
 Verfügbar ab MUCGPT 2.1.
+
+![Canvas mit Dokument und Agent-Ausgabe](/img/mucgpt/canvas.png)
 
 Neben dem Chat lässt sich ein Rich-Text-Dokument öffnen und gemeinsam mit dem
 Assistenten bearbeiten: Der Assistent kann das Dokument schreiben und ändern,
@@ -56,7 +60,11 @@ sichern und das Dokument als Markdown, PDF, Word oder Excel exportieren.
 Ausgewählte Textstellen lassen sich direkt in den Chat zitieren und gezielt
 überarbeiten lassen.
 
+<video src="/img/mucgpt/videos/de-canvas-writing.mp4" controls muted loop width="100%"></video>
+
 ### Chat mit Dokumenten
+
+![Dokumentdialog mit hochgeladenem Dokument](/img/mucgpt/chat_documents.png)
 
 Dokumente lassen sich im Chat hochladen und als Kontext für die Antworten
 nutzen: Dateien werden zu Text extrahiert, und der Assistent arbeitet mit dem
@@ -70,6 +78,8 @@ Dokumente mit eigenen Anweisungen kombinieren.
   und sieht nur die Dokumente, die Sie für den aktuellen Schritt ausgewählt
   haben.
 - Verfügbar ab MUCGPT 2.1.
+
+<video src="/img/mucgpt/videos/de-document-upload.mp4" controls muted loop width="100%"></video>
 
 ### Assistenten erstellen
 
@@ -97,6 +107,8 @@ Die Plattform ist so ausgelegt, dass weitere Tools je nach Bedarf ergänzt werde
 
 #### Tool-Bestätigung (Human in the loop)
 
+![Tool-Bestätigungskarte](/img/mucgpt/tool_approval.png)
+
 Manche Tools erfordern Ihre ausdrückliche Bestätigung, bevor sie ausgeführt
 werden. Ruft der Assistent ein solches Tool auf, pausiert die Antwort und eine
 Bestätigungskarte erscheint im Chat: Sie zeigt das Tool, die genauen Argumente
@@ -105,6 +117,8 @@ und die DatenSchutzebene, die das Tool empfangen darf. Sie können den Aufruf
 bestätigen oder ablehnen — bei einer Ablehnung fährt der Assistent ohne
 Ausführung fort. Wenn Sie stattdessen weiterarbeiten, wird die pausierte
 Aktion abgebrochen und nie ausgeführt.
+
+<video src="/img/mucgpt/videos/de-tool-approval.mp4" controls muted loop width="100%"></video>
 
 ### Spracheingabe
 
