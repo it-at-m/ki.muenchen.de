@@ -47,6 +47,8 @@ Der Chat bietet einen klaren Arbeitsbereich zur Interaktion mit dem Sprachmodell
 
 ### Canvas
 
+Verfügbar ab MUCGPT 2.1.
+
 Neben dem Chat lässt sich ein Rich-Text-Dokument öffnen und gemeinsam mit dem
 Assistenten bearbeiten: Der Assistent kann das Dokument schreiben und ändern,
 während Sie es live mitverfolgen; Sie können selbst formatieren, Versionen
@@ -104,13 +106,15 @@ bestätigen oder ablehnen — bei einer Ablehnung fährt der Assistent ohne
 Ausführung fort. Wenn Sie stattdessen weiterarbeiten, wird die pausierte
 Aktion abgebrochen und nie ausgeführt.
 
-### Spracheingabe (beta)
+### Spracheingabe
+
+Verfügbar ab MUCGPT 2.1.
 
 Sie können im Chat diktieren statt zu tippen: Die Spracheingabe läuft komplett
-im Browser (Web Speech/Browser-Spracherkennung) — kein Mikrofoninhalt verlässt
-Ihr Gerät. Der erkannte Text landet im Eingabefeld und kann frei mit getipptem
-Text kombiniert werden. Das Spracherkennungsmodell wird zentral pro
-Deployment ausgewählt und einmalig im Browser heruntergeladen und gespeichert.
+im Browser — kein Mikrofoninhalt verlässt Ihr Gerät. Der erkannte Text landet
+im Eingabefeld und kann frei mit getipptem Text kombiniert werden. Das
+Spracherkennungsmodell wird zentral pro Deployment ausgewählt und einmalig im
+Browser heruntergeladen und gespeichert.
 
 ### Startseite
 
