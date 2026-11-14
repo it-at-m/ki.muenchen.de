@@ -14,6 +14,14 @@ Hier finden Sie spannende Einblicke in die Arbeit der Stadt München im Bereich 
 ## Artikel
 
 <BlogpostCard
+  title="MUCGPT 2.1"
+  link="/blog/2026-11-14-mucgpt-2.1"
+  teaser="Canvas, Chat mit Dokumenten, Tool-Freigabe und Spracheingabe: die neue Version MUCGPT 2.1."
+  date="2026-11-14"
+  img="/img/mucgpt/canvas.png"
+/>
+
+<BlogpostCard
   title="MUCGPT 2.0"
   link="/blog/2026-06-29-mucgpt-2.0"
   teaser="Münchens KI-Werkzeug erhält neue Oberfläche und teilbare Assistenten"
