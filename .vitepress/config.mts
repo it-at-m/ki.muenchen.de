@@ -97,7 +97,12 @@ const vitepressConfig = defineConfig({
     resolve: { alias: { "vuetify/lib": "vuetify" } },
     plugins: [
       llmstxt({
-        ignoreFiles: ["CODE_OF_CONDUCT.md", "README.md", "impressum.md"],
+        ignoreFiles: [
+          "AGENTS.md",
+          "CODE_OF_CONDUCT.md",
+          "README.md",
+          "impressum.md",
+        ],
       }),
     ],
   },
