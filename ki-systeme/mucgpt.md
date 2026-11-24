@@ -31,6 +31,8 @@ Diese Dokumentation fasst die wichtigsten Funktionen und Limitierungen von MUCGP
 
 MUCGPT ist eine Assistenz‑zuerst‑Plattform für die Arbeit mit großen Sprachmodellen. Chats sind der Ort, an dem gearbeitet wird; Assistenten bringen Struktur, damit wiederkehrende Aufgaben schneller und zuverlässiger erledigt werden können. Die Historie bleibt lokal im Browser (IndexedDB), vergangene Gespräche können fortgesetzt und favorisiert werden.
 
+![Big Picture: Städtische Mitarbeiter*innen senden Prompts an MUCGPT und erhalten Ergebnisse zurück. Die MUCGPT arbeitet mit internen Wissensplattformen und sendet Daten an Cloud-KI, welche keine Eingaben oder Ausgaben speichert.](/img/mucgpt/big-picture.png)
+
 ## Funktionen
 
 MUCGPT unterstützt eine Vielzahl von Anwendungsfällen rund um Textbearbeitung, Ideation und Zusammenarbeit. Die wichtigsten Bereiche im Überblick:

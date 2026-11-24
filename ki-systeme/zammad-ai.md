@@ -29,6 +29,8 @@ Zammad-AI erweitert das Ticketsystem Zammad um eine eigenständige GenAI-Integra
 
 Zammad-AI ist eine bewusst getrennt betreibbare Middleware für GenAI-Workflows rund um Zammad. Im Unterschied zu den in Zammad integrierten KI-Funktionen verfolgt das Projekt nicht primär das Ziel einer generischen Produktfunktion, sondern einer kontrollierbaren, projektbezogenen Orchestrierungsschicht. Dadurch können GenAI-Funktionen unabhängig von Zammad-Releasezyklen entwickelt, betrieben und erweitert werden.
 
+![Big Picture: Bürger*innen stellen Anfragen im Ticketsystem Zammad. Zammad-AI kategorisiert Tickets, erstellt Antwortvorschläge auf Basis von Gesetzen, Wissen und Regeln, die von der Sachbearbeitung geprüft und korrigiert werden.](/img/zammad-ai/big-picture.png)
+
 Das Projekt ist bewusst nicht Teil des Zammad-Kerns, sondern eine getrennt betreibbare Komponente. Zammad-AI besteht aus drei Python-Diensten:
 
 - Die Zammad-AI Workflow-Engine als FastAPI- und FastStream-basierter Backend-Dienst für Ticket-Triage, Antwortgenerierung, Kafka-Verarbeitung und ein optional eingebettetes Gradio-Frontend,
