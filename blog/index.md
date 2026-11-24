@@ -14,6 +14,14 @@ Hier finden Sie spannende Einblicke in die Arbeit der Stadt München im Bereich 
 ## Artikel
 
 <BlogpostCard
+  title="Unser Open Source KI-Stack: Update 2026"
+  link="/blog/2026-11-19-ki-stack-update"
+  teaser="Ein Jahr nach unserem ersten Stack-Überblick: Xberg ersetzt Docling, SearXNG geht als Search-Proxy produktiv, LiteLLM und Langfuse wachsen mit – und ein Ausblick auf model2vec-serve."
+  date="2026-11-19"
+  img="/img/blog/kicc-muc-stack.png"
+/>
+
+<BlogpostCard
   title="MUCGPT 2.0"
   link="/blog/2026-06-29-mucgpt-2.0"
   teaser="Münchens KI-Werkzeug erhält neue Oberfläche und teilbare Assistenten"
